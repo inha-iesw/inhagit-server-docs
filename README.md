@@ -1,1 +1,0 @@
-# inhagit-server-docs
