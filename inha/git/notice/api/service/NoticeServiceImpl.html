@@ -84,7 +84,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">NoticeServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></span></div>
-<div class="block">NoticeServiceImpl는 NoticeService 인터페이스를 구현하는 클래스.</div>
+<div class="block">공지사항 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.
+ 공지사항의 조회, 생성, 수정, 삭제 및 첨부파일 관리 기능을 제공합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -117,22 +118,24 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
  <a href="../controller/dto/request/CreateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">CreateNoticeRequest</a>&nbsp;createNoticeRequest,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">공지 생성</div>
+<div class="block">새로운 공지사항을 생성합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteNotice(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteNotice</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">공지 삭제</div>
+<div class="block">공지사항을 삭제(비활성화) 처리합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/SearchNoticeResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticeResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNotice(java.lang.Integer)" class="member-name-link">getNotice</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특정 공지사항의 상세 정보를 조회합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../controller/dto/response/SearchNoticesResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticesResponse</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNotices(java.lang.Integer,java.lang.Integer)" class="member-name-link">getNotices</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">공지 조회</div>
+<div class="block">공지사항 목록을 페이징하여 조회합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateNotice(inha.git.user.domain.User,java.lang.Integer,inha.git.notice.api.controller.dto.request.UpdateNoticeRequest,java.util.List)" class="member-name-link">updateNotice</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
@@ -140,7 +143,7 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
  <a href="../controller/dto/request/UpdateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">UpdateNoticeRequest</a>&nbsp;updateNoticeRequest,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">공지 수정</div>
+<div class="block">기존 공지사항을 수정합니다.</div>
 </div>
 </div>
 </div>
@@ -179,15 +182,21 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
 <div class="member-signature"><span class="annotations">@Transactional(readOnly=true)
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">org.springframework.data.domain.Page&lt;<a href="../controller/dto/response/SearchNoticesResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticesResponse</a>&gt;</span>&nbsp;<span class="element-name">getNotices</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</span></div>
-<div class="block">공지 조회</div>
+<div class="block">공지사항 목록을 페이징하여 조회합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 페이지 정보로 Pageable 객체 생성 (작성일 기준 내림차순 정렬)<br>
+ 2. QueryDSL을 사용하여 페이징된 공지사항 목록 조회<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="NoticeService.html#getNotices(java.lang.Integer,java.lang.Integer)">getNotices</a></code>&nbsp;in interface&nbsp;<code><a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>page</code> - 페이지 번호</dd>
-<dd><code>size</code> - 페이지 사이즈</dd>
+<dd><code>page</code> - 조회할 페이지 번호 (0부터 시작)</dd>
+<dd><code>size</code> - 페이지당 항목 수</dd>
 <dt>Returns:</dt>
-<dd>공지 페이지</dd>
+<dd>페이징된 공지사항 목록</dd>
 </dl>
 </section>
 </li>
@@ -196,9 +205,25 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
 <h3>getNotice</h3>
 <div class="member-signature"><span class="annotations">@Transactional(readOnly=true)
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../controller/dto/response/SearchNoticeResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticeResponse</a></span>&nbsp;<span class="element-name">getNotice</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</span></div>
+<div class="block">특정 공지사항의 상세 정보를 조회합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 공지사항 ID로 공지사항 조회<br>
+ 2. 작성자 정보 조회<br>
+ 3. 첨부파일 정보 매핑<br>
+ 4. 응답 DTO 생성 및 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="NoticeService.html#getNotice(java.lang.Integer)">getNotice</a></code>&nbsp;in interface&nbsp;<code><a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>noticeIdx</code> - 조회할 공지사항 ID</dd>
+<dt>Returns:</dt>
+<dd>공지사항 상세 정보</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - NOT_FIND_USER: 작성자를 찾을 수 없는 경우
+                      NOTICE_NOT_FOUND: 공지사항을 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -208,16 +233,24 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createNotice</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="../controller/dto/request/CreateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">CreateNoticeRequest</a>&nbsp;createNoticeRequest,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</span></div>
-<div class="block">공지 생성</div>
+<div class="block">새로운 공지사항을 생성합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 중복 요청 검증<br>
+ 2. 공지사항 엔티티 생성 및 저장<br>
+ 3. 첨부파일이 있는 경우 파일 저장 및 엔티티 생성<br>
+ 4. 트랜잭션 롤백 시 파일 삭제 등록<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="NoticeService.html#createNotice(inha.git.user.domain.User,inha.git.notice.api.controller.dto.request.CreateNoticeRequest,java.util.List)">createNotice</a></code>&nbsp;in interface&nbsp;<code><a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>user</code> - 사용자</dd>
-<dd><code>createNoticeRequest</code> - 공지 생성 요청</dd>
-<dd><code>attachmentList</code> - 첨부 파일 리스트</dd>
+<dd><code>user</code> - 생성을 요청한 사용자 정보</dd>
+<dd><code>createNoticeRequest</code> - 생성할 공지사항 정보</dd>
+<dd><code>attachmentList</code> - 첨부파일 목록 (선택적)</dd>
 <dt>Returns:</dt>
-<dd>생성된 공지 이름</dd>
+<dd>공지사항 생성 완료 메시지</dd>
 </dl>
 </section>
 </li>
@@ -228,19 +261,29 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx,
  <a href="../controller/dto/request/UpdateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">UpdateNoticeRequest</a>&nbsp;updateNoticeRequest,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</span></div>
-<div class="block">공지 수정
+<div class="block">기존 공지사항을 수정합니다.
 
- <p>관리자는 모든 공지를 수정할 수 있고, 공지 작성자는 자신의 공지만 수정할 수 있습니다.</p></div>
+ <p>
+ 처리 과정:<br>
+ 1. 공지사항 조회 및 권한 검증<br>
+ 2. 제목, 내용 수정<br>
+ 3. 기존 첨부파일 삭제 (파일 시스템 및 DB)<br>
+ 4. 새로운 첨부파일 저장 (있는 경우)<br>
+ 5. 트랜잭션 롤백 시 파일 삭제 등록<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="NoticeService.html#updateNotice(inha.git.user.domain.User,java.lang.Integer,inha.git.notice.api.controller.dto.request.UpdateNoticeRequest,java.util.List)">updateNotice</a></code>&nbsp;in interface&nbsp;<code><a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>user</code> - 사용자</dd>
-<dd><code>noticeIdx</code> - 공지 인덱스</dd>
-<dd><code>updateNoticeRequest</code> - 공지 수정 요청</dd>
-<dd><code>attachmentList</code> - 첨부 파일 리스트</dd>
+<dd><code>user</code> - 수정을 요청한 사용자 정보</dd>
+<dd><code>noticeIdx</code> - 수정할 공지사항 ID</dd>
+<dd><code>updateNoticeRequest</code> - 수정할 내용</dd>
+<dd><code>attachmentList</code> - 새로운 첨부파일 목록 (선택적)</dd>
 <dt>Returns:</dt>
-<dd>수정된 공지 이름</dd>
+<dd>공지사항 수정 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - NOTICE_NOT_FOUND: 공지사항을 찾을 수 없는 경우
+                      NOTICE_NOT_AUTHORIZED: 수정 권한이 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -249,17 +292,25 @@ implements <a href="NoticeService.html" title="interface in inha.git.notice.api.
 <h3>deleteNotice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteNotice</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</span></div>
-<div class="block">공지 삭제
+<div class="block">공지사항을 삭제(비활성화) 처리합니다.
 
- <p>관리자는 모든 공지를 삭제할 수 있고, 공지 작성자는 자신의 공지만 삭제할 수 있습니다.</p></div>
+ <p>
+ 처리 과정:<br>
+ 1. 공지사항 조회 및 권한 검증<br>
+ 2. 상태를 INACTIVE로 변경<br>
+ 3. 삭제 시간 기록<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="NoticeService.html#deleteNotice(inha.git.user.domain.User,java.lang.Integer)">deleteNotice</a></code>&nbsp;in interface&nbsp;<code><a href="NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>user</code> - 사용자</dd>
-<dd><code>noticeIdx</code> - 공지 인덱스</dd>
+<dd><code>user</code> - 삭제를 요청한 사용자 정보</dd>
+<dd><code>noticeIdx</code> - 삭제할 공지사항 ID</dd>
 <dt>Returns:</dt>
-<dd>삭제된 공지 이름</dd>
+<dd>공지사항 삭제 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - NOTICE_NOT_FOUND: 공지사항을 찾을 수 없는 경우
+                      NOTICE_NOT_AUTHORIZED: 삭제 권한이 없는 경우</dd>
 </dl>
 </section>
 </li>

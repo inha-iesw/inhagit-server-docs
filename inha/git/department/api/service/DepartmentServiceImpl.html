@@ -84,7 +84,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">DepartmentServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></span></div>
-<div class="block">DepartmentServiceImpl는 DepartmentService 인터페이스를 구현하는 클래스.</div>
+<div class="block">학과 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.
+ 학과의 조회, 생성, 수정, 삭제 및 관련 통계 처리를 담당합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -116,23 +117,25 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)" class="member-name-link">createDepartment</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateDepartmentRequest.html" title="class in inha.git.department.api.controller.dto.request">CreateDepartmentRequest</a>&nbsp;createDepartmentRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학과 생성</div>
+<div class="block">새로운 학과를 생성합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteDepartment</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">학과를 삭제(비활성화) 처리합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../admin/api/controller/dto/response/SearchDepartmentResponse.html" title="class in inha.git.admin.api.controller.dto.response">SearchDepartmentResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDepartments(java.lang.Integer)" class="member-name-link">getDepartments</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학과 전체 조회</div>
+<div class="block">학과 목록을 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateDepartmentName(inha.git.user.domain.User,java.lang.Integer,inha.git.department.api.controller.dto.request.UpdateDepartmentRequest)" class="member-name-link">updateDepartmentName</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx,
  <a href="../controller/dto/request/UpdateDepartmentRequest.html" title="class in inha.git.department.api.controller.dto.request">UpdateDepartmentRequest</a>&nbsp;updateDepartmentRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학과 이름 변경</div>
+<div class="block">학과명을 수정합니다.</div>
 </div>
 </div>
 </div>
@@ -169,14 +172,25 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <section class="detail" id="getDepartments(java.lang.Integer)">
 <h3>getDepartments</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../admin/api/controller/dto/response/SearchDepartmentResponse.html" title="class in inha.git.admin.api.controller.dto.response">SearchDepartmentResponse</a>&gt;</span>&nbsp;<span class="element-name">getDepartments</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx)</span></div>
-<div class="block">학과 전체 조회</div>
+<div class="block">학과 목록을 조회합니다.
+
+ <p>
+ 단과대학 ID가 제공된 경우:<br>
+ 1. 단과대학 존재 여부 확인<br>
+ 2. 해당 단과대학에 속한 학과만 조회<br>
+<br>
+ 단과대학 ID가 제공되지 않은 경우:<br>
+ 1. 모든 활성화된 학과 조회<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#getDepartments(java.lang.Integer)">getDepartments</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>collegeIdx</code> - 대학 인덱스</dd>
+<dd><code>collegeIdx</code> - 조회할 단과대학 ID (선택적)</dd>
 <dt>Returns:</dt>
-<dd>학과 전체 조회 결과</dd>
+<dd>학과 목록</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - COLLEGE_NOT_FOUND: 단과대학을 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -186,14 +200,27 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createDepartment</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateDepartmentRequest.html" title="class in inha.git.department.api.controller.dto.request">CreateDepartmentRequest</a>&nbsp;createDepartmentRequest)</span></div>
-<div class="block">학과 생성</div>
+<div class="block">새로운 학과를 생성합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 단과대학 존재 여부 확인<br>
+ 2. 학과 엔티티 생성<br>
+ 3. 단과대학-학과 연관관계 검증<br>
+ 4. 학과 정보 저장<br>
+ 5. 학과 통계 정보 생성<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)">createDepartment</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>createDepartmentRequest</code> - 학과 생성 요청</dd>
+<dd><code>admin</code> - 생성을 요청한 관리자 정보</dd>
+<dd><code>createDepartmentRequest</code> - 생성할 학과 정보</dd>
 <dt>Returns:</dt>
-<dd>생성된 학과 이름</dd>
+<dd>학과 생성 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - COLLEGE_NOT_FOUND: 단과대학을 찾을 수 없는 경우,
+                      DEPARTMENT_NOT_BELONG_TO_COLLEGE: 학과와 단과대학 정보가 일치하지 않는 경우</dd>
 </dl>
 </section>
 </li>
@@ -204,15 +231,18 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">updateDepartmentName</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx,
  <a href="../controller/dto/request/UpdateDepartmentRequest.html" title="class in inha.git.department.api.controller.dto.request">UpdateDepartmentRequest</a>&nbsp;updateDepartmentRequest)</span></div>
-<div class="block">학과 이름 변경</div>
+<div class="block">학과명을 수정합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#updateDepartmentName(inha.git.user.domain.User,java.lang.Integer,inha.git.department.api.controller.dto.request.UpdateDepartmentRequest)">updateDepartmentName</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>departmentIdx</code> - 학과 인덱스</dd>
-<dd><code>updateDepartmentRequest</code> - 학과 이름 변경 요청</dd>
+<dd><code>admin</code> - 수정을 요청한 관리자 정보</dd>
+<dd><code>departmentIdx</code> - 수정할 학과의 식별자</dd>
+<dd><code>updateDepartmentRequest</code> - 새로운 학과명</dd>
 <dt>Returns:</dt>
-<dd>변경된 학과 이름</dd>
+<dd>학과명 수정 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - DEPARTMENT_NOT_FOUND: 학과를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -222,9 +252,18 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteDepartment</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx)</span></div>
+<div class="block">학과를 삭제(비활성화) 처리합니다.
+ 실제 삭제가 아닌 상태 변경 및 삭제 일시 기록으로 처리됩니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)">deleteDepartment</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>admin</code> - 삭제를 요청한 관리자 정보</dd>
+<dd><code>departmentIdx</code> - 삭제할 학과의 식별자</dd>
+<dt>Returns:</dt>
+<dd>학과 삭제 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - DEPARTMENT_NOT_FOUND: 학과를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>

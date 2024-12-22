@@ -79,7 +79,8 @@ loadScripts(document, 'script');</script>
 @RequestMapping("/api/v1/colleges")
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">CollegeController</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">CollegeController는 collage 관련 엔드포인트를 처리.</div>
+<div class="block">단과대학 관련 API를 처리하는 컨트롤러입니다.
+ 단과대학의 조회, 생성, 수정, 삭제 기능을 제공합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -111,30 +112,30 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createCollege(inha.git.user.domain.User,inha.git.college.controller.dto.request.CreateCollegeRequest)" class="member-name-link">createCollege</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="dto/request/CreateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">CreateCollegeRequest</a>&nbsp;createDepartmentRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">단과대 생성 API</div>
+<div class="block">새로운 단과대학을 생성합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteCollege(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCollege</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">단과대 삭제 API</div>
+<div class="block">단과대학을 삭제(비활성화) 처리합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchCollegeResponse.html" title="class in inha.git.college.controller.dto.response">SearchCollegeResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCollege(java.lang.Integer)" class="member-name-link">getCollege</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">단과대 조회 API</div>
+<div class="block">특정 학과가 속한 단과대학을 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchCollegeResponse.html" title="class in inha.git.college.controller.dto.response">SearchCollegeResponse</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getColleges()" class="member-name-link">getColleges</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">단과대 전체 조회 API</div>
+<div class="block">모든 단과대학 목록을 조회합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCollege(inha.git.user.domain.User,java.lang.Integer,inha.git.college.controller.dto.request.UpdateCollegeRequest)" class="member-name-link">updateCollege</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx,
  <a href="dto/request/UpdateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">UpdateCollegeRequest</a>&nbsp;updateCollegeRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">단과대 수정 API</div>
+<div class="block">기존 단과대학의 정보를 수정합니다.</div>
 </div>
 </div>
 </div>
@@ -172,12 +173,11 @@ loadScripts(document, 'script');</script>
 <h3>getColleges</h3>
 <div class="member-signature"><span class="annotations">@GetMapping
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchCollegeResponse.html" title="class in inha.git.college.controller.dto.response">SearchCollegeResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getColleges</span>()</div>
-<div class="block">단과대 전체 조회 API
-
- <p>단과대 전체를 조회합니다.</p></div>
+<div class="block">모든 단과대학 목록을 조회합니다.
+ 활성화된 단과대학만 조회됩니다.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>단과대 전체 조회 결과를 포함하는 BaseResponse&lt;List<SearchCollegeResponse>></dd>
+<dd>단과대학 목록을 포함한 응답</dd>
 </dl>
 </section>
 </li>
@@ -187,12 +187,15 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@GetMapping("/{departmentIdx}")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchCollegeResponse.html" title="class in inha.git.college.controller.dto.response">SearchCollegeResponse</a>&gt;</span>&nbsp;<span class="element-name">getCollege</span><wbr><span class="parameters">(@PathVariable("departmentIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx)</span></div>
-<div class="block">단과대 조회 API</div>
+<div class="block">특정 학과가 속한 단과대학을 조회합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>departmentIdx</code> - 단과대 인덱스</dd>
+<dd><code>departmentIdx</code> - 조회할 학과의 식별자</dd>
 <dt>Returns:</dt>
-<dd>단과대 조회 결과</dd>
+<dd>해당 학과가 속한 단과대학 정보를 포함한 응답</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - DEPARTMENT_NOT_FOUND: 학과를 찾을 수 없는 경우,
+                      COLLEGE_NOT_FOUND: 단과대학을 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -205,12 +208,14 @@ loadScripts(document, 'script');</script>
  <a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @Validated @RequestBody
  <a href="dto/request/CreateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">CreateCollegeRequest</a>&nbsp;createDepartmentRequest)</span></div>
-<div class="block">단과대 생성 API</div>
+<div class="block">새로운 단과대학을 생성합니다.
+ 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>createDepartmentRequest</code> - 단과대 생성 요청</dd>
+<dd><code>user</code> - 현재 인증된 관리자 정보</dd>
+<dd><code>createDepartmentRequest</code> - 생성할 단과대학 정보 (단과대학명)</dd>
 <dt>Returns:</dt>
-<dd>생성된 단과대 이름</dd>
+<dd>단과대학 생성 결과 메시지</dd>
 </dl>
 </section>
 </li>
@@ -225,13 +230,17 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx,
  @Validated @RequestBody
  <a href="dto/request/UpdateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">UpdateCollegeRequest</a>&nbsp;updateCollegeRequest)</span></div>
-<div class="block">단과대 수정 API</div>
+<div class="block">기존 단과대학의 정보를 수정합니다.
+ 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>collegeIdx</code> - 단과대 인덱스</dd>
-<dd><code>updateCollegeRequest</code> - 단과대 수정 요청</dd>
+<dd><code>user</code> - 현재 인증된 관리자 정보</dd>
+<dd><code>collegeIdx</code> - 수정할 단과대학의 식별자</dd>
+<dd><code>updateCollegeRequest</code> - 수정할 단과대학 정보 (새로운 단과대학명)</dd>
 <dt>Returns:</dt>
-<dd>수정된 단과대 이름</dd>
+<dd>단과대학 수정 결과 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - COLLEGE_NOT_FOUND: 단과대학을 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -244,12 +253,17 @@ loadScripts(document, 'script');</script>
  <a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("collegeIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx)</span></div>
-<div class="block">단과대 삭제 API</div>
+<div class="block">단과대학을 삭제(비활성화) 처리합니다.
+ 관리자 권한을 가진 사용자만 접근 가능합니다.
+ 실제 삭제가 아닌 소프트 삭제로 처리됩니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>collegeIdx</code> - 단과대 인덱스</dd>
+<dd><code>user</code> - 현재 인증된 관리자 정보</dd>
+<dd><code>collegeIdx</code> - 삭제할 단과대학의 식별자</dd>
 <dt>Returns:</dt>
-<dd>삭제된 단과대 이름</dd>
+<dd>단과대학 삭제 결과 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - COLLEGE_NOT_FOUND: 단과대학을 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>

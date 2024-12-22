@@ -84,7 +84,7 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">CategoryServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></span></div>
-<div class="block">SemesterServiceImpl는 SemesterService 인터페이스를 구현하는 클래스.</div>
+<div class="block">카테고리 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -116,25 +116,25 @@ implements <a href="CategoryService.html" title="interface in inha.git.category.
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createCategory(inha.git.user.domain.User,inha.git.category.controller.dto.request.CreateCategoryRequest)" class="member-name-link">createCategory</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">CreateCategoryRequest</a>&nbsp;createCategoryRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">카테고리 생성</div>
+<div class="block">새로운 카테고리를 생성하는 서비스입니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteCategory(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCategory</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">카테고리 삭제</div>
+<div class="block">카테고리를 삭제(비활성화) 처리하는 서비스입니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchCategoryResponse.html" title="class in inha.git.category.controller.dto.response">SearchCategoryResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCategories()" class="member-name-link">getCategories</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">카테고리 전체 조회</div>
+<div class="block">모든 활성 상태 카테고리를 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCategoryName(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)" class="member-name-link">updateCategoryName</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx,
  <a href="../controller/dto/request/UpdateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">UpdateCategoryRequest</a>&nbsp;updateCategoryRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">카테고리 이름 수정</div>
+<div class="block">카테고리의 이름을 수정하는 서비스입니다.</div>
 </div>
 </div>
 </div>
@@ -171,12 +171,19 @@ implements <a href="CategoryService.html" title="interface in inha.git.category.
 <section class="detail" id="getCategories()">
 <h3>getCategories</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchCategoryResponse.html" title="class in inha.git.category.controller.dto.response">SearchCategoryResponse</a>&gt;</span>&nbsp;<span class="element-name">getCategories</span>()</div>
-<div class="block">카테고리 전체 조회</div>
+<div class="block">모든 활성 상태 카테고리를 조회합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 활성 상태인 카테고리 조회<br>
+ 2. 이름 기준 오름차순 정렬<br>
+ 3. 응답 DTO로 변환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CategoryService.html#getCategories()">getCategories</a></code>&nbsp;in interface&nbsp;<code><a href="CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></code></dd>
 <dt>Returns:</dt>
-<dd>카테고리 전체 조회 결과</dd>
+<dd>카테고리 목록</dd>
 </dl>
 </section>
 </li>
@@ -186,14 +193,21 @@ implements <a href="CategoryService.html" title="interface in inha.git.category.
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createCategory</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">CreateCategoryRequest</a>&nbsp;createCategoryRequest)</span></div>
-<div class="block">카테고리 생성</div>
+<div class="block">새로운 카테고리를 생성하는 서비스입니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 카테고리 엔티티 생성<br>
+ 2. 데이터베이스에 저장<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CategoryService.html#createCategory(inha.git.user.domain.User,inha.git.category.controller.dto.request.CreateCategoryRequest)">createCategory</a></code>&nbsp;in interface&nbsp;<code><a href="CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>createCategoryRequest</code> - 카테고리 생성 요청</dd>
+<dd><code>admin</code> - 카테고리를 생성하는 관리자 정보</dd>
+<dd><code>createCategoryRequest</code> - 생성할 카테고리 정보</dd>
 <dt>Returns:</dt>
-<dd>생성된 카테고리 이름</dd>
+<dd>카테고리 생성 완료 메시지</dd>
 </dl>
 </section>
 </li>
@@ -204,15 +218,24 @@ implements <a href="CategoryService.html" title="interface in inha.git.category.
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">updateCategoryName</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx,
  <a href="../controller/dto/request/UpdateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">UpdateCategoryRequest</a>&nbsp;updateCategoryRequest)</span></div>
-<div class="block">카테고리 이름 수정</div>
+<div class="block">카테고리의 이름을 수정하는 서비스입니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 카테고리 존재 여부 확인<br>
+ 2. 카테고리 이름 업데이트<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CategoryService.html#updateCategoryName(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)">updateCategoryName</a></code>&nbsp;in interface&nbsp;<code><a href="CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>categoryIdx</code> - 카테고리 인덱스</dd>
-<dd><code>updateCategoryRequest</code> - 카테고리 수정 요청</dd>
+<dd><code>admin</code> - 수정을 요청한 관리자 정보</dd>
+<dd><code>categoryIdx</code> - 수정할 카테고리의 식별자</dd>
+<dd><code>updateCategoryRequest</code> - 새로운 카테고리 정보</dd>
 <dt>Returns:</dt>
-<dd>수정된 카테고리 이름</dd>
+<dd>카테고리 수정 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - CATEGORY_NOT_FOUND: 카테고리를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -222,14 +245,24 @@ implements <a href="CategoryService.html" title="interface in inha.git.category.
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteCategory</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx)</span></div>
-<div class="block">카테고리 삭제</div>
+<div class="block">카테고리를 삭제(비활성화) 처리하는 서비스입니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 카테고리 존재 여부 확인<br>
+ 2. 상태를 INACTIVE로 변경<br>
+ 3. 삭제 일시 기록<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CategoryService.html#deleteCategory(inha.git.user.domain.User,java.lang.Integer)">deleteCategory</a></code>&nbsp;in interface&nbsp;<code><a href="CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>categoryIdx</code> - 카테고리 인덱스</dd>
+<dd><code>admin</code> - 삭제를 요청한 관리자 정보</dd>
+<dd><code>categoryIdx</code> - 삭제할 카테고리의 식별자</dd>
 <dt>Returns:</dt>
-<dd>삭제된 카테고리 이름</dd>
+<dd>카테고리 삭제 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - CATEGORY_NOT_FOUND: 카테고리를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>

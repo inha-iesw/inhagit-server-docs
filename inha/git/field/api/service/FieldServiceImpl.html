@@ -84,7 +84,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">FieldServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></span></div>
-<div class="block">FieldServiceImpl는 FieldService 인터페이스를 구현하는 클래스.</div>
+<div class="block">FieldService 인터페이스를 구현하는 서비스 클래스입니다.
+ 분야의 조회, 생성, 수정, 삭제 등의 비즈니스 로직을 처리합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -116,25 +117,25 @@ implements <a href="FieldService.html" title="interface in inha.git.field.api.se
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">CreateFieldRequest</a>&nbsp;createFieldRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">분야 생성</div>
+<div class="block">새로운 분야를 생성합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteField(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">분야 삭제</div>
+<div class="block">분야를 삭제(비활성화) 처리합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchFieldResponse.html" title="class in inha.git.field.api.controller.dto.response">SearchFieldResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFields()" class="member-name-link">getFields</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">분야 전체 조회</div>
+<div class="block">활성화된 모든 분야를 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)" class="member-name-link">updateField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx,
  <a href="../controller/dto/request/UpdateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">UpdateFieldRequest</a>&nbsp;updateFieldRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">분야 이름 변경</div>
+<div class="block">분야명을 수정합니다.</div>
 </div>
 </div>
 </div>
@@ -171,12 +172,18 @@ implements <a href="FieldService.html" title="interface in inha.git.field.api.se
 <section class="detail" id="getFields()">
 <h3>getFields</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchFieldResponse.html" title="class in inha.git.field.api.controller.dto.response">SearchFieldResponse</a>&gt;</span>&nbsp;<span class="element-name">getFields</span>()</div>
-<div class="block">분야 전체 조회</div>
+<div class="block">활성화된 모든 분야를 조회합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ACTIVE 상태의 모든 분야를 조회<br>
+ 2. 조회된 분야 엔티티들을 DTO로 변환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="FieldService.html#getFields()">getFields</a></code>&nbsp;in interface&nbsp;<code><a href="FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></code></dd>
 <dt>Returns:</dt>
-<dd>분야 전체 조회 결과</dd>
+<dd>분야 정보 목록 (SearchFieldResponse)</dd>
 </dl>
 </section>
 </li>
@@ -186,14 +193,22 @@ implements <a href="FieldService.html" title="interface in inha.git.field.api.se
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createField</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">CreateFieldRequest</a>&nbsp;createFieldRequest)</span></div>
-<div class="block">분야 생성</div>
+<div class="block">새로운 분야를 생성합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 요청 DTO를 분야 엔티티로 변환<br>
+ 2. 분야 엔티티 저장<br>
+ 3. 생성 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="FieldService.html#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)">createField</a></code>&nbsp;in interface&nbsp;<code><a href="FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>createFieldRequest</code> - 분야 생성 요청</dd>
+<dd><code>admin</code> - 생성을 요청한 관리자 정보</dd>
+<dd><code>createFieldRequest</code> - 생성할 분야 정보</dd>
 <dt>Returns:</dt>
-<dd>생성된 분야 이름</dd>
+<dd>분야 생성 완료 메시지</dd>
 </dl>
 </section>
 </li>
@@ -203,15 +218,26 @@ implements <a href="FieldService.html" title="interface in inha.git.field.api.se
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">updateField</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx,
  <a href="../controller/dto/request/UpdateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">UpdateFieldRequest</a>&nbsp;updateFieldRequest)</span></div>
-<div class="block">분야 이름 변경</div>
+<div class="block">분야명을 수정합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ID와 상태로 분야 조회<br>
+ 2. 분야 존재 여부 확인<br>
+ 3. 분야명 수정<br>
+ 4. 수정 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="FieldService.html#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)">updateField</a></code>&nbsp;in interface&nbsp;<code><a href="FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>fieldIdx</code> - 분야 인덱스</dd>
-<dd><code>updateFieldRequest</code> - 분야 이름 변경 요청</dd>
+<dd><code>admin</code> - 수정을 요청한 관리자 정보</dd>
+<dd><code>fieldIdx</code> - 수정할 분야의 식별자</dd>
+<dd><code>updateFieldRequest</code> - 새로운 분야명 정보</dd>
 <dt>Returns:</dt>
-<dd>변경된 분야 이름</dd>
+<dd>분야명 수정 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - FIELD_NOT_FOUND: 분야를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -221,14 +247,26 @@ implements <a href="FieldService.html" title="interface in inha.git.field.api.se
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteField</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx)</span></div>
-<div class="block">분야 삭제</div>
+<div class="block">분야를 삭제(비활성화) 처리합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ID와 상태로 분야 조회<br>
+ 2. 분야 존재 여부 확인<br>
+ 3. 분야 상태를 INACTIVE로 변경<br>
+ 4. 삭제 시간 기록<br>
+ 5. 삭제 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="FieldService.html#deleteField(inha.git.user.domain.User,java.lang.Integer)">deleteField</a></code>&nbsp;in interface&nbsp;<code><a href="FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>fieldIdx</code> - 분야 인덱스</dd>
+<dd><code>admin</code> - 삭제를 요청한 관리자 정보</dd>
+<dd><code>fieldIdx</code> - 삭제할 분야의 식별자</dd>
 <dt>Returns:</dt>
-<dd>삭제된 분야 이름</dd>
+<dd>분야 삭제 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - FIELD_NOT_FOUND: 분야를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>

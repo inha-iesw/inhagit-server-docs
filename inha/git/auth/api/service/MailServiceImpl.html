@@ -115,26 +115,28 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emailAuth(java.lang.String,java.lang.String)" class="member-name-link">emailAuth</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;email,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userPosition)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">이메일 인증을 처리합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)" class="member-name-link">findPasswordMailSend</a><wbr>(<a href="../controller/dto/request/FindPasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a>&nbsp;findPasswordRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 찾기 이메일 전송</div>
+<div class="block">비밀번호 찾기를 위한 인증 이메일을 전송합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)" class="member-name-link">findPasswordMailSendCheck</a><wbr>(<a href="../controller/dto/request/FindPasswordCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordCheckRequest</a>&nbsp;findPasswordCheckRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 찾기 이메일 인증을 처리.</div>
+<div class="block">비밀번호 찾기 이메일 인증번호를 검증합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)" class="member-name-link">mailSend</a><wbr>(<a href="../controller/dto/request/EmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailRequest</a>&nbsp;emailRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호를 발송합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)" class="member-name-link">mailSendCheck</a><wbr>(<a href="../controller/dto/request/EmailCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a>&nbsp;emailCheckRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호의 유효성을 검증합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#postMailSend(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.Integer)" class="member-name-link">postMailSend</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;setFrom,
@@ -181,14 +183,26 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)">
 <h3>mailSend</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">mailSend</span><wbr><span class="parameters">(<a href="../controller/dto/request/EmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailRequest</a>&nbsp;emailRequest)</span></div>
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호를 발송합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 이메일 도메인 검증 (학생/교수 타입인 경우)<br>
+ 2. 기존 인증번호가 있다면 삭제<br>
+ 3. 새로운 인증번호(6자리) 생성<br>
+ 4. 이메일 발송<br>
+ 5. Redis에 인증번호 저장 (3분 유효)<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MailService.html#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)">mailSend</a></code>&nbsp;in interface&nbsp;<code><a href="MailService.html" title="interface in inha.git.auth.api.service">MailService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>emailRequest</code> - 이메일 인증 요청 정보</dd>
+<dd><code>emailRequest</code> - 이메일 주소와 인증 타입을 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>이메일 인증 결과</dd>
+<dd>이메일 전송 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - INVALID_EMAIL_DOMAIN: 유효하지 않은 이메일 도메인인 경우,
+                      EMAIL_SEND_FAIL: 이메일 전송 실패한 경우</dd>
 </dl>
 </section>
 </li>
@@ -196,14 +210,26 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)">
 <h3>findPasswordMailSend</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">findPasswordMailSend</span><wbr><span class="parameters">(<a href="../controller/dto/request/FindPasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a>&nbsp;findPasswordRequest)</span></div>
-<div class="block">비밀번호 찾기 이메일 전송</div>
+<div class="block">비밀번호 찾기를 위한 인증 이메일을 전송합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 이메일 존재 여부 확인<br>
+ 2. 기존 인증번호가 있다면 삭제<br>
+ 3. 새로운 인증번호 생성<br>
+ 4. 이메일 전송<br>
+ 5. Redis에 인증번호 저장 (3분 유효)<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MailService.html#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)">findPasswordMailSend</a></code>&nbsp;in interface&nbsp;<code><a href="MailService.html" title="interface in inha.git.auth.api.service">MailService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>findPasswordRequest</code> - 비밀번호 찾기 요청 정보</dd>
+<dd><code>findPasswordRequest</code> - 비밀번호 찾기 이메일 전송 요청 정보</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 찾기 이메일 전송 결과</dd>
+<dd>이메일 전송 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_NOT_FOUND: 존재하지 않는 이메일인 경우
+                      EMAIL_SEND_FAIL: 이메일 전송 실패한 경우</dd>
 </dl>
 </section>
 </li>
@@ -211,14 +237,27 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)">
 <h3>mailSendCheck</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">mailSendCheck</span><wbr><span class="parameters">(<a href="../controller/dto/request/EmailCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a>&nbsp;emailCheckRequest)</span></div>
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호의 유효성을 검증합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 이메일 도메인 검증 (학생/교수 타입인 경우)<br>
+ 2. Redis에서 저장된 인증번호 조회<br>
+ 3. 인증번호 만료 여부 확인<br>
+ 4. 인증번호 일치 여부 확인<br>
+ 5. 인증 성공 시 verification 정보 Redis에 저장 (1시간 유효)<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MailService.html#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)">mailSendCheck</a></code>&nbsp;in interface&nbsp;<code><a href="MailService.html" title="interface in inha.git.auth.api.service">MailService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>emailCheckRequest</code> - 이메일 인증 요청 정보</dd>
+<dd><code>emailCheckRequest</code> - 이메일 주소, 인증번호, 인증 타입을 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>이메일 인증 결과</dd>
+<dd>인증 성공 여부</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_AUTH_EXPIRED: 인증번호가 만료된 경우,
+                      EMAIL_AUTH_NOT_MATCH: 인증번호가 일치하지 않는 경우,
+                      INVALID_EMAIL_DOMAIN: 유효하지 않은 이메일 도메인인 경우</dd>
 </dl>
 </section>
 </li>
@@ -226,14 +265,27 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)">
 <h3>findPasswordMailSendCheck</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">findPasswordMailSendCheck</span><wbr><span class="parameters">(<a href="../controller/dto/request/FindPasswordCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordCheckRequest</a>&nbsp;findPasswordCheckRequest)</span></div>
-<div class="block">비밀번호 찾기 이메일 인증을 처리.</div>
+<div class="block">비밀번호 찾기 이메일 인증번호를 검증합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 이메일 존재 여부 확인<br>
+ 2. Redis에서 저장된 인증번호 조회<br>
+ 3. 인증번호 만료 여부 확인<br>
+ 4. 인증번호 일치 여부 확인<br>
+ 5. 인증 성공 시 verification 정보 Redis에 저장 (1시간 유효)<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MailService.html#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)">findPasswordMailSendCheck</a></code>&nbsp;in interface&nbsp;<code><a href="MailService.html" title="interface in inha.git.auth.api.service">MailService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>findPasswordCheckRequest</code> - 비밀번호 찾기 이메일 인증 요청 정보</dd>
+<dd><code>findPasswordCheckRequest</code> - 비밀번호 찾기 인증번호 확인 요청 정보</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 찾기 이메일 인증 결과</dd>
+<dd>인증 성공 여부</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_NOT_FOUND: 존재하지 않는 이메일인 경우
+                      EMAIL_AUTH_EXPIRED: 인증번호가 만료된 경우
+                      EMAIL_AUTH_NOT_MATCH: 인증번호가 일치하지 않는 경우</dd>
 </dl>
 </section>
 </li>
@@ -249,10 +301,12 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <div class="block">이메일을 전송합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>setFrom</code> - 이메일의 발신자 주소</dd>
-<dd><code>toMail</code> - 이메일의 수신자 주소</dd>
-<dd><code>title</code> - 이메일의 제목</dd>
-<dd><code>content</code> - 이메일의 내용</dd>
+<dd><code>setFrom</code> - 보내는 사람</dd>
+<dd><code>toMail</code> - 받는 사람</dd>
+<dd><code>title</code> - 제목</dd>
+<dd><code>content</code> - 내용</dd>
+<dd><code>authNumber</code> - 인증번호</dd>
+<dd><code>type</code> - 인증 타입</dd>
 </dl>
 </section>
 </li>
@@ -261,9 +315,13 @@ implements <a href="MailService.html" title="interface in inha.git.auth.api.serv
 <h3>emailAuth</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">emailAuth</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;email,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userPosition)</span></div>
+<div class="block">이메일 인증을 처리합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="MailService.html#emailAuth(java.lang.String,java.lang.String)">emailAuth</a></code>&nbsp;in interface&nbsp;<code><a href="MailService.html" title="interface in inha.git.auth.api.service">MailService</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>email</code> - 이메일 주소</dd>
+<dd><code>userPosition</code> - 사용자 포지션</dd>
 </dl>
 </section>
 </li>

@@ -79,7 +79,8 @@ loadScripts(document, 'script');</script>
 @RequestMapping("/api/v1/auth")
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">AuthController</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">AuthController는 인증 관련 엔드포인트를 처리.</div>
+<div class="block">인증 관련 API를 처리하는 컨트롤러입니다.
+ 로그인, 이메일 인증, 비밀번호 찾기 등 인증이 필요 없는 엔드포인트를 제공합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -110,37 +111,37 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/FindEmailResponse.html" title="class in inha.git.auth.api.controller.dto.response">FindEmailResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)" class="member-name-link">findEmail</a><wbr>(@Valid <a href="dto/request/FindEmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a>&nbsp;findEmailRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">아이디 찾기 API</div>
+<div class="block">학번과 이름으로 사용자의 이메일(아이디)을 찾습니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findPassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)" class="member-name-link">findPassword</a><wbr>(@Valid <a href="dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 변경 API</div>
+<div class="block">이메일 인증 후 새로운 비밀번호로 변경합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)" class="member-name-link">findPasswordMailSend</a><wbr>(@Valid <a href="dto/request/FindPasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a>&nbsp;findPasswordRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 찾기 이메일 인증 API</div>
+<div class="block">비밀번호 찾기를 위한 이메일 인증번호를 발송합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)" class="member-name-link">findPasswordMailSendCheck</a><wbr>(@Valid <a href="dto/request/FindPasswordCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordCheckRequest</a>&nbsp;fdindPasswordCheckRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 찾기 이메일 인증 확인 API</div>
+<div class="block">비밀번호 찾기를 위해 발송된 인증번호를 검증합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#login(inha.git.auth.api.controller.dto.request.LoginRequest)" class="member-name-link">login</a><wbr>(@Valid <a href="dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">로그인 API</div>
+<div class="block">사용자 로그인을 처리합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)" class="member-name-link">mailSend</a><wbr>(@Valid <a href="dto/request/EmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailRequest</a>&nbsp;emailRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">이메일 인증 API</div>
+<div class="block">회원가입 및 인증을 위한 이메일 인증번호를 발송합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)" class="member-name-link">mailSendCheck</a><wbr>(@Valid <a href="dto/request/EmailCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a>&nbsp;emailCheckRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">이메일 인증 확인 API</div>
+<div class="block">발송된 이메일 인증번호의 유효성을 검증합니다.</div>
 </div>
 </div>
 </div>
@@ -179,14 +180,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/number")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">mailSend</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/EmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailRequest</a>&nbsp;emailRequest)</span></div>
-<div class="block">이메일 인증 API
-
- <p>이메일 인증을 처리.</p></div>
+<div class="block">회원가입 및 인증을 위한 이메일 인증번호를 발송합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>emailRequest</code> - 이메일 인증 요청 정보</dd>
+<dd><code>emailRequest</code> - 이메일 주소와 인증 타입(회원가입/비밀번호 찾기 등)을 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>이메일 인증 결과를 포함하는 BaseResponse<String></dd>
+<dd>이메일 발송 결과 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_SEND_FAIL: 이메일 발송 실패 시</dd>
 </dl>
 </section>
 </li>
@@ -196,14 +197,15 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/number/check")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">mailSendCheck</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/EmailCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a>&nbsp;emailCheckRequest)</span></div>
-<div class="block">이메일 인증 확인 API
-
- <p>이메일 인증 확인을 처리.</p></div>
+<div class="block">발송된 이메일 인증번호의 유효성을 검증합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>emailCheckRequest</code> - 이메일 인증 확인 요청 정보</dd>
+<dd><code>emailCheckRequest</code> - 이메일 주소, 인증번호, 인증 타입을 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>이메일 인증 확인 결과를 포함하는 BaseResponse<Boolean></dd>
+<dd>인증 성공 여부 (true/false)</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_AUTH_EXPIRED: 인증 시간 만료,
+                      EMAIL_AUTH_NOT_MATCH: 인증번호 불일치</dd>
 </dl>
 </section>
 </li>
@@ -213,14 +215,18 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/login")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a>&gt;</span>&nbsp;<span class="element-name">login</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</span></div>
-<div class="block">로그인 API
-
- <p>로그인을 처리.</p></div>
+<div class="block">사용자 로그인을 처리합니다.
+ 로그인 성공 시 JWT 토큰을 발급합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>loginRequest</code> - 로그인 요청 정보</dd>
+<dd><code>loginRequest</code> - 이메일과 비밀번호를 포함한 로그인 요청</dd>
 <dt>Returns:</dt>
-<dd>로그인 결과를 포함하는 BaseResponse<LoginResponse></dd>
+<dd>JWT 토큰과 사용자 정보를 포함한 응답</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - ACCOUNT_LOCKED: 계정 잠김,
+                      EMAIL_NOT_FOUND: 존재하지 않는 이메일
+                      BLOCKED_USER: 차단된 사용자
+                      NOT_APPROVED_USER: 승인되지 않은 사용자</dd>
 </dl>
 </section>
 </li>
@@ -230,14 +236,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/email")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/FindEmailResponse.html" title="class in inha.git.auth.api.controller.dto.response">FindEmailResponse</a>&gt;</span>&nbsp;<span class="element-name">findEmail</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/FindEmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a>&nbsp;findEmailRequest)</span></div>
-<div class="block">아이디 찾기 API
-
- <p>아이디 찾기를 처리.</p></div>
+<div class="block">학번과 이름으로 사용자의 이메일(아이디)을 찾습니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>findEmailRequest</code> - 아이디 찾기 요청 정보</dd>
+<dd><code>findEmailRequest</code> - 학번과 이름을 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>아이디 찾기 결과를 포함하는 BaseResponse<FindEmailResponse></dd>
+<dd>찾은 이메일 정보</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - USER_NOT_FOUND: 일치하는 사용자 정보가 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -247,14 +253,16 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/pw")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">findPasswordMailSend</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/FindPasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a>&nbsp;findPasswordRequest)</span></div>
-<div class="block">비밀번호 찾기 이메일 인증 API
-
- <p>비밀번호 찾기 이메일 인증을 처리.</p></div>
+<div class="block">비밀번호 찾기를 위한 이메일 인증번호를 발송합니다.
+ 가입된 이메일인 경우에만 인증번호가 발송됩니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>findPasswordRequest</code> - 비밀번호 찾기 이메일 인증 요청 정보</dd>
+<dd><code>findPasswordRequest</code> - 이메일 주소를 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 찾기 이메일 인증 결과를 포함하는 BaseResponse<String></dd>
+<dd>이메일 발송 결과 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_NOT_FOUND: 가입되지 않은 이메일인 경우,
+                      EMAIL_SEND_FAIL: 이메일 발송 실패</dd>
 </dl>
 </section>
 </li>
@@ -264,14 +272,15 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/pw/check")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">findPasswordMailSendCheck</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/FindPasswordCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordCheckRequest</a>&nbsp;fdindPasswordCheckRequest)</span></div>
-<div class="block">비밀번호 찾기 이메일 인증 확인 API
-
- <p>비밀번호 찾기 이메일 인증 확인을 처리.</p></div>
+<div class="block">비밀번호 찾기를 위해 발송된 인증번호를 검증합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>fdindPasswordCheckRequest</code> - 비밀번호 찾기 이메일 인증 확인 요청 정보</dd>
+<dd><code>fdindPasswordCheckRequest</code> - 이메일과 인증번호를 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 찾기 이메일 인증 확인 결과를 포함하는 BaseResponse<Boolean></dd>
+<dd>인증 성공 여부 (true/false)</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_AUTH_EXPIRED: 인증 시간 만료,
+                      EMAIL_AUTH_NOT_MATCH: 인증번호 불일치</dd>
 </dl>
 </section>
 </li>
@@ -281,14 +290,16 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/pw/change")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a>&gt;</span>&nbsp;<span class="element-name">findPassword</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</span></div>
-<div class="block">비밀번호 변경 API
-
- <p>비밀번호 변경을 처리.</p></div>
+<div class="block">이메일 인증 후 새로운 비밀번호로 변경합니다.
+ 이메일 인증이 완료된 경우에만 비밀번호 변경이 가능합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>changePasswordRequest</code> - 비밀번호 변경 요청 정보</dd>
+<dd><code>changePasswordRequest</code> - 이메일과 새로운 비밀번호를 포함한 요청</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 변경 결과를 포함하는 BaseResponse<UserResponse></dd>
+<dd>비밀번호가 변경된 사용자 정보</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_AUTH_NOT_FOUND: 이메일 인증이 완료되지 않은 경우,
+                      EMAIL_NOT_FOUND: 존재하지 않는 이메일</dd>
 </dl>
 </section>
 </li>

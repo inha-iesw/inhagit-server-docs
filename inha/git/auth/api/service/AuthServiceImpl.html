@@ -115,17 +115,17 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)" class="member-name-link">changePassword</a><wbr>(<a href="../controller/dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">비밀번호 변경 API</div>
+<div class="block">비밀번호 찾기 후 새로운 비밀번호로 변경하는 서비스입니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/FindEmailResponse.html" title="class in inha.git.auth.api.controller.dto.response">FindEmailResponse</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)" class="member-name-link">findEmail</a><wbr>(<a href="../controller/dto/request/FindEmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a>&nbsp;findEmailRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">이메일 찾기 API</div>
+<div class="block">학번과 이름으로 사용자의 이메일을 찾는 서비스입니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#login(inha.git.auth.api.controller.dto.request.LoginRequest)" class="member-name-link">login</a><wbr>(<a href="../controller/dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">로그인 API</div>
+<div class="block">사용자 로그인을 처리하는 서비스입니다.</div>
 </div>
 </div>
 </div>
@@ -162,16 +162,32 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="login(inha.git.auth.api.controller.dto.request.LoginRequest)">
 <h3>login</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../controller/dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a></span>&nbsp;<span class="element-name">login</span><wbr><span class="parameters">(<a href="../controller/dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</span></div>
-<div class="block">로그인 API
+<div class="block">사용자 로그인을 처리하는 서비스입니다.
 
- <p>로그인을 처리합니다.</p></div>
+ <p>
+ 로그인 과정:
+ 1. 이메일로 사용자 조회
+ 2. 계정 잠금 상태 확인
+ 3. 비밀번호 검증
+    - 실패 시 실패 횟수 증가
+    - 최대 실패 횟수 초과 시 계정 잠금
+ 4. 차단된 사용자 확인
+ 5. 교수/기업 회원의 경우 승인 여부 확인
+ 6. JWT 토큰 발급
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#login(inha.git.auth.api.controller.dto.request.LoginRequest)">login</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>loginRequest</code> - 로그인 요청 정보</dd>
+<dd><code>loginRequest</code> - 이메일과 비밀번호를 포함한 로그인 요청 정보</dd>
 <dt>Returns:</dt>
-<dd>로그인 결과를 포함하는 LoginResponse</dd>
+<dd>LoginResponse JWT 토큰과 사용자 정보를 포함한 로그인 응답</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - 다음의 경우에 발생:
+      - NOT_FIND_USER: 존재하지 않는 이메일이거나 비밀번호가 일치하지 않는 경우
+      - ACCOUNT_LOCKED: 계정이 잠금 상태이거나 로그인 실패 횟수 초과로 잠긴 경우
+      - BLOCKED_USER: 관리자에 의해 차단된 사용자인 경우
+      - NOT_APPROVED_USER: 승인되지 않은 교수/기업 회원인 경우</dd>
 </dl>
 </section>
 </li>
@@ -179,16 +195,23 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)">
 <h3>findEmail</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../controller/dto/response/FindEmailResponse.html" title="class in inha.git.auth.api.controller.dto.response">FindEmailResponse</a></span>&nbsp;<span class="element-name">findEmail</span><wbr><span class="parameters">(<a href="../controller/dto/request/FindEmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a>&nbsp;findEmailRequest)</span></div>
-<div class="block">이메일 찾기 API
+<div class="block">학번과 이름으로 사용자의 이메일을 찾는 서비스입니다.
 
- <p>이메일을 찾습니다.</p></div>
+ <p>
+ 사용자의 학번과 이름을 받아서:
+ 1. 해당하는 사용자가 존재하는지 확인
+ 2. 존재하는 경우 사용자의 이메일 정보를 반환
+ 3. 존재하지 않는 경우 예외 발생
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)">findEmail</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>findEmailRequest</code> - 이메일 찾기 요청 정보</dd>
+<dd><code>findEmailRequest</code> - 학번과 이름이 포함된 이메일 찾기 요청 정보</dd>
 <dt>Returns:</dt>
-<dd>이메일을 포함하는 FindEmailResponse</dd>
+<dd>FindEmailResponse 찾은 사용자의 이메일 정보</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - NOT_FIND_USER - 해당하는 학번과 이름을 가진 사용자가 존재하지 않는 경우</dd>
 </dl>
 </section>
 </li>
@@ -196,16 +219,25 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)">
 <h3>changePassword</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a></span>&nbsp;<span class="element-name">changePassword</span><wbr><span class="parameters">(<a href="../controller/dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</span></div>
-<div class="block">비밀번호 변경 API
+<div class="block">비밀번호 찾기 후 새로운 비밀번호로 변경하는 서비스입니다.
 
- <p>비밀번호를 변경합니다.</p></div>
+ <p>
+ 처리 과정:
+ 1. 이메일 인증 상태 확인
+ 2. 사용자 존재 여부 확인
+ 3. 새로운 비밀번호 암호화
+ 4. 비밀번호 업데이트
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)">changePassword</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>changePasswordRequest</code> - 비밀번호 변경 요청 정보</dd>
+<dd><code>changePasswordRequest</code> - 이메일과 새로운 비밀번호가 포함된 요청</dd>
 <dt>Returns:</dt>
-<dd>비밀번호 변경 결과를 포함하는 UserResponse</dd>
+<dd>UserResponse 비밀번호가 변경된 사용자의 정보</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - EMAIL_AUTH_NOT_FOUND: 이메일 인증이 완료되지 않은 경우,
+                      NOT_FIND_USER: 존재하지 않는 이메일이거나 활성 상태가 아닌 경우</dd>
 </dl>
 </section>
 </li>

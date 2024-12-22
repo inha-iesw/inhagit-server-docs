@@ -330,7 +330,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html" class="type-name-link" title="class in inha.git.auth.api.controller">AuthController</a> - Class in <a href="inha/git/auth/api/controller/package-summary.html">inha.git.auth.api.controller</a></dt>
 <dd>
-<div class="block">AuthController는 인증 관련 엔드포인트를 처리.</div>
+<div class="block">인증 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#%3Cinit%3E()" class="member-name-link">AuthController()</a> - Constructor for class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>&nbsp;</dd>
@@ -493,7 +493,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/common/exceptions/BaseException.html" class="type-name-link" title="class in inha.git.common.exceptions">BaseException</a> - Exception in <a href="inha/git/common/exceptions/package-summary.html">inha.git.common.exceptions</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/common/exceptions/BaseException.html#%3Cinit%3E()" class="member-name-link">BaseException()</a> - Constructor for exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
+<dt><a href="inha/git/common/exceptions/BaseException.html#%3Cinit%3E(inha.git.common.code.status.ErrorStatus)" class="member-name-link">BaseException(ErrorStatus)</a> - Constructor for exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/BaseResponse.html" class="type-name-link" title="class in inha.git.common">BaseResponse</a>&lt;<a href="inha/git/common/BaseResponse.html" title="type parameter in BaseResponse">T</a>&gt; - Class in <a href="inha/git/common/package-summary.html">inha.git.common</a></dt>
 <dd>
@@ -718,7 +718,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/controller/CategoryController.html" class="type-name-link" title="class in inha.git.category.controller">CategoryController</a> - Class in <a href="inha/git/category/controller/package-summary.html">inha.git.category.controller</a></dt>
 <dd>
-<div class="block">CategoryController는 category 관련 엔드포인트를 처리.</div>
+<div class="block">카테고리(교과/비교과/기타) 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/category/controller/CategoryController.html#%3Cinit%3E()" class="member-name-link">CategoryController()</a> - Constructor for class inha.git.category.controller.<a href="inha/git/category/controller/CategoryController.html" title="class in inha.git.category.controller">CategoryController</a></dt>
 <dd>&nbsp;</dd>
@@ -768,7 +768,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html" class="type-name-link" title="class in inha.git.category.service">CategoryServiceImpl</a> - Class in <a href="inha/git/category/service/package-summary.html">inha.git.category.service</a></dt>
 <dd>
-<div class="block">SemesterServiceImpl는 SemesterService 인터페이스를 구현하는 클래스.</div>
+<div class="block">카테고리 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html#%3Cinit%3E()" class="member-name-link">CategoryServiceImpl()</a> - Constructor for class inha.git.category.service.<a href="inha/git/category/service/CategoryServiceImpl.html" title="class in inha.git.category.service">CategoryServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -796,10 +796,12 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/AuthServiceImpl.html#changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)" class="member-name-link">changePassword(ChangePasswordRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/AuthServiceImpl.html" title="class in inha.git.auth.api.service">AuthServiceImpl</a></dt>
 <dd>
-<div class="block">비밀번호 변경 API</div>
+<div class="block">비밀번호 찾기 후 새로운 비밀번호로 변경하는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#changePassword(inha.git.user.domain.User,inha.git.user.api.controller.dto.request.UpdatePwRequest)" class="member-name-link">changePassword(User, UpdatePwRequest)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">로그인한 사용자의 비밀번호를 변경합니다.</div>
+</dd>
 <dt><a href="inha/git/user/api/service/UserService.html#changePassword(java.lang.Integer,inha.git.user.api.controller.dto.request.UpdatePwRequest)" class="member-name-link">changePassword(Integer, UpdatePwRequest)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/UserServiceImpl.html#changePassword(java.lang.Integer,inha.git.user.api.controller.dto.request.UpdatePwRequest)" class="member-name-link">changePassword(Integer, UpdatePwRequest)</a> - Method in class inha.git.user.api.service.<a href="inha/git/user/api/service/UserServiceImpl.html" title="class in inha.git.user.api.service">UserServiceImpl</a></dt>
@@ -852,7 +854,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/controller/CollegeController.html" class="type-name-link" title="class in inha.git.college.controller">CollegeController</a> - Class in <a href="inha/git/college/controller/package-summary.html">inha.git.college.controller</a></dt>
 <dd>
-<div class="block">CollegeController는 collage 관련 엔드포인트를 처리.</div>
+<div class="block">단과대학 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#%3Cinit%3E()" class="member-name-link">CollegeController()</a> - Constructor for class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>&nbsp;</dd>
@@ -902,7 +904,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html" class="type-name-link" title="class in inha.git.college.service">CollegeServiceImpl</a> - Class in <a href="inha/git/college/service/package-summary.html">inha.git.college.service</a></dt>
 <dd>
-<div class="block">CollegeServiceImpl는 CollegeService 인터페이스를 구현하는 클래스.</div>
+<div class="block">단과대학 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#%3Cinit%3E()" class="member-name-link">CollegeServiceImpl()</a> - Constructor for class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1053,18 +1055,20 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/user/api/service/CompanyService.html" class="type-name-link" title="interface in inha.git.user.api.service">CompanyService</a> - Interface in <a href="inha/git/user/api/service/package-summary.html">inha.git.user.api.service</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/CompanyServiceImpl.html" class="type-name-link" title="class in inha.git.user.api.service">CompanyServiceImpl</a> - Class in <a href="inha/git/user/api/service/package-summary.html">inha.git.user.api.service</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">기업 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
+</dd>
 <dt><a href="inha/git/user/api/service/CompanyServiceImpl.html#%3Cinit%3E()" class="member-name-link">CompanyServiceImpl()</a> - Constructor for class inha.git.user.api.service.<a href="inha/git/user/api/service/CompanyServiceImpl.html" title="class in inha.git.user.api.service">CompanyServiceImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#companySignup(inha.git.user.api.controller.dto.request.CompanySignupRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">companySignup(CompanySignupRequest, MultipartFile)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">기업 회원가입 API</div>
+<div class="block">기업 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/CompanyService.html#companySignup(inha.git.user.api.controller.dto.request.CompanySignupRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">companySignup(CompanySignupRequest, MultipartFile)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/CompanyService.html" title="interface in inha.git.user.api.service">CompanyService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/CompanyServiceImpl.html#companySignup(inha.git.user.api.controller.dto.request.CompanySignupRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">companySignup(CompanySignupRequest, MultipartFile)</a> - Method in class inha.git.user.api.service.<a href="inha/git/user/api/service/CompanyServiceImpl.html" title="class in inha.git.user.api.service">CompanyServiceImpl</a></dt>
 <dd>
-<div class="block">기업 회원가입</div>
+<div class="block">기업 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/controller/dto/request/CompanySignupRequest.html" class="type-name-link" title="class in inha.git.user.api.controller.dto.request">CompanySignupRequest</a> - Record Class in <a href="inha/git/user/api/controller/dto/request/package-summary.html">inha.git.user.api.controller.dto.request</a></dt>
 <dd>
@@ -1314,13 +1318,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/category/controller/CategoryController.html#createCategory(inha.git.user.domain.User,inha.git.category.controller.dto.request.CreateCategoryRequest)" class="member-name-link">createCategory(User, CreateCategoryRequest)</a> - Method in class inha.git.category.controller.<a href="inha/git/category/controller/CategoryController.html" title="class in inha.git.category.controller">CategoryController</a></dt>
 <dd>
-<div class="block">카테고리 생성 API</div>
+<div class="block">새로운 카테고리를 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/category/service/CategoryService.html#createCategory(inha.git.user.domain.User,inha.git.category.controller.dto.request.CreateCategoryRequest)" class="member-name-link">createCategory(User, CreateCategoryRequest)</a> - Method in interface inha.git.category.service.<a href="inha/git/category/service/CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html#createCategory(inha.git.user.domain.User,inha.git.category.controller.dto.request.CreateCategoryRequest)" class="member-name-link">createCategory(User, CreateCategoryRequest)</a> - Method in class inha.git.category.service.<a href="inha/git/category/service/CategoryServiceImpl.html" title="class in inha.git.category.service">CategoryServiceImpl</a></dt>
 <dd>
-<div class="block">카테고리 생성</div>
+<div class="block">새로운 카테고리를 생성하는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/category/controller/dto/request/CreateCategoryRequest.html" class="type-name-link" title="class in inha.git.category.controller.dto.request">CreateCategoryRequest</a> - Record Class in <a href="inha/git/category/controller/dto/request/package-summary.html">inha.git.category.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -1332,13 +1336,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#createCollege(inha.git.user.domain.User,inha.git.college.controller.dto.request.CreateCollegeRequest)" class="member-name-link">createCollege(User, CreateCollegeRequest)</a> - Method in class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>
-<div class="block">단과대 생성 API</div>
+<div class="block">새로운 단과대학을 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeService.html#createCollege(inha.git.user.domain.User,inha.git.college.controller.dto.request.CreateCollegeRequest)" class="member-name-link">createCollege(User, CreateCollegeRequest)</a> - Method in interface inha.git.college.service.<a href="inha/git/college/service/CollegeService.html" title="interface in inha.git.college.service">CollegeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#createCollege(inha.git.user.domain.User,inha.git.college.controller.dto.request.CreateCollegeRequest)" class="member-name-link">createCollege(User, CreateCollegeRequest)</a> - Method in class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>
-<div class="block">단과대 생성</div>
+<div class="block">새로운 단과대학을 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/dto/request/CreateCollegeRequest.html" class="type-name-link" title="class in inha.git.college.controller.dto.request">CreateCollegeRequest</a> - Record Class in <a href="inha/git/college/controller/dto/request/package-summary.html">inha.git.college.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -1518,13 +1522,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)" class="member-name-link">createDepartment(User, CreateDepartmentRequest)</a> - Method in class inha.git.department.api.controller.<a href="inha/git/department/api/controller/DepartmentController.html" title="class in inha.git.department.api.controller">DepartmentController</a></dt>
 <dd>
-<div class="block">학과 생성 API</div>
+<div class="block">새로운 학과를 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/service/DepartmentService.html#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)" class="member-name-link">createDepartment(User, CreateDepartmentRequest)</a> - Method in interface inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)" class="member-name-link">createDepartment(User, CreateDepartmentRequest)</a> - Method in class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
 <dd>
-<div class="block">학과 생성</div>
+<div class="block">새로운 학과를 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/controller/dto/request/CreateDepartmentRequest.html" class="type-name-link" title="class in inha.git.department.api.controller.dto.request">CreateDepartmentRequest</a> - Record Class in <a href="inha/git/department/api/controller/dto/request/package-summary.html">inha.git.department.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -1548,13 +1552,16 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField(User, CreateFieldRequest)</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
 <dd>
-<div class="block">분야 생성 API</div>
+<div class="block">
+ 새로운 분야를 생성합니다.<br>
+ 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
+ 관리자는 새로운 분야를 생성할 수 있으며, 생성된 분야는 활성화 상태가 됩니다.<br></div>
 </dd>
 <dt><a href="inha/git/field/api/service/FieldService.html#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField(User, CreateFieldRequest)</a> - Method in interface inha.git.field.api.service.<a href="inha/git/field/api/service/FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField(User, CreateFieldRequest)</a> - Method in class inha.git.field.api.service.<a href="inha/git/field/api/service/FieldServiceImpl.html" title="class in inha.git.field.api.service">FieldServiceImpl</a></dt>
 <dd>
-<div class="block">분야 생성</div>
+<div class="block">새로운 분야를 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/field/api/controller/dto/request/CreateFieldRequest.html" class="type-name-link" title="class in inha.git.field.api.controller.dto.request">CreateFieldRequest</a> - Record Class in <a href="inha/git/field/api/controller/dto/request/package-summary.html">inha.git.field.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -1594,13 +1601,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#createNotice(inha.git.user.domain.User,inha.git.notice.api.controller.dto.request.CreateNoticeRequest,java.util.List)" class="member-name-link">createNotice(User, CreateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>
-<div class="block">공지 생성 API</div>
+<div class="block">새로운 공지사항을 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeService.html#createNotice(inha.git.user.domain.User,inha.git.notice.api.controller.dto.request.CreateNoticeRequest,java.util.List)" class="member-name-link">createNotice(User, CreateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in interface inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#createNotice(inha.git.user.domain.User,inha.git.notice.api.controller.dto.request.CreateNoticeRequest,java.util.List)" class="member-name-link">createNotice(User, CreateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
 <dd>
-<div class="block">공지 생성</div>
+<div class="block">새로운 공지사항을 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/mapper/NoticeMapper.html#createNoticeAttachmentRequestToNoticeAttachment(java.lang.String,java.lang.String,inha.git.notice.domain.Notice)" class="member-name-link">createNoticeAttachmentRequestToNoticeAttachment(String, String, Notice)</a> - Method in interface inha.git.notice.api.mapper.<a href="inha/git/notice/api/mapper/NoticeMapper.html" title="interface in inha.git.notice.api.mapper">NoticeMapper</a></dt>
 <dd>
@@ -1844,13 +1851,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#createSemester(inha.git.user.domain.User,inha.git.semester.controller.dto.request.CreateSemesterRequest)" class="member-name-link">createSemester(User, CreateSemesterRequest)</a> - Method in class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>
-<div class="block">학기 생성 API</div>
+<div class="block">
+ 새로운 학기를 생성합니다.<br>
+ 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
+ 관리자는 새로운 학기를 생성할 수 있으며, 생성된 학기는 활성화 상태가 됩니다.<br></div>
 </dd>
 <dt><a href="inha/git/semester/service/SemesterService.html#createSemester(inha.git.user.domain.User,inha.git.semester.controller.dto.request.CreateSemesterRequest)" class="member-name-link">createSemester(User, CreateSemesterRequest)</a> - Method in interface inha.git.semester.service.<a href="inha/git/semester/service/SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html#createSemester(inha.git.user.domain.User,inha.git.semester.controller.dto.request.CreateSemesterRequest)" class="member-name-link">createSemester(User, CreateSemesterRequest)</a> - Method in class inha.git.semester.service.<a href="inha/git/semester/service/SemesterServiceImpl.html" title="class in inha.git.semester.service">SemesterServiceImpl</a></dt>
 <dd>
-<div class="block">학기 생성</div>
+<div class="block">새로운 학기를 생성합니다.</div>
 </dd>
 <dt><a href="inha/git/semester/controller/dto/request/CreateSemesterRequest.html" class="type-name-link" title="class in inha.git.semester.controller.dto.request">CreateSemesterRequest</a> - Record Class in <a href="inha/git/semester/controller/dto/request/package-summary.html">inha.git.semester.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -2153,23 +2163,23 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/controller/CategoryController.html#deleteCategory(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCategory(User, Integer)</a> - Method in class inha.git.category.controller.<a href="inha/git/category/controller/CategoryController.html" title="class in inha.git.category.controller">CategoryController</a></dt>
 <dd>
-<div class="block">카테고리 삭제 API</div>
+<div class="block">카테고리를 삭제 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/category/service/CategoryService.html#deleteCategory(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCategory(User, Integer)</a> - Method in interface inha.git.category.service.<a href="inha/git/category/service/CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html#deleteCategory(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCategory(User, Integer)</a> - Method in class inha.git.category.service.<a href="inha/git/category/service/CategoryServiceImpl.html" title="class in inha.git.category.service">CategoryServiceImpl</a></dt>
 <dd>
-<div class="block">카테고리 삭제</div>
+<div class="block">카테고리를 삭제(비활성화) 처리하는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#deleteCollege(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCollege(User, Integer)</a> - Method in class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>
-<div class="block">단과대 삭제 API</div>
+<div class="block">단과대학을 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeService.html#deleteCollege(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCollege(User, Integer)</a> - Method in interface inha.git.college.service.<a href="inha/git/college/service/CollegeService.html" title="interface in inha.git.college.service">CollegeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#deleteCollege(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCollege(User, Integer)</a> - Method in class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>
-<div class="block">단과대 삭제</div>
+<div class="block">단과대학을 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/project/api/controller/ProjectCommentController.html#deleteComment(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteComment(User, Integer)</a> - Method in class inha.git.project.api.controller.<a href="inha/git/project/api/controller/ProjectCommentController.html" title="class in inha.git.project.api.controller">ProjectCommentController</a></dt>
 <dd>
@@ -2206,22 +2216,32 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the value of the <code>deletedAt</code> record component.</div>
 </dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteDepartment(User, Integer)</a> - Method in class inha.git.department.api.controller.<a href="inha/git/department/api/controller/DepartmentController.html" title="class in inha.git.department.api.controller">DepartmentController</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">학과를 삭제(비활성화) 처리합니다.</div>
+</dd>
 <dt><a href="inha/git/department/api/service/DepartmentService.html#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteDepartment(User, Integer)</a> - Method in interface inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteDepartment(User, Integer)</a> - Method in class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">학과를 삭제(비활성화) 처리합니다.</div>
+</dd>
 <dt><a href="inha/git/utils/file/FilePath.html#deleteDirectory(java.lang.String)" class="member-name-link">deleteDirectory(String)</a> - Static method in class inha.git.utils.file.<a href="inha/git/utils/file/FilePath.html" title="class in inha.git.utils.file">FilePath</a></dt>
 <dd>
 <div class="block">디렉토리 삭제</div>
 </dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html#deleteField(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteField(User, Integer)</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">
+ 분야를 삭제(비활성화) 처리합니다.<br>
+ 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
+ 실제 삭제가 아닌 소프트 삭제로 처리됩니다.<br>
+ 삭제된 분야는 비활성화 상태로 변경되며, 삭제 시간이 기록됩니다.<br></div>
+</dd>
 <dt><a href="inha/git/field/api/service/FieldService.html#deleteField(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteField(User, Integer)</a> - Method in interface inha.git.field.api.service.<a href="inha/git/field/api/service/FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html#deleteField(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteField(User, Integer)</a> - Method in class inha.git.field.api.service.<a href="inha/git/field/api/service/FieldServiceImpl.html" title="class in inha.git.field.api.service">FieldServiceImpl</a></dt>
 <dd>
-<div class="block">분야 삭제</div>
+<div class="block">분야를 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/utils/file/FilePath.html#deleteFile(java.lang.String)" class="member-name-link">deleteFile(String)</a> - Static method in class inha.git.utils.file.<a href="inha/git/utils/file/FilePath.html" title="class in inha.git.utils.file">FilePath</a></dt>
 <dd>
@@ -2229,13 +2249,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#deleteNotice(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteNotice(User, Integer)</a> - Method in class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>
-<div class="block">공지 삭제 API</div>
+<div class="block">공지사항을 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeService.html#deleteNotice(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteNotice(User, Integer)</a> - Method in interface inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#deleteNotice(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteNotice(User, Integer)</a> - Method in class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
 <dd>
-<div class="block">공지 삭제</div>
+<div class="block">공지사항을 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/project/api/controller/ProjectPatentController.html#deletePatent(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deletePatent(User, Integer)</a> - Method in class inha.git.project.api.controller.<a href="inha/git/project/api/controller/ProjectPatentController.html" title="class in inha.git.project.api.controller">ProjectPatentController</a></dt>
 <dd>
@@ -2319,13 +2339,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#deleteSemester(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteSemester(User, Integer)</a> - Method in class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>
-<div class="block">학기 목록 조회 API</div>
+<div class="block">
+ 학기를 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/semester/service/SemesterService.html#deleteSemester(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteSemester(User, Integer)</a> - Method in interface inha.git.semester.service.<a href="inha/git/semester/service/SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html#deleteSemester(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteSemester(User, Integer)</a> - Method in class inha.git.semester.service.<a href="inha/git/semester/service/SemesterServiceImpl.html" title="class in inha.git.semester.service">SemesterServiceImpl</a></dt>
 <dd>
-<div class="block">학기 삭제</div>
+<div class="block">학기를 삭제(비활성화) 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/team/api/controller/TeamController.html#deleteTeam(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteTeam(User, Integer)</a> - Method in class inha.git.team.api.controller.<a href="inha/git/team/api/controller/TeamController.html" title="class in inha.git.team.api.controller">TeamController</a></dt>
 <dd>
@@ -2409,7 +2430,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html" class="type-name-link" title="class in inha.git.department.api.controller">DepartmentController</a> - Class in <a href="inha/git/department/api/controller/package-summary.html">inha.git.department.api.controller</a></dt>
 <dd>
-<div class="block">DepartmentController는 학과 관련 엔드포인트를 처리.</div>
+<div class="block">학과 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html#%3Cinit%3E()" class="member-name-link">DepartmentController()</a> - Constructor for class inha.git.department.api.controller.<a href="inha/git/department/api/controller/DepartmentController.html" title="class in inha.git.department.api.controller">DepartmentController</a></dt>
 <dd>&nbsp;</dd>
@@ -2473,7 +2494,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html" class="type-name-link" title="class in inha.git.department.api.service">DepartmentServiceImpl</a> - Class in <a href="inha/git/department/api/service/package-summary.html">inha.git.department.api.service</a></dt>
 <dd>
-<div class="block">DepartmentServiceImpl는 DepartmentService 인터페이스를 구현하는 클래스.</div>
+<div class="block">학과 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#%3Cinit%3E()" class="member-name-link">DepartmentServiceImpl()</a> - Constructor for class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2526,6 +2547,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/common/Constant.html#DS_STORE" class="member-name-link">DS_STORE</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#DSYM" class="member-name-link">DSYM</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/common/code/status/ErrorStatus.html#DUPLICATE_EMAIL" class="member-name-link">DUPLICATE_EMAIL</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#DUPLICATE_REPORT" class="member-name-link">DUPLICATE_REPORT</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
@@ -2645,7 +2668,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/auth/api/service/MailService.html#emailAuth(java.lang.String,java.lang.String)" class="member-name-link">emailAuth(String, String)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailService.html" title="interface in inha.git.auth.api.service">MailService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/MailServiceImpl.html#emailAuth(java.lang.String,java.lang.String)" class="member-name-link">emailAuth(String, String)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailServiceImpl.html" title="class in inha.git.auth.api.service">MailServiceImpl</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">이메일 인증을 처리합니다.</div>
+</dd>
 <dt><a href="inha/git/auth/api/controller/dto/request/EmailCheckRequest.html" class="type-name-link" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a> - Record Class in <a href="inha/git/auth/api/controller/dto/request/package-summary.html">inha.git.auth.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/controller/dto/request/EmailCheckRequest.html#%3Cinit%3E(java.lang.String,java.lang.Integer,java.lang.String)" class="member-name-link">EmailCheckRequest(String, Integer, String)</a> - Constructor for record class inha.git.auth.api.controller.dto.request.<a href="inha/git/auth/api/controller/dto/request/EmailCheckRequest.html" title="class in inha.git.auth.api.controller.dto.request">EmailCheckRequest</a></dt>
@@ -3519,7 +3544,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html" class="type-name-link" title="class in inha.git.field.api.controller">FieldController</a> - Class in <a href="inha/git/field/api/controller/package-summary.html">inha.git.field.api.controller</a></dt>
 <dd>
-<div class="block">FieldController는 field 관련 엔드포인트를 처리.</div>
+<div class="block">분야 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html#%3Cinit%3E()" class="member-name-link">FieldController()</a> - Constructor for class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
 <dd>&nbsp;</dd>
@@ -3607,7 +3632,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html" class="type-name-link" title="class in inha.git.field.api.service">FieldServiceImpl</a> - Class in <a href="inha/git/field/api/service/package-summary.html">inha.git.field.api.service</a></dt>
 <dd>
-<div class="block">FieldServiceImpl는 FieldService 인터페이스를 구현하는 클래스.</div>
+<div class="block">FieldService 인터페이스를 구현하는 서비스 클래스입니다.</div>
 </dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html#%3Cinit%3E()" class="member-name-link">FieldServiceImpl()</a> - Constructor for class inha.git.field.api.service.<a href="inha/git/field/api/service/FieldServiceImpl.html" title="class in inha.git.field.api.service">FieldServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -3827,13 +3852,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)" class="member-name-link">findEmail(FindEmailRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">아이디 찾기 API</div>
+<div class="block">학번과 이름으로 사용자의 이메일(아이디)을 찾습니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/AuthService.html#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)" class="member-name-link">findEmail(FindEmailRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/AuthServiceImpl.html#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)" class="member-name-link">findEmail(FindEmailRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/AuthServiceImpl.html" title="class in inha.git.auth.api.service">AuthServiceImpl</a></dt>
 <dd>
-<div class="block">이메일 찾기 API</div>
+<div class="block">학번과 이름으로 사용자의 이메일을 찾는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/dto/request/FindEmailRequest.html" class="type-name-link" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a> - Record Class in <a href="inha/git/auth/api/controller/dto/request/package-summary.html">inha.git.auth.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -3849,7 +3874,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#findPassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)" class="member-name-link">findPassword(ChangePasswordRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">비밀번호 변경 API</div>
+<div class="block">이메일 인증 후 새로운 비밀번호로 변경합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/dto/request/FindPasswordCheckRequest.html" class="type-name-link" title="class in inha.git.auth.api.controller.dto.request">FindPasswordCheckRequest</a> - Record Class in <a href="inha/git/auth/api/controller/dto/request/package-summary.html">inha.git.auth.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -3859,23 +3884,23 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)" class="member-name-link">findPasswordMailSend(FindPasswordRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">비밀번호 찾기 이메일 인증 API</div>
+<div class="block">비밀번호 찾기를 위한 이메일 인증번호를 발송합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/MailService.html#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)" class="member-name-link">findPasswordMailSend(FindPasswordRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailService.html" title="interface in inha.git.auth.api.service">MailService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/MailServiceImpl.html#findPasswordMailSend(inha.git.auth.api.controller.dto.request.FindPasswordRequest)" class="member-name-link">findPasswordMailSend(FindPasswordRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailServiceImpl.html" title="class in inha.git.auth.api.service">MailServiceImpl</a></dt>
 <dd>
-<div class="block">비밀번호 찾기 이메일 전송</div>
+<div class="block">비밀번호 찾기를 위한 인증 이메일을 전송합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)" class="member-name-link">findPasswordMailSendCheck(FindPasswordCheckRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">비밀번호 찾기 이메일 인증 확인 API</div>
+<div class="block">비밀번호 찾기를 위해 발송된 인증번호를 검증합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/MailService.html#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)" class="member-name-link">findPasswordMailSendCheck(FindPasswordCheckRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailService.html" title="interface in inha.git.auth.api.service">MailService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/MailServiceImpl.html#findPasswordMailSendCheck(inha.git.auth.api.controller.dto.request.FindPasswordCheckRequest)" class="member-name-link">findPasswordMailSendCheck(FindPasswordCheckRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailServiceImpl.html" title="class in inha.git.auth.api.service">MailServiceImpl</a></dt>
 <dd>
-<div class="block">비밀번호 찾기 이메일 인증을 처리.</div>
+<div class="block">비밀번호 찾기 이메일 인증번호를 검증합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/dto/request/FindPasswordRequest.html" class="type-name-link" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a> - Record Class in <a href="inha/git/auth/api/controller/dto/request/package-summary.html">inha.git.auth.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -4082,33 +4107,33 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/category/controller/CategoryController.html#getCategories()" class="member-name-link">getCategories()</a> - Method in class inha.git.category.controller.<a href="inha/git/category/controller/CategoryController.html" title="class in inha.git.category.controller">CategoryController</a></dt>
 <dd>
-<div class="block">카테고리 전체 조회 API</div>
+<div class="block">전체 카테고리 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/category/service/CategoryService.html#getCategories()" class="member-name-link">getCategories()</a> - Method in interface inha.git.category.service.<a href="inha/git/category/service/CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html#getCategories()" class="member-name-link">getCategories()</a> - Method in class inha.git.category.service.<a href="inha/git/category/service/CategoryServiceImpl.html" title="class in inha.git.category.service">CategoryServiceImpl</a></dt>
 <dd>
-<div class="block">카테고리 전체 조회</div>
+<div class="block">모든 활성 상태 카테고리를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#getCollege(java.lang.Integer)" class="member-name-link">getCollege(Integer)</a> - Method in class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>
-<div class="block">단과대 조회 API</div>
+<div class="block">특정 학과가 속한 단과대학을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeService.html#getCollege(java.lang.Integer)" class="member-name-link">getCollege(Integer)</a> - Method in interface inha.git.college.service.<a href="inha/git/college/service/CollegeService.html" title="interface in inha.git.college.service">CollegeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#getCollege(java.lang.Integer)" class="member-name-link">getCollege(Integer)</a> - Method in class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>
-<div class="block">단과대 조회</div>
+<div class="block">특정 학과가 속한 단과대학을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#getColleges()" class="member-name-link">getColleges()</a> - Method in class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>
-<div class="block">단과대 전체 조회 API</div>
+<div class="block">모든 단과대학 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeService.html#getColleges()" class="member-name-link">getColleges()</a> - Method in interface inha.git.college.service.<a href="inha/git/college/service/CollegeService.html" title="interface in inha.git.college.service">CollegeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#getColleges()" class="member-name-link">getColleges()</a> - Method in class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>
-<div class="block">단과대 전체 조회</div>
+<div class="block">모든 활성화된 단과대학을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/project/api/controller/ProjectController.html#getCondProjects(inha.git.project.api.controller.dto.request.SearchProjectCond,java.lang.Integer,java.lang.Integer)" class="member-name-link">getCondProjects(SearchProjectCond, Integer, Integer)</a> - Method in class inha.git.project.api.controller.<a href="inha/git/project/api/controller/ProjectController.html" title="class in inha.git.project.api.controller">ProjectController</a></dt>
 <dd>
@@ -4142,29 +4167,31 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">현재 인증된 사용자의 ID를 반환.</div>
 </dd>
-<dt><a href="inha/git/field/api/controller/FieldController.html#getDepartments()" class="member-name-link">getDepartments()</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
-<dd>
-<div class="block">분야 전체 조회 API</div>
-</dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html#getDepartments(java.lang.Integer)" class="member-name-link">getDepartments(Integer)</a> - Method in class inha.git.department.api.controller.<a href="inha/git/department/api/controller/DepartmentController.html" title="class in inha.git.department.api.controller">DepartmentController</a></dt>
 <dd>
-<div class="block">학과 전체 조회 API</div>
+<div class="block">학과 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/service/DepartmentService.html#getDepartments(java.lang.Integer)" class="member-name-link">getDepartments(Integer)</a> - Method in interface inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#getDepartments(java.lang.Integer)" class="member-name-link">getDepartments(Integer)</a> - Method in class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
 <dd>
-<div class="block">학과 전체 조회</div>
+<div class="block">학과 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/common/exceptions/BaseException.html#getErrorReason()" class="member-name-link">getErrorReason()</a> - Method in exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/exceptions/BaseException.html#getErrorReasonHttpStatus()" class="member-name-link">getErrorReasonHttpStatus()</a> - Method in exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/field/api/controller/FieldController.html#getFields()" class="member-name-link">getFields()</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
+<dd>
+<div class="block">
+ 전체 분야 목록을 조회합니다.<br>
+ 활성화된 모든 분야의 정보를 조회하여 반환합니다.<br></div>
+</dd>
 <dt><a href="inha/git/field/api/service/FieldService.html#getFields()" class="member-name-link">getFields()</a> - Method in interface inha.git.field.api.service.<a href="inha/git/field/api/service/FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html#getFields()" class="member-name-link">getFields()</a> - Method in class inha.git.field.api.service.<a href="inha/git/field/api/service/FieldServiceImpl.html" title="class in inha.git.field.api.service">FieldServiceImpl</a></dt>
 <dd>
-<div class="block">분야 전체 조회</div>
+<div class="block">활성화된 모든 분야를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/github/api/service/GithubServiceImpl.html#getGithubFileContent(inha.git.user.domain.User,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">getGithubFileContent(User, String, String, String, String)</a> - Method in class inha.git.github.api.service.<a href="inha/git/github/api/service/GithubServiceImpl.html" title="class in inha.git.github.api.service">GithubServiceImpl</a></dt>
 <dd>
@@ -4192,7 +4219,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getLoginUser(inha.git.user.domain.User)" class="member-name-link">getLoginUser(User)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저 조회 API</div>
+<div class="block">현재 로그인한 사용자의 상세 정보를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/team/api/controller/TeamController.html#getMyTeams(inha.git.user.domain.User)" class="member-name-link">getMyTeams(User)</a> - Method in class inha.git.team.api.controller.<a href="inha/git/team/api/controller/TeamController.html" title="class in inha.git.team.api.controller">TeamController</a></dt>
 <dd>
@@ -4212,21 +4239,23 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#getNotice(java.lang.Integer)" class="member-name-link">getNotice(Integer)</a> - Method in class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>
-<div class="block">공지 상세 조회 API</div>
+<div class="block">특정 공지사항의 상세 정보를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeService.html#getNotice(java.lang.Integer)" class="member-name-link">getNotice(Integer)</a> - Method in interface inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#getNotice(java.lang.Integer)" class="member-name-link">getNotice(Integer)</a> - Method in class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">특정 공지사항의 상세 정보를 조회합니다.</div>
+</dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#getNotices(java.lang.Integer,java.lang.Integer)" class="member-name-link">getNotices(Integer, Integer)</a> - Method in class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>
-<div class="block">공지 조회 API</div>
+<div class="block">전체 공지사항을 페이징하여 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeService.html#getNotices(java.lang.Integer,java.lang.Integer)" class="member-name-link">getNotices(Integer, Integer)</a> - Method in interface inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#getNotices(java.lang.Integer,java.lang.Integer)" class="member-name-link">getNotices(Integer, Integer)</a> - Method in class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
 <dd>
-<div class="block">공지 조회</div>
+<div class="block">공지사항 목록을 페이징하여 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/domain/repository/NoticeQueryRepository.html#getNotices(org.springframework.data.domain.Pageable)" class="member-name-link">getNotices(Pageable)</a> - Method in class inha.git.notice.domain.repository.<a href="inha/git/notice/domain/repository/NoticeQueryRepository.html" title="class in inha.git.notice.domain.repository">NoticeQueryRepository</a></dt>
 <dd>
@@ -4451,13 +4480,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#getSemesters()" class="member-name-link">getSemesters()</a> - Method in class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>
-<div class="block">학기 전체 조회 API</div>
+<div class="block">
+ 전체 학기 목록을 조회합니다.<br>
+ 활성화된 모든 학기의 정보를 조회하여 반환합니다.<br>
+ 학기명을 기준으로 오름차순 정렬된 결과를 제공합니다.<br></div>
 </dd>
 <dt><a href="inha/git/semester/service/SemesterService.html#getSemesters()" class="member-name-link">getSemesters()</a> - Method in interface inha.git.semester.service.<a href="inha/git/semester/service/SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html#getSemesters()" class="member-name-link">getSemesters()</a> - Method in class inha.git.semester.service.<a href="inha/git/semester/service/SemesterServiceImpl.html" title="class in inha.git.semester.service">SemesterServiceImpl</a></dt>
 <dd>
-<div class="block">학기 전체 조회</div>
+<div class="block">활성화된 모든 학기를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/bug_report/domain/enums/BugStatus.html#getStatus()" class="member-name-link">getStatus()</a> - Method in enum class inha.git.bug_report.domain.enums.<a href="inha/git/bug_report/domain/enums/BugStatus.html" title="enum class in inha.git.bug_report.domain.enums">BugStatus</a></dt>
 <dd>&nbsp;</dd>
@@ -4503,7 +4535,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUser(java.lang.Integer)" class="member-name-link">getUser(Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저 조회 API</div>
+<div class="block">특정 사용자의 상세 정보를 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUser(java.lang.Integer)" class="member-name-link">getUser(Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4513,7 +4545,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserBugReports(inha.git.user.domain.User,java.lang.Integer,inha.git.bug_report.api.controller.dto.request.SearchBugReportCond,java.lang.Integer)" class="member-name-link">getUserBugReports(User, Integer, SearchBugReportCond, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 버그 제보 조회 API</div>
+<div class="block">특정 사용자가 작성한 버그 제보 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserBugReports(inha.git.user.domain.User,java.lang.Integer,inha.git.bug_report.api.controller.dto.request.SearchBugReportCond,java.lang.Integer)" class="member-name-link">getUserBugReports(User, Integer, SearchBugReportCond, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4529,7 +4561,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserProblems(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProblems(User, Integer, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 참여중인 문제 조회 API</div>
+<div class="block">특정 사용자가 참여중인 문제 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserProblems(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProblems(User, Integer, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4543,7 +4575,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserProjects(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProjects(User, Integer, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 프로젝트 조회 API</div>
+<div class="block">특정 사용자가 참여중인 프로젝트 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserProjects(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProjects(User, Integer, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4557,7 +4589,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserQuestions(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserQuestions(User, Integer, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 질문 조회 API</div>
+<div class="block">특정 사용자가 작성한 질문 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserQuestions(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserQuestions(User, Integer, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4571,7 +4603,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserReports(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserReports(User, Integer, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 신고 조회 API</div>
+<div class="block">특정 사용자가 작성한 신고 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserReports(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserReports(User, Integer, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -4583,7 +4615,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#getUserTeams(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserTeams(User, Integer, Integer)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">특정 유저의 팀 조회 API</div>
+<div class="block">특정 사용자가 참여중인 팀 목록을 조회합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/UserService.html#getUserTeams(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserTeams(User, Integer, Integer)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/UserService.html" title="interface in inha.git.user.api.service">UserService</a></dt>
 <dd>&nbsp;</dd>
@@ -6710,13 +6742,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#login(inha.git.auth.api.controller.dto.request.LoginRequest)" class="member-name-link">login(LoginRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">로그인 API</div>
+<div class="block">사용자 로그인을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/AuthService.html#login(inha.git.auth.api.controller.dto.request.LoginRequest)" class="member-name-link">login(LoginRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/AuthServiceImpl.html#login(inha.git.auth.api.controller.dto.request.LoginRequest)" class="member-name-link">login(LoginRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/AuthServiceImpl.html" title="class in inha.git.auth.api.service">AuthServiceImpl</a></dt>
 <dd>
-<div class="block">로그인 API</div>
+<div class="block">사용자 로그인을 처리하는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/common/code/status/SuccessStatus.html#LOGIN_OK" class="member-name-link">LOGIN_OK</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/SuccessStatus.html" title="enum class in inha.git.common.code.status">SuccessStatus</a></dt>
 <dd>&nbsp;</dd>
@@ -6732,7 +6764,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">LoginResponse는 로그인 응답 정보를 담는 DTO 클래스.</div>
 </dd>
-<dt><a href="inha/git/auth/api/controller/dto/response/LoginResponse.html#%3Cinit%3E(java.lang.Long,java.lang.String)" class="member-name-link">LoginResponse(Long, String)</a> - Constructor for record class inha.git.auth.api.controller.dto.response.<a href="inha/git/auth/api/controller/dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a></dt>
+<dt><a href="inha/git/auth/api/controller/dto/response/LoginResponse.html#%3Cinit%3E(java.lang.Integer,java.lang.String)" class="member-name-link">LoginResponse(Integer, String)</a> - Constructor for record class inha.git.auth.api.controller.dto.response.<a href="inha/git/auth/api/controller/dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>LoginResponse</code> record class.</div>
 </dd>
@@ -6751,23 +6783,23 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)" class="member-name-link">mailSend(EmailRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">이메일 인증 API</div>
+<div class="block">회원가입 및 인증을 위한 이메일 인증번호를 발송합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/MailService.html#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)" class="member-name-link">mailSend(EmailRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailService.html" title="interface in inha.git.auth.api.service">MailService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/MailServiceImpl.html#mailSend(inha.git.auth.api.controller.dto.request.EmailRequest)" class="member-name-link">mailSend(EmailRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailServiceImpl.html" title="class in inha.git.auth.api.service">MailServiceImpl</a></dt>
 <dd>
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호를 발송합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/controller/AuthController.html#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)" class="member-name-link">mailSendCheck(EmailCheckRequest)</a> - Method in class inha.git.auth.api.controller.<a href="inha/git/auth/api/controller/AuthController.html" title="class in inha.git.auth.api.controller">AuthController</a></dt>
 <dd>
-<div class="block">이메일 인증 확인 API</div>
+<div class="block">발송된 이메일 인증번호의 유효성을 검증합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/MailService.html#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)" class="member-name-link">mailSendCheck(EmailCheckRequest)</a> - Method in interface inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailService.html" title="interface in inha.git.auth.api.service">MailService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/auth/api/service/MailServiceImpl.html#mailSendCheck(inha.git.auth.api.controller.dto.request.EmailCheckRequest)" class="member-name-link">mailSendCheck(EmailCheckRequest)</a> - Method in class inha.git.auth.api.service.<a href="inha/git/auth/api/service/MailServiceImpl.html" title="class in inha.git.auth.api.service">MailServiceImpl</a></dt>
 <dd>
-<div class="block">이메일 인증을 처리.</div>
+<div class="block">이메일 인증번호의 유효성을 검증합니다.</div>
 </dd>
 <dt><a href="inha/git/auth/api/service/MailService.html" class="type-name-link" title="interface in inha.git.auth.api.service">MailService</a> - Interface in <a href="inha/git/auth/api/service/package-summary.html">inha.git.auth.api.service</a></dt>
 <dd>&nbsp;</dd>
@@ -7191,7 +7223,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html" class="type-name-link" title="class in inha.git.notice.api.controller">NoticeController</a> - Class in <a href="inha/git/notice/api/controller/package-summary.html">inha.git.notice.api.controller</a></dt>
 <dd>
-<div class="block">NoticeController는 notice 관련 엔드포인트를 처리.</div>
+<div class="block">공지사항 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#%3Cinit%3E()" class="member-name-link">NoticeController()</a> - Constructor for class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>&nbsp;</dd>
@@ -7213,7 +7245,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html" class="type-name-link" title="class in inha.git.notice.api.service">NoticeServiceImpl</a> - Class in <a href="inha/git/notice/api/service/package-summary.html">inha.git.notice.api.service</a></dt>
 <dd>
-<div class="block">NoticeServiceImpl는 NoticeService 인터페이스를 구현하는 클래스.</div>
+<div class="block">공지사항 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#%3Cinit%3E()" class="member-name-link">NoticeServiceImpl()</a> - Constructor for class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -7269,6 +7301,12 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:P">P</h2>
 <dl class="index">
+<dt><a href="inha/git/utils/PagingUtils.html" class="type-name-link" title="class in inha.git.utils">PagingUtils</a> - Class in <a href="inha/git/utils/package-summary.html">inha.git.utils</a></dt>
+<dd>
+<div class="block">페이징 처리를 위한 유틸리티 클래스입니다.</div>
+</dd>
+<dt><a href="inha/git/utils/PagingUtils.html#%3Cinit%3E()" class="member-name-link">PagingUtils()</a> - Constructor for class inha.git.utils.<a href="inha/git/utils/PagingUtils.html" title="class in inha.git.utils">PagingUtils</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/validation/validator/ParameterValidator.html" class="type-name-link" title="class in inha.git.common.validation.validator">ParameterValidator</a> - Class in <a href="inha/git/common/validation/validator/package-summary.html">inha.git.common.validation.validator</a></dt>
 <dd>
 <div class="block">ParameterValidator
@@ -7673,18 +7711,20 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/user/api/service/ProfessorService.html" class="type-name-link" title="interface in inha.git.user.api.service">ProfessorService</a> - Interface in <a href="inha/git/user/api/service/package-summary.html">inha.git.user.api.service</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/ProfessorServiceImpl.html" class="type-name-link" title="class in inha.git.user.api.service">ProfessorServiceImpl</a> - Class in <a href="inha/git/user/api/service/package-summary.html">inha.git.user.api.service</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">교수 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
+</dd>
 <dt><a href="inha/git/user/api/service/ProfessorServiceImpl.html#%3Cinit%3E()" class="member-name-link">ProfessorServiceImpl()</a> - Constructor for class inha.git.user.api.service.<a href="inha/git/user/api/service/ProfessorServiceImpl.html" title="class in inha.git.user.api.service">ProfessorServiceImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#professorSignup(inha.git.user.api.controller.dto.request.ProfessorSignupRequest)" class="member-name-link">professorSignup(ProfessorSignupRequest)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">교수 회원가입 API</div>
+<div class="block">교수 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/ProfessorService.html#professorSignup(inha.git.user.api.controller.dto.request.ProfessorSignupRequest)" class="member-name-link">professorSignup(ProfessorSignupRequest)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/ProfessorService.html" title="interface in inha.git.user.api.service">ProfessorService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/ProfessorServiceImpl.html#professorSignup(inha.git.user.api.controller.dto.request.ProfessorSignupRequest)" class="member-name-link">professorSignup(ProfessorSignupRequest)</a> - Method in class inha.git.user.api.service.<a href="inha/git/user/api/service/ProfessorServiceImpl.html" title="class in inha.git.user.api.service">ProfessorServiceImpl</a></dt>
 <dd>
-<div class="block">교수 회원가입</div>
+<div class="block">교수 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/controller/dto/request/ProfessorSignupRequest.html" class="type-name-link" title="class in inha.git.user.api.controller.dto.request">ProfessorSignupRequest</a> - Record Class in <a href="inha/git/user/api/controller/dto/request/package-summary.html">inha.git.user.api.controller.dto.request</a></dt>
 <dd>
@@ -9227,7 +9267,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html" class="type-name-link" title="class in inha.git.semester.controller">SemesterController</a> - Class in <a href="inha/git/semester/controller/package-summary.html">inha.git.semester.controller</a></dt>
 <dd>
-<div class="block">SemesterController는 semester 관련 엔드포인트를 처리.</div>
+<div class="block">학기 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#%3Cinit%3E()" class="member-name-link">SemesterController()</a> - Constructor for class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>&nbsp;</dd>
@@ -9289,7 +9329,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html" class="type-name-link" title="class in inha.git.semester.service">SemesterServiceImpl</a> - Class in <a href="inha/git/semester/service/package-summary.html">inha.git.semester.service</a></dt>
 <dd>
-<div class="block">SemesterServiceImpl는 SemesterService 인터페이스를 구현하는 클래스.</div>
+<div class="block">학기 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html#%3Cinit%3E()" class="member-name-link">SemesterServiceImpl()</a> - Constructor for class inha.git.semester.service.<a href="inha/git/semester/service/SemesterServiceImpl.html" title="class in inha.git.semester.service">SemesterServiceImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -9371,7 +9411,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/domain/NoticeAttachment.html#setNotice(inha.git.notice.domain.Notice)" class="member-name-link">setNotice(Notice)</a> - Method in class inha.git.notice.domain.<a href="inha/git/notice/domain/NoticeAttachment.html" title="class in inha.git.notice.domain">NoticeAttachment</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/notice/domain/Notice.html#setNoticeAttachments(java.util.ArrayList)" class="member-name-link">setNoticeAttachments(ArrayList&lt;NoticeAttachment&gt;)</a> - Method in class inha.git.notice.domain.<a href="inha/git/notice/domain/Notice.html" title="class in inha.git.notice.domain">Notice</a></dt>
+<dt><a href="inha/git/notice/domain/Notice.html#setNoticeAttachments(java.util.List)" class="member-name-link">setNoticeAttachments(List&lt;NoticeAttachment&gt;)</a> - Method in class inha.git.notice.domain.<a href="inha/git/notice/domain/Notice.html" title="class in inha.git.notice.domain">Notice</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/User.html#setPassword(java.lang.String)" class="member-name-link">setPassword(String)</a> - Method in class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
 <dd>&nbsp;</dd>
@@ -9463,19 +9503,19 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/StudentServiceImpl.html" class="type-name-link" title="class in inha.git.user.api.service">StudentServiceImpl</a> - Class in <a href="inha/git/user/api/service/package-summary.html">inha.git.user.api.service</a></dt>
 <dd>
-<div class="block">StudentServiceImpl은 학생 관련 비즈니스 로직을 처리하는 서비스 클래스.</div>
+<div class="block">학생 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/StudentServiceImpl.html#%3Cinit%3E()" class="member-name-link">StudentServiceImpl()</a> - Constructor for class inha.git.user.api.service.<a href="inha/git/user/api/service/StudentServiceImpl.html" title="class in inha.git.user.api.service">StudentServiceImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#studentSignup(inha.git.user.api.controller.dto.request.StudentSignupRequest)" class="member-name-link">studentSignup(StudentSignupRequest)</a> - Method in class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>
-<div class="block">학생 회원가입 API</div>
+<div class="block">학생 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/service/StudentService.html#studentSignup(inha.git.user.api.controller.dto.request.StudentSignupRequest)" class="member-name-link">studentSignup(StudentSignupRequest)</a> - Method in interface inha.git.user.api.service.<a href="inha/git/user/api/service/StudentService.html" title="interface in inha.git.user.api.service">StudentService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/StudentServiceImpl.html#studentSignup(inha.git.user.api.controller.dto.request.StudentSignupRequest)" class="member-name-link">studentSignup(StudentSignupRequest)</a> - Method in class inha.git.user.api.service.<a href="inha/git/user/api/service/StudentServiceImpl.html" title="class in inha.git.user.api.service">StudentServiceImpl</a></dt>
 <dd>
-<div class="block">학생 회원가입</div>
+<div class="block">학생 회원가입을 처리합니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/controller/dto/request/StudentSignupRequest.html" class="type-name-link" title="class in inha.git.user.api.controller.dto.request">StudentSignupRequest</a> - Record Class in <a href="inha/git/user/api/controller/dto/request/package-summary.html">inha.git.user.api.controller.dto.request</a></dt>
 <dd>
@@ -10046,6 +10086,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#TOKEN_PREFIX" class="member-name-link">TOKEN_PREFIX</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/utils/PagingUtils.html#toPageIndex(int)" class="member-name-link">toPageIndex(int)</a> - Method in class inha.git.utils.<a href="inha/git/utils/PagingUtils.html" title="class in inha.git.utils">PagingUtils</a></dt>
+<dd>
+<div class="block">사용자가 입력한 페이지 번호를 인덱스로 변환합니다.</div>
+</dd>
+<dt><a href="inha/git/utils/PagingUtils.html#toPageSize(int)" class="member-name-link">toPageSize(int)</a> - Method in class inha.git.utils.<a href="inha/git/utils/PagingUtils.html" title="class in inha.git.utils">PagingUtils</a></dt>
+<dd>
+<div class="block">사용자가 입력한 페이지 크기를 실제 크기로 변환합니다.</div>
+</dd>
 <dt><a href="inha/git/project/api/mapper/ProjectMapper.html#toPatentInventor(inha.git.project.api.controller.dto.response.SearchInventorResponse,inha.git.project.domain.ProjectPatent)" class="member-name-link">toPatentInventor(SearchInventorResponse, ProjectPatent)</a> - Method in interface inha.git.project.api.mapper.<a href="inha/git/project/api/mapper/ProjectMapper.html" title="interface in inha.git.project.api.mapper">ProjectMapper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/mapper/ProjectMapper.html#toPatentInventor(java.util.List,inha.git.project.domain.ProjectPatent)" class="member-name-link">toPatentInventor(List&lt;SearchInventorResponse&gt;, ProjectPatent)</a> - Method in interface inha.git.project.api.mapper.<a href="inha/git/project/api/mapper/ProjectMapper.html" title="interface in inha.git.project.api.mapper">ProjectMapper</a></dt>
@@ -10973,13 +11021,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/category/controller/CategoryController.html#updateCategory(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)" class="member-name-link">updateCategory(User, Integer, UpdateCategoryRequest)</a> - Method in class inha.git.category.controller.<a href="inha/git/category/controller/CategoryController.html" title="class in inha.git.category.controller">CategoryController</a></dt>
 <dd>
-<div class="block">카테고리 수정 API</div>
+<div class="block">기존 카테고리의 이름을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/category/service/CategoryService.html#updateCategoryName(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)" class="member-name-link">updateCategoryName(User, Integer, UpdateCategoryRequest)</a> - Method in interface inha.git.category.service.<a href="inha/git/category/service/CategoryService.html" title="interface in inha.git.category.service">CategoryService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/service/CategoryServiceImpl.html#updateCategoryName(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)" class="member-name-link">updateCategoryName(User, Integer, UpdateCategoryRequest)</a> - Method in class inha.git.category.service.<a href="inha/git/category/service/CategoryServiceImpl.html" title="class in inha.git.category.service">CategoryServiceImpl</a></dt>
 <dd>
-<div class="block">카테고리 이름 수정</div>
+<div class="block">카테고리의 이름을 수정하는 서비스입니다.</div>
 </dd>
 <dt><a href="inha/git/category/controller/dto/request/UpdateCategoryRequest.html" class="type-name-link" title="class in inha.git.category.controller.dto.request">UpdateCategoryRequest</a> - Record Class in <a href="inha/git/category/controller/dto/request/package-summary.html">inha.git.category.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -10989,13 +11037,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#updateCollege(inha.git.user.domain.User,java.lang.Integer,inha.git.college.controller.dto.request.UpdateCollegeRequest)" class="member-name-link">updateCollege(User, Integer, UpdateCollegeRequest)</a> - Method in class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>
-<div class="block">단과대 수정 API</div>
+<div class="block">기존 단과대학의 정보를 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/college/service/CollegeService.html#updateCollegeName(inha.git.user.domain.User,java.lang.Integer,inha.git.college.controller.dto.request.UpdateCollegeRequest)" class="member-name-link">updateCollegeName(User, Integer, UpdateCollegeRequest)</a> - Method in interface inha.git.college.service.<a href="inha/git/college/service/CollegeService.html" title="interface in inha.git.college.service">CollegeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#updateCollegeName(inha.git.user.domain.User,java.lang.Integer,inha.git.college.controller.dto.request.UpdateCollegeRequest)" class="member-name-link">updateCollegeName(User, Integer, UpdateCollegeRequest)</a> - Method in class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>
-<div class="block">단과대 이름 수정</div>
+<div class="block">단과대학의 이름을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/college/controller/dto/request/UpdateCollegeRequest.html" class="type-name-link" title="class in inha.git.college.controller.dto.request">UpdateCollegeRequest</a> - Record Class in <a href="inha/git/college/controller/dto/request/package-summary.html">inha.git.college.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -11053,13 +11101,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/department/api/controller/DepartmentController.html#updateDepartmentName(inha.git.user.domain.User,java.lang.Integer,inha.git.department.api.controller.dto.request.UpdateDepartmentRequest)" class="member-name-link">updateDepartmentName(User, Integer, UpdateDepartmentRequest)</a> - Method in class inha.git.department.api.controller.<a href="inha/git/department/api/controller/DepartmentController.html" title="class in inha.git.department.api.controller">DepartmentController</a></dt>
 <dd>
-<div class="block">학과명 수정 API</div>
+<div class="block">학과명을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/service/DepartmentService.html#updateDepartmentName(inha.git.user.domain.User,java.lang.Integer,inha.git.department.api.controller.dto.request.UpdateDepartmentRequest)" class="member-name-link">updateDepartmentName(User, Integer, UpdateDepartmentRequest)</a> - Method in interface inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#updateDepartmentName(inha.git.user.domain.User,java.lang.Integer,inha.git.department.api.controller.dto.request.UpdateDepartmentRequest)" class="member-name-link">updateDepartmentName(User, Integer, UpdateDepartmentRequest)</a> - Method in class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
 <dd>
-<div class="block">학과 이름 변경</div>
+<div class="block">학과명을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/department/api/controller/dto/request/UpdateDepartmentRequest.html" class="type-name-link" title="class in inha.git.department.api.controller.dto.request">UpdateDepartmentRequest</a> - Record Class in <a href="inha/git/department/api/controller/dto/request/package-summary.html">inha.git.department.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -11069,13 +11117,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)" class="member-name-link">updateField(User, Integer, UpdateFieldRequest)</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
 <dd>
-<div class="block">분야 수정 API</div>
+<div class="block">
+ 분야명을 수정합니다.<br>
+ 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
+ 관리자는 기존 분야의 이름을 새로운 이름으로 변경할 수 있습니다.<br></div>
 </dd>
 <dt><a href="inha/git/field/api/service/FieldService.html#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)" class="member-name-link">updateField(User, Integer, UpdateFieldRequest)</a> - Method in interface inha.git.field.api.service.<a href="inha/git/field/api/service/FieldService.html" title="interface in inha.git.field.api.service">FieldService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/service/FieldServiceImpl.html#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)" class="member-name-link">updateField(User, Integer, UpdateFieldRequest)</a> - Method in class inha.git.field.api.service.<a href="inha/git/field/api/service/FieldServiceImpl.html" title="class in inha.git.field.api.service">FieldServiceImpl</a></dt>
 <dd>
-<div class="block">분야 이름 변경</div>
+<div class="block">분야명을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/field/api/controller/dto/request/UpdateFieldRequest.html" class="type-name-link" title="class in inha.git.field.api.controller.dto.request">UpdateFieldRequest</a> - Record Class in <a href="inha/git/field/api/controller/dto/request/package-summary.html">inha.git.field.api.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -11095,13 +11146,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/notice/api/controller/NoticeController.html#updateNotice(inha.git.user.domain.User,java.lang.Integer,inha.git.notice.api.controller.dto.request.UpdateNoticeRequest,java.util.List)" class="member-name-link">updateNotice(User, Integer, UpdateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in class inha.git.notice.api.controller.<a href="inha/git/notice/api/controller/NoticeController.html" title="class in inha.git.notice.api.controller">NoticeController</a></dt>
 <dd>
-<div class="block">공지 수정 API</div>
+<div class="block">기존 공지사항을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/api/service/NoticeService.html#updateNotice(inha.git.user.domain.User,java.lang.Integer,inha.git.notice.api.controller.dto.request.UpdateNoticeRequest,java.util.List)" class="member-name-link">updateNotice(User, Integer, UpdateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in interface inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeService.html" title="interface in inha.git.notice.api.service">NoticeService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/service/NoticeServiceImpl.html#updateNotice(inha.git.user.domain.User,java.lang.Integer,inha.git.notice.api.controller.dto.request.UpdateNoticeRequest,java.util.List)" class="member-name-link">updateNotice(User, Integer, UpdateNoticeRequest, List&lt;MultipartFile&gt;)</a> - Method in class inha.git.notice.api.service.<a href="inha/git/notice/api/service/NoticeServiceImpl.html" title="class in inha.git.notice.api.service">NoticeServiceImpl</a></dt>
 <dd>
-<div class="block">공지 수정</div>
+<div class="block">기존 공지사항을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/notice/domain/Notice.html#updateNotice(java.lang.String,java.lang.String)" class="member-name-link">updateNotice(String, String)</a> - Method in class inha.git.notice.domain.<a href="inha/git/notice/domain/Notice.html" title="class in inha.git.notice.domain">Notice</a></dt>
 <dd>&nbsp;</dd>
@@ -11235,13 +11286,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#updateSemester(inha.git.user.domain.User,java.lang.Integer,inha.git.semester.controller.dto.request.UpdateSemesterRequest)" class="member-name-link">updateSemester(User, Integer, UpdateSemesterRequest)</a> - Method in class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>
-<div class="block">학기 수정 API</div>
+<div class="block">
+ 학기명을 수정합니다.<br>
+ 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
+ 관리자는 기존 학기의 이름을 새로운 이름으로 변경할 수 있습니다.<br></div>
 </dd>
 <dt><a href="inha/git/semester/service/SemesterService.html#updateSemesterName(inha.git.user.domain.User,java.lang.Integer,inha.git.semester.controller.dto.request.UpdateSemesterRequest)" class="member-name-link">updateSemesterName(User, Integer, UpdateSemesterRequest)</a> - Method in interface inha.git.semester.service.<a href="inha/git/semester/service/SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/service/SemesterServiceImpl.html#updateSemesterName(inha.git.user.domain.User,java.lang.Integer,inha.git.semester.controller.dto.request.UpdateSemesterRequest)" class="member-name-link">updateSemesterName(User, Integer, UpdateSemesterRequest)</a> - Method in class inha.git.semester.service.<a href="inha/git/semester/service/SemesterServiceImpl.html" title="class in inha.git.semester.service">SemesterServiceImpl</a></dt>
 <dd>
-<div class="block">학기 이름 수정</div>
+<div class="block">학기명을 수정합니다.</div>
 </dd>
 <dt><a href="inha/git/semester/controller/dto/request/UpdateSemesterRequest.html" class="type-name-link" title="class in inha.git.semester.controller.dto.request">UpdateSemesterRequest</a> - Record Class in <a href="inha/git/semester/controller/dto/request/package-summary.html">inha.git.semester.controller.dto.request</a></dt>
 <dd>&nbsp;</dd>
@@ -11339,7 +11393,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html" class="type-name-link" title="class in inha.git.user.api.controller">UserController</a> - Class in <a href="inha/git/user/api/controller/package-summary.html">inha.git.user.api.controller</a></dt>
 <dd>
-<div class="block">UserController는 유저 관련 엔드포인트를 처리.</div>
+<div class="block">사용자 관련 API를 처리하는 컨트롤러입니다.</div>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#%3Cinit%3E()" class="member-name-link">UserController()</a> - Constructor for class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>&nbsp;</dd>
@@ -11578,6 +11632,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/utils/file/ValidFile.html#validateImagePdfZipFile(org.springframework.web.multipart.MultipartFile)" class="member-name-link">validateImagePdfZipFile(MultipartFile)</a> - Static method in class inha.git.utils.file.<a href="inha/git/utils/file/ValidFile.html" title="class in inha.git.utils.file">ValidFile</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/utils/PagingUtils.html#validatePage(int)" class="member-name-link">validatePage(int)</a> - Method in class inha.git.utils.<a href="inha/git/utils/PagingUtils.html" title="class in inha.git.utils">PagingUtils</a></dt>
+<dd>
+<div class="block">페이지 번호의 유효성을 검증합니다.</div>
+</dd>
+<dt><a href="inha/git/utils/PagingUtils.html#validateSize(int)" class="member-name-link">validateSize(int)</a> - Method in class inha.git.utils.<a href="inha/git/utils/PagingUtils.html" title="class in inha.git.utils">PagingUtils</a></dt>
+<dd>
+<div class="block">페이지 크기의 유효성을 검증합니다.</div>
+</dd>
 <dt><a href="inha/git/common/exceptions/ExceptionAdvice.html#validation(jakarta.validation.ConstraintViolationException,org.springframework.web.context.request.WebRequest)" class="member-name-link">validation(ConstraintViolationException, WebRequest)</a> - Method in class inha.git.common.exceptions.<a href="inha/git/common/exceptions/ExceptionAdvice.html" title="class in inha.git.common.exceptions">ExceptionAdvice</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/validation/annotation/ValidCollegeName.html" class="type-name-link" title="annotation interface in inha.git.common.validation.annotation">ValidCollegeName</a> - Annotation Interface in <a href="inha/git/common/validation/annotation/package-summary.html">inha.git.common.validation.annotation</a></dt>

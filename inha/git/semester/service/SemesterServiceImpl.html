@@ -84,7 +84,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">SemesterServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></span></div>
-<div class="block">SemesterServiceImpl는 SemesterService 인터페이스를 구현하는 클래스.</div>
+<div class="block">학기 관련 비즈니스 로직을 처리하는 서비스 구현체입니다.
+ 학기의 조회, 생성, 수정, 삭제 기능을 제공합니다.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -114,27 +115,27 @@ implements <a href="SemesterService.html" title="interface in inha.git.semester.
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createSemester(inha.git.user.domain.User,inha.git.semester.controller.dto.request.CreateSemesterRequest)" class="member-name-link">createSemester</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
- <a href="../controller/dto/request/CreateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">CreateSemesterRequest</a>&nbsp;createDepartmentRequest)</code></div>
+ <a href="../controller/dto/request/CreateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">CreateSemesterRequest</a>&nbsp;createSemesterRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학기 생성</div>
+<div class="block">새로운 학기를 생성합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteSemester(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteSemester</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학기 삭제</div>
+<div class="block">학기를 삭제(비활성화) 처리합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchSemesterResponse.html" title="class in inha.git.semester.controller.dto.response">SearchSemesterResponse</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSemesters()" class="member-name-link">getSemesters</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학기 전체 조회</div>
+<div class="block">활성화된 모든 학기를 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateSemesterName(inha.git.user.domain.User,java.lang.Integer,inha.git.semester.controller.dto.request.UpdateSemesterRequest)" class="member-name-link">updateSemesterName</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterIdx,
  <a href="../controller/dto/request/UpdateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">UpdateSemesterRequest</a>&nbsp;updateSemesterRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">학기 이름 수정</div>
+<div class="block">학기명을 수정합니다.</div>
 </div>
 </div>
 </div>
@@ -171,12 +172,19 @@ implements <a href="SemesterService.html" title="interface in inha.git.semester.
 <section class="detail" id="getSemesters()">
 <h3>getSemesters</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchSemesterResponse.html" title="class in inha.git.semester.controller.dto.response">SearchSemesterResponse</a>&gt;</span>&nbsp;<span class="element-name">getSemesters</span>()</div>
-<div class="block">학기 전체 조회</div>
+<div class="block">활성화된 모든 학기를 조회합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ACTIVE 상태의 모든 학기를 조회<br>
+ 2. 학기명 기준 오름차순으로 정렬<br>
+ 3. 조회된 학기 엔티티들을 DTO로 변환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="SemesterService.html#getSemesters()">getSemesters</a></code>&nbsp;in interface&nbsp;<code><a href="SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></code></dd>
 <dt>Returns:</dt>
-<dd>학기 전체 조회 결과</dd>
+<dd>학기 정보 목록 (SearchSemesterResponse)</dd>
 </dl>
 </section>
 </li>
@@ -185,15 +193,23 @@ implements <a href="SemesterService.html" title="interface in inha.git.semester.
 <h3>createSemester</h3>
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createSemester</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
- <a href="../controller/dto/request/CreateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">CreateSemesterRequest</a>&nbsp;createDepartmentRequest)</span></div>
-<div class="block">학기 생성</div>
+ <a href="../controller/dto/request/CreateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">CreateSemesterRequest</a>&nbsp;createSemesterRequest)</span></div>
+<div class="block">새로운 학기를 생성합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. 요청 DTO를 학기 엔티티로 변환<br>
+ 2. 학기 엔티티 저장<br>
+ 3. 생성 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="SemesterService.html#createSemester(inha.git.user.domain.User,inha.git.semester.controller.dto.request.CreateSemesterRequest)">createSemester</a></code>&nbsp;in interface&nbsp;<code><a href="SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>createDepartmentRequest</code> - 학기 생성 요청</dd>
+<dd><code>admin</code> - 생성을 요청한 관리자 정보</dd>
+<dd><code>createSemesterRequest</code> - 생성할 학기 정보</dd>
 <dt>Returns:</dt>
-<dd>생성된 학기 이름</dd>
+<dd>학기 생성 완료 메시지</dd>
 </dl>
 </section>
 </li>
@@ -204,15 +220,26 @@ implements <a href="SemesterService.html" title="interface in inha.git.semester.
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">updateSemesterName</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterIdx,
  <a href="../controller/dto/request/UpdateSemesterRequest.html" title="class in inha.git.semester.controller.dto.request">UpdateSemesterRequest</a>&nbsp;updateSemesterRequest)</span></div>
-<div class="block">학기 이름 수정</div>
+<div class="block">학기명을 수정합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ID와 상태로 학기 조회<br>
+ 2. 학기 존재 여부 확인<br>
+ 3. 학기명 수정<br>
+ 4. 수정 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="SemesterService.html#updateSemesterName(inha.git.user.domain.User,java.lang.Integer,inha.git.semester.controller.dto.request.UpdateSemesterRequest)">updateSemesterName</a></code>&nbsp;in interface&nbsp;<code><a href="SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>semesterIdx</code> - 학기 인덱스</dd>
-<dd><code>updateSemesterRequest</code> - 학기 수정 요청</dd>
+<dd><code>admin</code> - 수정을 요청한 관리자 정보</dd>
+<dd><code>semesterIdx</code> - 수정할 학기의 식별자</dd>
+<dd><code>updateSemesterRequest</code> - 새로운 학기명 정보</dd>
 <dt>Returns:</dt>
-<dd>수정된 학기 이름</dd>
+<dd>학기명 수정 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - SEMESTER_NOT_FOUND: 학기를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
@@ -222,14 +249,26 @@ implements <a href="SemesterService.html" title="interface in inha.git.semester.
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteSemester</span><wbr><span class="parameters">(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterIdx)</span></div>
-<div class="block">학기 삭제</div>
+<div class="block">학기를 삭제(비활성화) 처리합니다.
+
+ <p>
+ 처리 과정:<br>
+ 1. ID와 상태로 학기 조회<br>
+ 2. 학기 존재 여부 확인<br>
+ 3. 학기 상태를 INACTIVE로 변경<br>
+ 4. 삭제 시간 기록<br>
+ 5. 삭제 결과 메시지 반환<br>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="SemesterService.html#deleteSemester(inha.git.user.domain.User,java.lang.Integer)">deleteSemester</a></code>&nbsp;in interface&nbsp;<code><a href="SemesterService.html" title="interface in inha.git.semester.service">SemesterService</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>semesterIdx</code> - 학기 인덱스</dd>
+<dd><code>admin</code> - 삭제를 요청한 관리자 정보</dd>
+<dd><code>semesterIdx</code> - 삭제할 학기의 식별자</dd>
 <dt>Returns:</dt>
-<dd>삭제된 학기 이름</dd>
+<dd>학기 삭제 완료 메시지</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - SEMESTER_NOT_FOUND: 학기를 찾을 수 없는 경우</dd>
 </dl>
 </section>
 </li>
