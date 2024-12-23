@@ -162,19 +162,7 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="login(inha.git.auth.api.controller.dto.request.LoginRequest)">
 <h3>login</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../controller/dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a></span>&nbsp;<span class="element-name">login</span><wbr><span class="parameters">(<a href="../controller/dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</span></div>
-<div class="block">사용자 로그인을 처리하는 서비스입니다.
-
- <p>
- 로그인 과정:
- 1. 이메일로 사용자 조회
- 2. 계정 잠금 상태 확인
- 3. 비밀번호 검증
-    - 실패 시 실패 횟수 증가
-    - 최대 실패 횟수 초과 시 계정 잠금
- 4. 차단된 사용자 확인
- 5. 교수/기업 회원의 경우 승인 여부 확인
- 6. JWT 토큰 발급
- </p></div>
+<div class="block">사용자 로그인을 처리하는 서비스입니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#login(inha.git.auth.api.controller.dto.request.LoginRequest)">login</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>
@@ -195,14 +183,7 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)">
 <h3>findEmail</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../controller/dto/response/FindEmailResponse.html" title="class in inha.git.auth.api.controller.dto.response">FindEmailResponse</a></span>&nbsp;<span class="element-name">findEmail</span><wbr><span class="parameters">(<a href="../controller/dto/request/FindEmailRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindEmailRequest</a>&nbsp;findEmailRequest)</span></div>
-<div class="block">학번과 이름으로 사용자의 이메일을 찾는 서비스입니다.
-
- <p>
- 사용자의 학번과 이름을 받아서:
- 1. 해당하는 사용자가 존재하는지 확인
- 2. 존재하는 경우 사용자의 이메일 정보를 반환
- 3. 존재하지 않는 경우 예외 발생
- </p></div>
+<div class="block">학번과 이름으로 사용자의 이메일을 찾는 서비스입니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#findEmail(inha.git.auth.api.controller.dto.request.FindEmailRequest)">findEmail</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>
@@ -219,15 +200,7 @@ implements <a href="AuthService.html" title="interface in inha.git.auth.api.serv
 <section class="detail" id="changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)">
 <h3>changePassword</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a></span>&nbsp;<span class="element-name">changePassword</span><wbr><span class="parameters">(<a href="../controller/dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</span></div>
-<div class="block">비밀번호 찾기 후 새로운 비밀번호로 변경하는 서비스입니다.
-
- <p>
- 처리 과정:
- 1. 이메일 인증 상태 확인
- 2. 사용자 존재 여부 확인
- 3. 새로운 비밀번호 암호화
- 4. 비밀번호 업데이트
- </p></div>
+<div class="block">비밀번호 찾기 후 새로운 비밀번호로 변경하는 서비스입니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="AuthService.html#changePassword(inha.git.auth.api.controller.dto.request.ChangePasswordRequest)">changePassword</a></code>&nbsp;in interface&nbsp;<code><a href="AuthService.html" title="interface in inha.git.auth.api.service">AuthService</a></code></dd>

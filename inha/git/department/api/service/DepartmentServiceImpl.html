@@ -172,16 +172,7 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <section class="detail" id="getDepartments(java.lang.Integer)">
 <h3>getDepartments</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../admin/api/controller/dto/response/SearchDepartmentResponse.html" title="class in inha.git.admin.api.controller.dto.response">SearchDepartmentResponse</a>&gt;</span>&nbsp;<span class="element-name">getDepartments</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx)</span></div>
-<div class="block">학과 목록을 조회합니다.
-
- <p>
- 단과대학 ID가 제공된 경우:<br>
- 1. 단과대학 존재 여부 확인<br>
- 2. 해당 단과대학에 속한 학과만 조회<br>
-<br>
- 단과대학 ID가 제공되지 않은 경우:<br>
- 1. 모든 활성화된 학과 조회<br>
- </p></div>
+<div class="block">학과 목록을 조회합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#getDepartments(java.lang.Integer)">getDepartments</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
@@ -200,16 +191,7 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createDepartment</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="../controller/dto/request/CreateDepartmentRequest.html" title="class in inha.git.department.api.controller.dto.request">CreateDepartmentRequest</a>&nbsp;createDepartmentRequest)</span></div>
-<div class="block">새로운 학과를 생성합니다.
-
- <p>
- 처리 과정:<br>
- 1. 단과대학 존재 여부 확인<br>
- 2. 학과 엔티티 생성<br>
- 3. 단과대학-학과 연관관계 검증<br>
- 4. 학과 정보 저장<br>
- 5. 학과 통계 정보 생성<br>
- </p></div>
+<div class="block">새로운 학과를 생성합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#createDepartment(inha.git.user.domain.User,inha.git.department.api.controller.dto.request.CreateDepartmentRequest)">createDepartment</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>
@@ -252,8 +234,7 @@ implements <a href="DepartmentService.html" title="interface in inha.git.departm
 <div class="member-signature"><span class="annotations">@Transactional
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">deleteDepartment</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;admin,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentIdx)</span></div>
-<div class="block">학과를 삭제(비활성화) 처리합니다.
- 실제 삭제가 아닌 상태 변경 및 삭제 일시 기록으로 처리됩니다.</div>
+<div class="block">학과를 삭제(비활성화) 처리합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="DepartmentService.html#deleteDepartment(inha.git.user.domain.User,java.lang.Integer)">deleteDepartment</a></code>&nbsp;in interface&nbsp;<code><a href="DepartmentService.html" title="interface in inha.git.department.api.service">DepartmentService</a></code></dd>

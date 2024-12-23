@@ -112,37 +112,25 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="dto/request/CreateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">CreateFieldRequest</a>&nbsp;createFieldRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">
- 새로운 분야를 생성합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 관리자는 새로운 분야를 생성할 수 있으며, 생성된 분야는 활성화 상태가 됩니다.<br></div>
+<div class="block">새로운 분야를 생성합니다.<br></div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteField(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">
- 분야를 삭제(비활성화) 처리합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 실제 삭제가 아닌 소프트 삭제로 처리됩니다.<br>
- 삭제된 분야는 비활성화 상태로 변경되며, 삭제 시간이 기록됩니다.<br></div>
+ 분야를 삭제(비활성화) 처리합니다.<br></div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchFieldResponse.html" title="class in inha.git.field.api.controller.dto.response">SearchFieldResponse</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFields()" class="member-name-link">getFields</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">
- 전체 분야 목록을 조회합니다.<br>
- 활성화된 모든 분야의 정보를 조회하여 반환합니다.<br></div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateField(inha.git.user.domain.User,java.lang.Integer,inha.git.field.api.controller.dto.request.UpdateFieldRequest)" class="member-name-link">updateField</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx,
  <a href="dto/request/UpdateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">UpdateFieldRequest</a>&nbsp;updateFieldRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">
- 분야명을 수정합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 관리자는 기존 분야의 이름을 새로운 이름으로 변경할 수 있습니다.<br></div>
+ 분야명을 수정합니다.<br></div>
 </div>
 </div>
 </div>
@@ -180,10 +168,6 @@ loadScripts(document, 'script');</script>
 <h3>getFields</h3>
 <div class="member-signature"><span class="annotations">@GetMapping
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchFieldResponse.html" title="class in inha.git.field.api.controller.dto.response">SearchFieldResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getFields</span>()</div>
-<div class="block"><p>
- 전체 분야 목록을 조회합니다.<br>
- 활성화된 모든 분야의 정보를 조회하여 반환합니다.<br>
- </p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>분야 목록을 포함한 응답</dd>
@@ -199,11 +183,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @Validated @RequestBody
  <a href="dto/request/CreateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">CreateFieldRequest</a>&nbsp;createFieldRequest)</span></div>
-<div class="block"></p>
- 새로운 분야를 생성합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 관리자는 새로운 분야를 생성할 수 있으며, 생성된 분야는 활성화 상태가 됩니다.<br>
- </p></div>
+<div class="block">새로운 분야를 생성합니다.<br></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>
@@ -225,10 +205,7 @@ loadScripts(document, 'script');</script>
  @Validated @RequestBody
  <a href="dto/request/UpdateFieldRequest.html" title="class in inha.git.field.api.controller.dto.request">UpdateFieldRequest</a>&nbsp;updateFieldRequest)</span></div>
 <div class="block"><p>
- 분야명을 수정합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 관리자는 기존 분야의 이름을 새로운 이름으로 변경할 수 있습니다.<br>
- </p></div>
+ 분야명을 수정합니다.<br></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>
@@ -251,11 +228,7 @@ loadScripts(document, 'script');</script>
  @PathVariable("fieldIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;fieldIdx)</span></div>
 <div class="block"><p>
- 분야를 삭제(비활성화) 처리합니다.<br>
- 관리자 권한을 가진 사용자만 접근 가능합니다.<br>
- 실제 삭제가 아닌 소프트 삭제로 처리됩니다.<br>
- 삭제된 분야는 비활성화 상태로 변경되며, 삭제 시간이 기록됩니다.<br>
- </p></div>
+ 분야를 삭제(비활성화) 처리합니다.<br></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>

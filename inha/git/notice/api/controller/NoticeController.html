@@ -179,14 +179,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
  @RequestParam("size")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</span></div>
-<div class="block">전체 공지사항을 페이징하여 조회합니다.
-
- <p>
- 처리 과정:<br>
- 1. 페이지 번호와 크기의 유효성 검증<br>
- 2. 페이지 정보를 인덱스로 변환<br>
- 3. 페이징된 공지사항 목록 조회<br>
- </p></div>
+<div class="block">전체 공지사항을 페이징하여 조회합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>page</code> - 조회할 페이지 번호 (1부터 시작)</dd>
@@ -205,11 +198,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@GetMapping("/{noticeIdx}")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchNoticeResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticeResponse</a>&gt;</span>&nbsp;<span class="element-name">getNotice</span><wbr><span class="parameters">(@PathVariable("noticeIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</span></div>
-<div class="block">특정 공지사항의 상세 정보를 조회합니다.
-
- <p>
- 공지사항의 제목, 내용, 작성자 정보, 첨부파일 정보를 포함한 상세 정보를 조회합니다.
- </p></div>
+<div class="block">특정 공지사항의 상세 정보를 조회합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>noticeIdx</code> - 조회할 공지사항의 식별자</dd>
@@ -231,15 +220,7 @@ loadScripts(document, 'script');</script>
  <a href="dto/request/CreateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">CreateNoticeRequest</a>&nbsp;createNoticeRequest,
  @RequestPart(value="attachmentList",required=false)
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</span></div>
-<div class="block">새로운 공지사항을 생성합니다.
- 조교, 교수, 관리자 권한을 가진 사용자만 접근 가능합니다.
-
- <p>
- 처리 과정:<br>
- 1. 권한 검증<br>
- 2. 공지사항 정보 저장<br>
- 3. 첨부파일이 있는 경우 파일 업로드 및 정보 저장<br>
- </p></div>
+<div class="block">새로운 공지사항을 생성합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 사용자 정보</dd>
@@ -264,16 +245,7 @@ loadScripts(document, 'script');</script>
  <a href="dto/request/UpdateNoticeRequest.html" title="class in inha.git.notice.api.controller.dto.request">UpdateNoticeRequest</a>&nbsp;updateNoticeRequest,
  @RequestPart(value="attachmentList",required=false)
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;attachmentList)</span></div>
-<div class="block">기존 공지사항을 수정합니다.
- 조교, 교수, 관리자 권한을 가진 사용자만 접근 가능하며,
- 관리자가 아닌 경우 본인이 작성한 공지사항만 수정할 수 있습니다.
-
- <p>
- 처리 과정:<br>
- 1. 권한 검증<br>
- 2. 공지사항 정보 수정<br>
- 3. 첨부파일 수정 (기존 파일 삭제 및 새로운 파일 업로드)<br>
- </p></div>
+<div class="block">기존 공지사항을 수정합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 사용자 정보</dd>
@@ -297,16 +269,7 @@ loadScripts(document, 'script');</script>
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("noticeIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;noticeIdx)</span></div>
-<div class="block">공지사항을 삭제(비활성화) 처리합니다.
- 조교, 교수, 관리자 권한을 가진 사용자만 접근 가능하며,
- 관리자가 아닌 경우 본인이 작성한 공지사항만 삭제할 수 있습니다.
-
- <p>
- 처리 과정:<br>
- 1. 권한 검증<br>
- 2. 공지사항 상태를 INACTIVE로 변경<br>
- 3. 삭제 시간 기록<br>
- </p></div>
+<div class="block">공지사항을 삭제(비활성화) 처리합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 사용자 정보</dd>

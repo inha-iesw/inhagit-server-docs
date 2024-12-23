@@ -173,8 +173,7 @@ loadScripts(document, 'script');</script>
 <h3>getColleges</h3>
 <div class="member-signature"><span class="annotations">@GetMapping
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchCollegeResponse.html" title="class in inha.git.college.controller.dto.response">SearchCollegeResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getColleges</span>()</div>
-<div class="block">모든 단과대학 목록을 조회합니다.
- 활성화된 단과대학만 조회됩니다.</div>
+<div class="block">모든 단과대학 목록을 조회합니다.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>단과대학 목록을 포함한 응답</dd>
@@ -208,8 +207,7 @@ loadScripts(document, 'script');</script>
  <a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @Validated @RequestBody
  <a href="dto/request/CreateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">CreateCollegeRequest</a>&nbsp;createDepartmentRequest)</span></div>
-<div class="block">새로운 단과대학을 생성합니다.
- 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
+<div class="block">새로운 단과대학을 생성합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>
@@ -230,8 +228,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeIdx,
  @Validated @RequestBody
  <a href="dto/request/UpdateCollegeRequest.html" title="class in inha.git.college.controller.dto.request">UpdateCollegeRequest</a>&nbsp;updateCollegeRequest)</span></div>
-<div class="block">기존 단과대학의 정보를 수정합니다.
- 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
+<div class="block">기존 단과대학의 정보를 수정합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>

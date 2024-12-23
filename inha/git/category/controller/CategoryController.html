@@ -118,12 +118,12 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteCategory(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteCategory</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">카테고리를 삭제 처리합니다.</div>
+<div class="block">카테고리를 소프트 삭제(상태 변경) 처리합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchCategoryResponse.html" title="class in inha.git.category.controller.dto.response">SearchCategoryResponse</a>&gt;&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCategories()" class="member-name-link">getCategories</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">전체 카테고리 목록을 조회합니다.</div>
+<div class="block">전체 카테고리 목록을 이름 기준으로 오름차순 조회합니다.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCategory(inha.git.user.domain.User,java.lang.Integer,inha.git.category.controller.dto.request.UpdateCategoryRequest)" class="member-name-link">updateCategory</a><wbr>(<a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
@@ -168,8 +168,7 @@ loadScripts(document, 'script');</script>
 <h3>getCategories</h3>
 <div class="member-signature"><span class="annotations">@GetMapping
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchCategoryResponse.html" title="class in inha.git.category.controller.dto.response">SearchCategoryResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getCategories</span>()</div>
-<div class="block">전체 카테고리 목록을 조회합니다.
- 카테고리는 이름 기준으로 오름차순 정렬됩니다.</div>
+<div class="block">전체 카테고리 목록을 이름 기준으로 오름차순 조회합니다.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>활성 상태인 모든 카테고리 정보를 포함하는 응답</dd>
@@ -185,8 +184,7 @@ loadScripts(document, 'script');</script>
  <a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @Validated @RequestBody
  <a href="dto/request/CreateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">CreateCategoryRequest</a>&nbsp;createCategoryRequest)</span></div>
-<div class="block">새로운 카테고리를 생성합니다.
- 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
+<div class="block">새로운 카테고리를 생성합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>
@@ -209,8 +207,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx,
  @Validated @RequestBody
  <a href="dto/request/UpdateCategoryRequest.html" title="class in inha.git.category.controller.dto.request">UpdateCategoryRequest</a>&nbsp;updateCategoryRequest)</span></div>
-<div class="block">기존 카테고리의 이름을 수정합니다.
- 관리자 권한을 가진 사용자만 접근 가능합니다.</div>
+<div class="block">기존 카테고리의 이름을 수정합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>
@@ -232,9 +229,7 @@ loadScripts(document, 'script');</script>
  <a href="../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("categoryIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;categoryIdx)</span></div>
-<div class="block">카테고리를 삭제 처리합니다.
- 관리자 권한을 가진 사용자만 접근 가능합니다.
- 실제 삭제가 아닌 소프트 삭제(상태 변경)로 처리됩니다.</div>
+<div class="block">카테고리를 소프트 삭제(상태 변경) 처리합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 현재 인증된 관리자 정보</dd>

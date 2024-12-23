@@ -215,8 +215,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/login")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/LoginResponse.html" title="class in inha.git.auth.api.controller.dto.response">LoginResponse</a>&gt;</span>&nbsp;<span class="element-name">login</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/LoginRequest.html" title="class in inha.git.auth.api.controller.dto.request">LoginRequest</a>&nbsp;loginRequest)</span></div>
-<div class="block">사용자 로그인을 처리합니다.
- 로그인 성공 시 JWT 토큰을 발급합니다.</div>
+<div class="block">사용자 로그인을 처리합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>loginRequest</code> - 이메일과 비밀번호를 포함한 로그인 요청</dd>
@@ -253,8 +252,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/pw")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">findPasswordMailSend</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/FindPasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">FindPasswordRequest</a>&nbsp;findPasswordRequest)</span></div>
-<div class="block">비밀번호 찾기를 위한 이메일 인증번호를 발송합니다.
- 가입된 이메일인 경우에만 인증번호가 발송됩니다.</div>
+<div class="block">비밀번호 찾기를 위한 이메일 인증번호를 발송합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>findPasswordRequest</code> - 이메일 주소를 포함한 요청</dd>
@@ -290,8 +288,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@PostMapping("/find/pw/change")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="../../../user/api/controller/dto/response/UserResponse.html" title="class in inha.git.user.api.controller.dto.response">UserResponse</a>&gt;</span>&nbsp;<span class="element-name">findPassword</span><wbr><span class="parameters">(@RequestBody @Valid
  @Valid <a href="dto/request/ChangePasswordRequest.html" title="class in inha.git.auth.api.controller.dto.request">ChangePasswordRequest</a>&nbsp;changePasswordRequest)</span></div>
-<div class="block">이메일 인증 후 새로운 비밀번호로 변경합니다.
- 이메일 인증이 완료된 경우에만 비밀번호 변경이 가능합니다.</div>
+<div class="block">이메일 인증 후 새로운 비밀번호로 변경합니다.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>changePasswordRequest</code> - 이메일과 새로운 비밀번호를 포함한 요청</dd>
