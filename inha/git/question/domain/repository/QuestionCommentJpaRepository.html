@@ -101,6 +101,10 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Que
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;commentIdx,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../QuestionComment.html" title="class in inha.git.question.domain">QuestionComment</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndStateWithPessimisticLock(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndStateWithPessimisticLock</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;commentIdx,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -137,6 +141,16 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Que
 <section class="detail" id="findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)">
 <h3>findByIdAndState</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../QuestionComment.html" title="class in inha.git.question.domain">QuestionComment</a>&gt;</span>&nbsp;<span class="element-name">findByIdAndState</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;commentIdx,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findByIdAndStateWithPessimisticLock(java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findByIdAndStateWithPessimisticLock</h3>
+<div class="member-signature"><span class="annotations">@Lock(PESSIMISTIC_WRITE)
+@QueryHints()
+@Query("SELECT c FROM QuestionComment c WHERE c.id = :commentIdx AND c.state = :state")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../QuestionComment.html" title="class in inha.git.question.domain">QuestionComment</a>&gt;</span>&nbsp;<span class="element-name">findByIdAndStateWithPessimisticLock</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;commentIdx,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
 </section>
 </li>
