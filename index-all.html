@@ -108,6 +108,12 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/config/WebConfig.html#addResourceHandlers(org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry)" class="member-name-link">addResourceHandlers(ResourceHandlerRegistry)</a> - Method in class inha.git.common.config.<a href="inha/git/common/config/WebConfig.html" title="class in inha.git.common.config">WebConfig</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsService.html#adjustCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer,boolean)" class="member-name-link">adjustCount(User, List&lt;Field&gt;, Semester, Category, Integer, boolean)</a> - Method in interface inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsService.html" title="interface in inha.git.statistics.api.service">StatisticsService</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsServiceImpl.html#adjustCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer,boolean)" class="member-name-link">adjustCount(User, List&lt;Field&gt;, Semester, Category, Integer, boolean)</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsServiceImpl</a></dt>
+<dd>
+<div class="block">사용자 통계 정보를 증가시킨다.</div>
+</dd>
 <dt><a href="inha/git/user/domain/enums/Role.html#ADMIN" class="member-name-link">ADMIN</a> - Enum constant in enum class inha.git.user.domain.enums.<a href="inha/git/user/domain/enums/Role.html" title="enum class in inha.git.user.domain.enums">Role</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/enums/Permission.html#ADMIN_CREATE" class="member-name-link">ADMIN_CREATE</a> - Enum constant in enum class inha.git.user.domain.enums.<a href="inha/git/user/domain/enums/Permission.html" title="enum class in inha.git.user.domain.enums">Permission</a></dt>
@@ -836,7 +842,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/college/domain/College.html#%3Cinit%3E()" class="member-name-link">College()</a> - Constructor for class inha.git.college.domain.<a href="inha/git/college/domain/College.html" title="class in inha.git.college.domain">College</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#COLLEGE" class="member-name-link">COLLEGE</a> - Enum constant in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#COLLEGE" class="member-name-link">COLLEGE</a> - Enum constant in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#COLLEGE" class="member-name-link">COLLEGE</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
@@ -860,6 +866,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/college/controller/CollegeController.html#%3Cinit%3E()" class="member-name-link">CollegeController()</a> - Constructor for class inha.git.college.controller.<a href="inha/git/college/controller/CollegeController.html" title="class in inha.git.college.controller">CollegeController</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#collegeId()" class="member-name-link">collegeId()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>collegeId</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#collegeId()" class="member-name-link">collegeId()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>collegeId</code> record component.</div>
@@ -910,28 +920,18 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/college/service/CollegeServiceImpl.html#%3Cinit%3E()" class="member-name-link">CollegeServiceImpl()</a> - Constructor for class inha.git.college.service.<a href="inha/git/college/service/CollegeServiceImpl.html" title="class in inha.git.college.service">CollegeServiceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">CollegeStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>
-<div class="block">CollegeStatistics 엔티티는 애플리케이션의 단과대별 통계 정보를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#%3Cinit%3E()" class="member-name-link">CollegeStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/data/package-summary.html">inha.git.statistics.api.controller.dto.data</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/response/package-summary.html">inha.git.statistics.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#%3Cinit%3E(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">CollegeStatisticsData(Integer, Integer, Integer, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#%3Cinit%3E(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">CollegeStatisticsData(Integer, Integer, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>CollegeStatisticsData</code> record class.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/repository/CollegeStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">CollegeStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#%3Cinit%3E(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">CollegeStatisticsData(Integer, Integer, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
-<div class="block">CollegeStatisticsJpaRepository 인터페이스는 단과대 통계 정보를 조회하는데 사용됨.</div>
+<div class="block">Creates an instance of a <code>CollegeStatisticsData</code> record class.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/id/CollegeStatisticsStatisticsId.html" class="type-name-link" title="class in inha.git.statistics.domain.id">CollegeStatisticsStatisticsId</a> - Class in <a href="inha/git/statistics/domain/id/package-summary.html">inha.git.statistics.domain.id</a></dt>
-<dd>
-<div class="block">CollegeStatisticsStatisticsId CollegeStatisticsStatistics 엔티티의 복합키를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/id/CollegeStatisticsStatisticsId.html#%3Cinit%3E()" class="member-name-link">CollegeStatisticsStatisticsId()</a> - Constructor for class inha.git.statistics.domain.id.<a href="inha/git/statistics/domain/id/CollegeStatisticsStatisticsId.html" title="class in inha.git.statistics.domain.id">CollegeStatisticsStatisticsId</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/college/mapper/CollegeMapper.html#collegesToSearchCollegeResponses(java.util.List)" class="member-name-link">collegesToSearchCollegeResponses(List&lt;College&gt;)</a> - Method in interface inha.git.college.mapper.<a href="inha/git/college/mapper/CollegeMapper.html" title="interface in inha.git.college.mapper">CollegeMapper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/mapper/CollegeMapper.html#collegeToSearchCollegeResponse(inha.git.college.domain.College)" class="member-name-link">collegeToSearchCollegeResponse(College)</a> - Method in interface inha.git.college.mapper.<a href="inha/git/college/mapper/CollegeMapper.html" title="interface in inha.git.college.mapper">CollegeMapper</a></dt>
@@ -1258,19 +1258,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#countByUserAndSemesterAndProjectFields_FieldAndState(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)" class="member-name-link">countByUserAndSemesterAndProjectFields_FieldAndState(User, Semester, Field, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndGithubProjectCount(java.lang.Integer,int)" class="member-name-link">countByUserIdAndGithubProjectCount(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndGithubProjectCountGreaterThan(java.lang.Integer,int)" class="member-name-link">countByUserIdAndGithubProjectCountGreaterThan(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndProblemCountGreaterThan(java.lang.Integer,int)" class="member-name-link">countByUserIdAndProblemCountGreaterThan(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndProjectCount(java.lang.Integer,int)" class="member-name-link">countByUserIdAndProjectCount(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndProjectCountGreaterThan(java.lang.Integer,int)" class="member-name-link">countByUserIdAndProjectCountGreaterThan(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndQuestionCount(java.lang.Integer,int)" class="member-name-link">countByUserIdAndQuestionCount(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#countByUserIdAndQuestionCountGreaterThan(java.lang.Integer,int)" class="member-name-link">countByUserIdAndQuestionCountGreaterThan(Integer, int)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
+<dt><a href="inha/git/question/domain/repository/QuestionJpaRepository.html#countByUserAndSemesterAndQuestionFields_FieldAndState(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)" class="member-name-link">countByUserAndSemesterAndQuestionFields_FieldAndState(User, Semester, Field, BaseEntity.State)</a> - Method in interface inha.git.question.domain.repository.<a href="inha/git/question/domain/repository/QuestionJpaRepository.html" title="interface in inha.git.question.domain.repository">QuestionJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#CREATE_AT" class="member-name-link">CREATE_AT</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
@@ -1356,16 +1344,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">CreateCollegeRequest를 College 엔티티로 변환</div>
 </dd>
-<dt><a href="inha/git/category/mapper/CategoryMapper.html#createCollegeStatistics(inha.git.category.domain.Category,java.util.List,java.util.List,java.util.List)" class="member-name-link">createCollegeStatistics(Category, List&lt;College&gt;, List&lt;Field&gt;, List&lt;Semester&gt;)</a> - Method in interface inha.git.category.mapper.<a href="inha/git/category/mapper/CategoryMapper.html" title="interface in inha.git.category.mapper">CategoryMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/college/mapper/CollegeMapper.html#createCollegeStatistics(inha.git.college.domain.College,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.category.domain.Category)" class="member-name-link">createCollegeStatistics(College, Semester, Field, Category)</a> - Method in interface inha.git.college.mapper.<a href="inha/git/college/mapper/CollegeMapper.html" title="interface in inha.git.college.mapper">CollegeMapper</a></dt>
-<dd>
-<div class="block">College 엔티티를 SearchCollegeResponse로 변환</div>
-</dd>
-<dt><a href="inha/git/field/api/mapper/FieldMapper.html#createCollegeStatistics(inha.git.field.domain.Field,java.util.List,java.util.List,java.util.List)" class="member-name-link">createCollegeStatistics(Field, List&lt;College&gt;, List&lt;Semester&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.field.api.mapper.<a href="inha/git/field/api/mapper/FieldMapper.html" title="interface in inha.git.field.api.mapper">FieldMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/semester/mapper/SemesterMapper.html#createCollegeStatistics(inha.git.semester.domain.Semester,java.util.List,java.util.List,java.util.List)" class="member-name-link">createCollegeStatistics(Semester, List&lt;College&gt;, List&lt;Field&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.semester.mapper.<a href="inha/git/semester/mapper/SemesterMapper.html" title="interface in inha.git.semester.mapper">SemesterMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/controller/ProjectCommentController.html#createComment(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.CreateCommentRequest)" class="member-name-link">createComment(User, CreateCommentRequest)</a> - Method in class inha.git.project.api.controller.<a href="inha/git/project/api/controller/ProjectCommentController.html" title="class in inha.git.project.api.controller">ProjectCommentController</a></dt>
 <dd>
 <div class="block">프로젝트 댓글 생성 API</div>
@@ -1542,16 +1520,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">CreateDepartmentRequest를 Department 엔티티로 변환</div>
 </dd>
-<dt><a href="inha/git/category/mapper/CategoryMapper.html#createDepartmentStatistics(inha.git.category.domain.Category,java.util.List,java.util.List,java.util.List)" class="member-name-link">createDepartmentStatistics(Category, List&lt;Department&gt;, List&lt;Field&gt;, List&lt;Semester&gt;)</a> - Method in interface inha.git.category.mapper.<a href="inha/git/category/mapper/CategoryMapper.html" title="interface in inha.git.category.mapper">CategoryMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/department/api/mapper/DepartmentMapper.html#createDepartmentStatistics(inha.git.department.domain.Department,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.category.domain.Category)" class="member-name-link">createDepartmentStatistics(Department, Semester, Field, Category)</a> - Method in interface inha.git.department.api.mapper.<a href="inha/git/department/api/mapper/DepartmentMapper.html" title="interface in inha.git.department.api.mapper">DepartmentMapper</a></dt>
-<dd>
-<div class="block">Department 엔티티를 DepartmentStatistics 엔티티로 변환</div>
-</dd>
-<dt><a href="inha/git/field/api/mapper/FieldMapper.html#createDepartmentStatistics(inha.git.field.domain.Field,java.util.List,java.util.List,java.util.List)" class="member-name-link">createDepartmentStatistics(Field, List&lt;Department&gt;, List&lt;Semester&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.field.api.mapper.<a href="inha/git/field/api/mapper/FieldMapper.html" title="interface in inha.git.field.api.mapper">FieldMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/semester/mapper/SemesterMapper.html#createDepartmentStatistics(inha.git.semester.domain.Semester,java.util.List,java.util.List,java.util.List)" class="member-name-link">createDepartmentStatistics(Semester, List&lt;Department&gt;, List&lt;Field&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.semester.mapper.<a href="inha/git/semester/mapper/SemesterMapper.html" title="interface in inha.git.semester.mapper">SemesterMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/field/api/controller/FieldController.html#createField(inha.git.user.domain.User,inha.git.field.api.controller.dto.request.CreateFieldRequest)" class="member-name-link">createField(User, CreateFieldRequest)</a> - Method in class inha.git.field.api.controller.<a href="inha/git/field/api/controller/FieldController.html" title="class in inha.git.field.api.controller">FieldController</a></dt>
 <dd>
 <div class="block">새로운 분야를 생성합니다.<br></div>
@@ -1920,26 +1888,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">팀 사용자를 생성.</div>
 </dd>
-<dt><a href="inha/git/college/mapper/CollegeMapper.html#createTotalCollegeStatistics(inha.git.college.domain.College)" class="member-name-link">createTotalCollegeStatistics(College)</a> - Method in interface inha.git.college.mapper.<a href="inha/git/college/mapper/CollegeMapper.html" title="interface in inha.git.college.mapper">CollegeMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/department/api/mapper/DepartmentMapper.html#createTotalDepartmentStatistics(inha.git.department.domain.Department)" class="member-name-link">createTotalDepartmentStatistics(Department)</a> - Method in interface inha.git.department.api.mapper.<a href="inha/git/department/api/mapper/DepartmentMapper.html" title="interface in inha.git.department.api.mapper">DepartmentMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/category/mapper/CategoryMapper.html#createUserCountStatistics(inha.git.category.domain.Category,java.util.List,java.util.List)" class="member-name-link">createUserCountStatistics(Category, List&lt;Field&gt;, List&lt;Semester&gt;)</a> - Method in interface inha.git.category.mapper.<a href="inha/git/category/mapper/CategoryMapper.html" title="interface in inha.git.category.mapper">CategoryMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/field/api/mapper/FieldMapper.html#createUserCountStatistics(inha.git.field.domain.Field,java.util.List,java.util.List)" class="member-name-link">createUserCountStatistics(Field, List&lt;Semester&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.field.api.mapper.<a href="inha/git/field/api/mapper/FieldMapper.html" title="interface in inha.git.field.api.mapper">FieldMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/user/api/mapper/UserMapper.html#createUserCountStatistics(inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.category.domain.Category)" class="member-name-link">createUserCountStatistics(Semester, Field, Category)</a> - Method in interface inha.git.user.api.mapper.<a href="inha/git/user/api/mapper/UserMapper.html" title="interface in inha.git.user.api.mapper">UserMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/semester/mapper/SemesterMapper.html#createUserCountStatistics(inha.git.semester.domain.Semester,java.util.List,java.util.List)" class="member-name-link">createUserCountStatistics(Semester, List&lt;Field&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.semester.mapper.<a href="inha/git/semester/mapper/SemesterMapper.html" title="interface in inha.git.semester.mapper">SemesterMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/category/mapper/CategoryMapper.html#createUserStatistics(inha.git.category.domain.Category,java.util.List,java.util.List,java.util.List)" class="member-name-link">createUserStatistics(Category, List&lt;User&gt;, List&lt;Field&gt;, List&lt;Semester&gt;)</a> - Method in interface inha.git.category.mapper.<a href="inha/git/category/mapper/CategoryMapper.html" title="interface in inha.git.category.mapper">CategoryMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/field/api/mapper/FieldMapper.html#createUserStatistics(inha.git.field.domain.Field,java.util.List,java.util.List,java.util.List)" class="member-name-link">createUserStatistics(Field, List&lt;User&gt;, List&lt;Semester&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.field.api.mapper.<a href="inha/git/field/api/mapper/FieldMapper.html" title="interface in inha.git.field.api.mapper">FieldMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/semester/mapper/SemesterMapper.html#createUserStatistics(inha.git.semester.domain.Semester,java.util.List,java.util.List,java.util.List)" class="member-name-link">createUserStatistics(Semester, List&lt;User&gt;, List&lt;Field&gt;, List&lt;Category&gt;)</a> - Method in interface inha.git.semester.mapper.<a href="inha/git/semester/mapper/SemesterMapper.html" title="interface in inha.git.semester.mapper">SemesterMapper</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/user/api/mapper/UserMapper.html#createUserStatistics(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.category.domain.Category)" class="member-name-link">createUserStatistics(User, Semester, Field, Category)</a> - Method in interface inha.git.user.api.mapper.<a href="inha/git/user/api/mapper/UserMapper.html" title="interface in inha.git.user.api.mapper">UserMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/team/api/controller/dto/response/SearchTeamResponse.html#currentMember()" class="member-name-link">currentMember()</a> - Method in record class inha.git.team.api.controller.dto.response.<a href="inha/git/team/api/controller/dto/response/SearchTeamResponse.html" title="class in inha.git.team.api.controller.dto.response">SearchTeamResponse</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>currentMember</code> record component.</div>
@@ -1963,163 +1911,19 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/question/domain/Question.html#decreaseCommentCount()" class="member-name-link">decreaseCommentCount()</a> - Method in class inha.git.question.domain.<a href="inha/git/question/domain/Question.html" title="class in inha.git.question.domain">Question</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsService.html#decreaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">decreaseCount(User, List&lt;Field&gt;, Semester, Category, Integer)</a> - Method in interface inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsService.html" title="interface in inha.git.statistics.api.service">StatisticsService</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsServiceImpl.html#decreaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">decreaseCount(User, List&lt;Field&gt;, Semester, Category, Integer)</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsServiceImpl</a></dt>
-<dd>
-<div class="block">사용자 통계 정보를 감소시킨다.</div>
-</dd>
 <dt><a href="inha/git/team/domain/Team.html#decreaseCurrentMemberNumber()" class="member-name-link">decreaseCurrentMemberNumber()</a> - Method in class inha.git.team.domain.<a href="inha/git/team/domain/Team.html" title="class in inha.git.team.domain">Team</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseGithubProjectCount()" class="member-name-link">decreaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseGithubProjectCount()" class="member-name-link">decreaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreaseGithubProjectCount()" class="member-name-link">decreaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreasePatentCount()" class="member-name-link">decreasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreasePatentCount()" class="member-name-link">decreasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreasePatentCount()" class="member-name-link">decreasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreasePatentUserCount()" class="member-name-link">decreasePatentUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreasePatentUserCount()" class="member-name-link">decreasePatentUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseProblemCount()" class="member-name-link">decreaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseProblemCount()" class="member-name-link">decreaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreaseProblemCount()" class="member-name-link">decreaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseProblemParticipationCount()" class="member-name-link">decreaseProblemParticipationCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseProblemParticipationCount()" class="member-name-link">decreaseProblemParticipationCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseProblemUserCount()" class="member-name-link">decreaseProblemUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseProblemUserCount()" class="member-name-link">decreaseProblemUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseProjectCount()" class="member-name-link">decreaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseProjectCount()" class="member-name-link">decreaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreaseProjectCount()" class="member-name-link">decreaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseProjectUserCount()" class="member-name-link">decreaseProjectUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseProjectUserCount()" class="member-name-link">decreaseProjectUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseQuestionCount()" class="member-name-link">decreaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseQuestionCount()" class="member-name-link">decreaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreaseQuestionCount()" class="member-name-link">decreaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseQuestionUserCount()" class="member-name-link">decreaseQuestionUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseQuestionUserCount()" class="member-name-link">decreaseQuestionUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/User.html#decreaseReportCount()" class="member-name-link">decreaseReportCount()</a> - Method in class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseTeamCount()" class="member-name-link">decreaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#decrementGithubProjectCount()" class="member-name-link">decrementGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseTeamCount()" class="member-name-link">decreaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#decrementLocalProjectCount()" class="member-name-link">decrementLocalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#decreaseTeamCount()" class="member-name-link">decreaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#decrementProjectParticipation()" class="member-name-link">decrementProjectParticipation()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#decreaseTeamUserCount()" class="member-name-link">decreaseTeamUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#decrementQuestionCount()" class="member-name-link">decrementQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#decreaseTeamUserCount()" class="member-name-link">decreaseTeamUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalGithubProjectCount()" class="member-name-link">decreaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalGithubProjectCount()" class="member-name-link">decreaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalGithubProjectCount()" class="member-name-link">decreaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalGithubProjectCount()" class="member-name-link">decreaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalPatentCount()" class="member-name-link">decreaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalPatentCount()" class="member-name-link">decreaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalPatentCount()" class="member-name-link">decreaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalPatentCount()" class="member-name-link">decreaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalProblemCount()" class="member-name-link">decreaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalProblemCount()" class="member-name-link">decreaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalProblemCount()" class="member-name-link">decreaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalProblemCount()" class="member-name-link">decreaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalProjectCount()" class="member-name-link">decreaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalProjectCount()" class="member-name-link">decreaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalProjectCount()" class="member-name-link">decreaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalProjectCount()" class="member-name-link">decreaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalQuestionCount()" class="member-name-link">decreaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalQuestionCount()" class="member-name-link">decreaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalQuestionCount()" class="member-name-link">decreaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalQuestionCount()" class="member-name-link">decreaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseTotalTeamCount()" class="member-name-link">decreaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseTotalTeamCount()" class="member-name-link">decreaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseTotalTeamCount()" class="member-name-link">decreaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseTotalTeamCount()" class="member-name-link">decreaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseUserPatentCount()" class="member-name-link">decreaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseUserPatentCount()" class="member-name-link">decreaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseUserPatentCount()" class="member-name-link">decreaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseUserPatentCount()" class="member-name-link">decreaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseUserProblemCount()" class="member-name-link">decreaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseUserProblemCount()" class="member-name-link">decreaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseUserProblemCount()" class="member-name-link">decreaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseUserProblemCount()" class="member-name-link">decreaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseUserProjectCount()" class="member-name-link">decreaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseUserProjectCount()" class="member-name-link">decreaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseUserProjectCount()" class="member-name-link">decreaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseUserProjectCount()" class="member-name-link">decreaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseUserQuestionCount()" class="member-name-link">decreaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseUserQuestionCount()" class="member-name-link">decreaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseUserQuestionCount()" class="member-name-link">decreaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseUserQuestionCount()" class="member-name-link">decreaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#decreaseUserTeamCount()" class="member-name-link">decreaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#decreaseUserTeamCount()" class="member-name-link">decreaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#decreaseUserTeamCount()" class="member-name-link">decreaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#decreaseUserTeamCount()" class="member-name-link">decreaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#decrementQuestionParticipation()" class="member-name-link">decrementQuestionParticipation()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/github/api/controller/dto/response/GithubRepositoryResponse.html#defaultBranch()" class="member-name-link">defaultBranch()</a> - Method in record class inha.git.github.api.controller.dto.response.<a href="inha/git/github/api/controller/dto/response/GithubRepositoryResponse.html" title="class in inha.git.github.api.controller.dto.response">GithubRepositoryResponse</a></dt>
 <dd>
@@ -2400,7 +2204,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/department/domain/Department.html#%3Cinit%3E()" class="member-name-link">Department()</a> - Constructor for class inha.git.department.domain.<a href="inha/git/department/domain/Department.html" title="class in inha.git.department.domain">Department</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#DEPARTMENT" class="member-name-link">DEPARTMENT</a> - Enum constant in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#DEPARTMENT" class="member-name-link">DEPARTMENT</a> - Enum constant in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#DEPARTMENT" class="member-name-link">DEPARTMENT</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
@@ -2490,22 +2294,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/department/api/service/DepartmentServiceImpl.html#%3Cinit%3E()" class="member-name-link">DepartmentServiceImpl()</a> - Constructor for class inha.git.department.api.service.<a href="inha/git/department/api/service/DepartmentServiceImpl.html" title="class in inha.git.department.api.service">DepartmentServiceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">DepartmentStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>
-<div class="block">DepartmentStatistics 엔티티는 애플리케이션의 학과별 통계 정보를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#%3Cinit%3E()" class="member-name-link">DepartmentStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/id/DepartmentStatisticsId.html" class="type-name-link" title="class in inha.git.statistics.domain.id">DepartmentStatisticsId</a> - Class in <a href="inha/git/statistics/domain/id/package-summary.html">inha.git.statistics.domain.id</a></dt>
-<dd>
-<div class="block">DepartmentStatisticsId DepartmentStatistics 엔티티의 복합키를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/id/DepartmentStatisticsId.html#%3Cinit%3E()" class="member-name-link">DepartmentStatisticsId()</a> - Constructor for class inha.git.statistics.domain.id.<a href="inha/git/statistics/domain/id/DepartmentStatisticsId.html" title="class in inha.git.statistics.domain.id">DepartmentStatisticsId</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/DepartmentStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">DepartmentStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">DepartmentStatisticsJpaRepository 인터페이스는 학과 통계 정보를 조회하는데 사용됨.</div>
-</dd>
 <dt><a href="inha/git/department/api/mapper/DepartmentMapper.html#departmentsToSearchDepartmentResponses(java.util.List)" class="member-name-link">departmentsToSearchDepartmentResponses(List&lt;Department&gt;)</a> - Method in interface inha.git.department.api.mapper.<a href="inha/git/department/api/mapper/DepartmentMapper.html" title="interface in inha.git.department.api.mapper">DepartmentMapper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/mapper/UserMapper.html#departmentsToSearchDepartmentResponses(java.util.List)" class="member-name-link">departmentsToSearchDepartmentResponses(List&lt;Department&gt;)</a> - Method in interface inha.git.user.api.mapper.<a href="inha/git/user/api/mapper/UserMapper.html" title="interface in inha.git.user.api.mapper">UserMapper</a></dt>
@@ -3225,6 +3013,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Indicates whether some other object is "equal to" this one.</div>
 </dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/request/SearchCond.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class inha.git.statistics.api.controller.dto.request.<a href="inha/git/statistics/api/controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a></dt>
 <dd>
 <div class="block">Indicates whether some other object is "equal to" this one.</div>
@@ -3722,9 +3518,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/domain/repository/SemesterJpaRepository.html#findAllByState(inha.git.common.BaseEntity.State,org.springframework.data.domain.Sort)" class="member-name-link">findAllByState(BaseEntity.State, Sort)</a> - Method in interface inha.git.semester.domain.repository.<a href="inha/git/semester/domain/repository/SemesterJpaRepository.html" title="interface in inha.git.semester.domain.repository">SemesterJpaRepository</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByStateOrderById(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByStateOrderById(BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/team/domain/repository/TeamCommentJpaRepository.html#findAllByTeamPostAndStateOrderByIdAsc(inha.git.team.domain.TeamPost,inha.git.common.BaseEntity.State)" class="member-name-link">findAllByTeamPostAndStateOrderByIdAsc(TeamPost, BaseEntity.State)</a> - Method in interface inha.git.team.domain.repository.<a href="inha/git/team/domain/repository/TeamCommentJpaRepository.html" title="interface in inha.git.team.domain.repository">TeamCommentJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/domain/repository/ProjectPatentJpaRepository.html#findByApplicationNumberAndState(java.lang.String,inha.git.common.BaseEntity.State)" class="member-name-link">findByApplicationNumberAndState(String, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectPatentJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectPatentJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html#findByCategoryIdAndStatisticsType(java.lang.Long,inha.git.statistics.domain.enums.StatisticsType)" class="member-name-link">findByCategoryIdAndStatisticsType(Long, StatisticsType)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/college/domain/repository/CollegeJpaRepository.html#findByDepartments_IdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByDepartments_IdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.college.domain.repository.<a href="inha/git/college/domain/repository/CollegeJpaRepository.html" title="interface in inha.git.college.domain.repository">CollegeJpaRepository</a></dt>
 <dd>&nbsp;</dd>
@@ -3734,6 +3534,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">사용자명과 상태를 기반으로 사용자를 찾음.</div>
 </dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html#findByFieldIdAndStatisticsType(java.lang.Long,inha.git.statistics.domain.enums.StatisticsType)" class="member-name-link">findByFieldIdAndStatisticsType(Long, StatisticsType)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/bug_report/domain/repository/BugReportJpaRepository.html#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.bug_report.domain.repository.<a href="inha/git/bug_report/domain/repository/BugReportJpaRepository.html" title="interface in inha.git.bug_report.domain.repository">BugReportJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/category/domain/repository/CategoryJpaRepository.html#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.category.domain.repository.<a href="inha/git/category/domain/repository/CategoryJpaRepository.html" title="interface in inha.git.category.domain.repository">CategoryJpaRepository</a></dt>
@@ -3834,11 +3636,15 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/mapping/domain/repository/QuestionFieldJpaRepository.html#findByQuestionAndFieldId(inha.git.question.domain.Question,java.lang.Integer)" class="member-name-link">findByQuestionAndFieldId(Question, Integer)</a> - Method in interface inha.git.mapping.domain.repository.<a href="inha/git/mapping/domain/repository/QuestionFieldJpaRepository.html" title="interface in inha.git.mapping.domain.repository">QuestionFieldJpaRepository</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html#findBySemesterIdAndStatisticsType(java.lang.Long,inha.git.statistics.domain.enums.StatisticsType)" class="member-name-link">findBySemesterIdAndStatisticsType(Long, StatisticsType)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html#findByStatisticsTypeAndTargetId(inha.git.statistics.domain.enums.StatisticsType,java.lang.Long)" class="member-name-link">findByStatisticsTypeAndTargetId(StatisticsType, Long)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html#findByStatisticsTypeAndTargetIdAndSemesterIdAndFieldIdAndCategoryIdWithPessimisticLock(inha.git.statistics.domain.enums.StatisticsType,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long)" class="member-name-link">findByStatisticsTypeAndTargetIdAndSemesterIdAndFieldIdAndCategoryIdWithPessimisticLock(StatisticsType, Long, Long, Long, Long)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/mapping/domain/repository/TeamUserJpaRepository.html#findByTeam(inha.git.team.domain.Team)" class="member-name-link">findByTeam(Team)</a> - Method in interface inha.git.mapping.domain.repository.<a href="inha/git/mapping/domain/repository/TeamUserJpaRepository.html" title="interface in inha.git.mapping.domain.repository">TeamUserJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/mapping/domain/repository/TeamUserJpaRepository.html#findByTeamAndAcceptedAtIsNull(inha.git.team.domain.Team,org.springframework.data.domain.Pageable)" class="member-name-link">findByTeamAndAcceptedAtIsNull(Team, Pageable)</a> - Method in interface inha.git.mapping.domain.repository.<a href="inha/git/mapping/domain/repository/TeamUserJpaRepository.html" title="interface in inha.git.mapping.domain.repository">TeamUserJpaRepository</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html#findByUser(inha.git.user.domain.User)" class="member-name-link">findByUser(User)</a> - Method in interface inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/team/domain/repository/TeamJpaRepository.html#findByUserAndStateOrderByCreatedAtDesc(inha.git.user.domain.User,inha.git.common.BaseEntity.State)" class="member-name-link">findByUserAndStateOrderByCreatedAtDesc(User, BaseEntity.State)</a> - Method in interface inha.git.team.domain.repository.<a href="inha/git/team/domain/repository/TeamJpaRepository.html" title="interface in inha.git.team.domain.repository">TeamJpaRepository</a></dt>
 <dd>&nbsp;</dd>
@@ -4181,6 +3987,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">학과 목록을 조회합니다.</div>
 </dd>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#getDescription()" class="member-name-link">getDescription()</a> - Method in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/exceptions/BaseException.html#getErrorReason()" class="member-name-link">getErrorReason()</a> - Method in exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/exceptions/BaseException.html#getErrorReasonHttpStatus()" class="member-name-link">getErrorReasonHttpStatus()</a> - Method in exception inha.git.common.exceptions.<a href="inha/git/common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></dt>
@@ -4213,6 +4021,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">사용자의 Github 레포지토리 목록을 조회합니다.</div>
 </dd>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#getIdColumnName()" class="member-name-link">getIdColumnName()</a> - Method in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/utils/jwt/JwtProvider.html#getIssuedAt(java.lang.String)" class="member-name-link">getIssuedAt(String)</a> - Method in class inha.git.utils.jwt.<a href="inha/git/utils/jwt/JwtProvider.html" title="class in inha.git.utils.jwt">JwtProvider</a></dt>
 <dd>
 <div class="block">토큰 발급 시간을 반환.</div>
@@ -4273,8 +4083,6 @@ loadScripts(document, 'script');</script>
  나중에 mapper 쓰는 것으로 변경해야함</div>
 </dd>
 <dt><a href="inha/git/user/domain/User.html#getPassword()" class="member-name-link">getPassword()</a> - Method in class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#getPrefix()" class="member-name-link">getPrefix()</a> - Method in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/problem/api/controller/ProblemController.html#getProblem(java.lang.Integer)" class="member-name-link">getProblem(Integer)</a> - Method in class inha.git.problem.api.controller.<a href="inha/git/problem/api/controller/ProblemController.html" title="class in inha.git.problem.api.controller">ProblemController</a></dt>
 <dd>
@@ -4363,9 +4171,7 @@ loadScripts(document, 'script');</script>
 <div class="block">프로젝트 통계 정보를 조회한다.</div>
 </dd>
 <dt><a href="inha/git/statistics/domain/repository/ProjectStatisticsQueryRepository.html#getProjectStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getProjectStatistics(SearchCond)</a> - Method in class inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/ProjectStatisticsQueryRepository.html" title="class in inha.git.statistics.domain.repository">ProjectStatisticsQueryRepository</a></dt>
-<dd>
-<div class="block">프로젝트 통계 조회</div>
-</dd>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/question/api/controller/QuestionController.html#getQuestion(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getQuestion(User, Integer)</a> - Method in class inha.git.question.api.controller.<a href="inha/git/question/api/controller/QuestionController.html" title="class in inha.git.question.api.controller">QuestionController</a></dt>
 <dd>
 <div class="block">질문 상세 조회 API</div>
@@ -4524,6 +4330,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">팀 게시글 목록 조회</div>
 </dd>
+<dt><a href="inha/git/statistics/domain/Statistics.html#getTotalProjectCount()" class="member-name-link">getTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/controller/dto/response/SearchDirectoryResponse.html#getType()" class="member-name-link">getType()</a> - Method in record class inha.git.project.api.controller.dto.response.<a href="inha/git/project/api/controller/dto/response/SearchDirectoryResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchDirectoryResponse</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/controller/dto/response/SearchFileDetailResponse.html#getType()" class="member-name-link">getType()</a> - Method in record class inha.git.project.api.controller.dto.response.<a href="inha/git/project/api/controller/dto/response/SearchFileDetailResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchFileDetailResponse</a></dt>
@@ -4664,6 +4472,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/github/api/controller/GithubController.html#%3Cinit%3E()" class="member-name-link">GithubController()</a> - Constructor for class inha.git.github.api.controller.<a href="inha/git/github/api/controller/GithubController.html" title="class in inha.git.github.api.controller">GithubController</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#githubCount()" class="member-name-link">githubCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>githubCount</code> record component.</div>
+</dd>
 <dt><a href="inha/git/github/api/controller/dto/response/GithubFileContentResponse.html" class="type-name-link" title="class in inha.git.github.api.controller.dto.response">GithubFileContentResponse</a> - Record Class in <a href="inha/git/github/api/controller/dto/response/package-summary.html">inha.git.github.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/github/api/controller/dto/response/GithubFileContentResponse.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">GithubFileContentResponse(String, String, String, String)</a> - Constructor for record class inha.git.github.api.controller.dto.response.<a href="inha/git/github/api/controller/dto/response/GithubFileContentResponse.html" title="class in inha.git.github.api.controller.dto.response">GithubFileContentResponse</a></dt>
@@ -4678,6 +4490,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/github/api/mapper/GithubMapper.html" class="type-name-link" title="interface in inha.git.github.api.mapper">GithubMapper</a> - Interface in <a href="inha/git/github/api/mapper/package-summary.html">inha.git.github.api.mapper</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#githubProjectCount()" class="member-name-link">githubProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>githubProjectCount</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#githubProjectCount()" class="member-name-link">githubProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>githubProjectCount</code> record component.</div>
@@ -5297,6 +5113,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns a hash code value for this object.</div>
 </dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/request/SearchCond.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class inha.git.statistics.api.controller.dto.request.<a href="inha/git/statistics/api/controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a></dt>
 <dd>
 <div class="block">Returns a hash code value for this object.</div>
@@ -5465,8 +5289,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns a hash code value for this object.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/repository/StatisticsExcelQueryRepository.html#hasNonZeroStatistics(inha.git.statistics.domain.StatisticsType,java.lang.Integer)" class="member-name-link">hasNonZeroStatistics(StatisticsType, Integer)</a> - Method in class inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsExcelQueryRepository.html" title="class in inha.git.statistics.domain.repository">StatisticsExcelQueryRepository</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#HEADER_AUTHORIZATION" class="member-name-link">HEADER_AUTHORIZATION</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/HomeStatisticsResponse.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.response">HomeStatisticsResponse</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/response/package-summary.html">inha.git.statistics.api.controller.dto.response</a></dt>
@@ -5848,163 +5670,19 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/question/domain/Question.html#increaseCommentCount()" class="member-name-link">increaseCommentCount()</a> - Method in class inha.git.question.domain.<a href="inha/git/question/domain/Question.html" title="class in inha.git.question.domain">Question</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsService.html#increaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">increaseCount(User, List&lt;Field&gt;, Semester, Category, Integer)</a> - Method in interface inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsService.html" title="interface in inha.git.statistics.api.service">StatisticsService</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsServiceImpl.html#increaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">increaseCount(User, List&lt;Field&gt;, Semester, Category, Integer)</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsServiceImpl</a></dt>
-<dd>
-<div class="block">사용자 통계 정보를 증가시킨다.</div>
-</dd>
 <dt><a href="inha/git/team/domain/Team.html#increaseCurrentMemberNumber()" class="member-name-link">increaseCurrentMemberNumber()</a> - Method in class inha.git.team.domain.<a href="inha/git/team/domain/Team.html" title="class in inha.git.team.domain">Team</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseGithubProjectCount()" class="member-name-link">increaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseGithubProjectCount()" class="member-name-link">increaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increaseGithubProjectCount()" class="member-name-link">increaseGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increasePatentCount()" class="member-name-link">increasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increasePatentCount()" class="member-name-link">increasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increasePatentCount()" class="member-name-link">increasePatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increasePatentUserCount()" class="member-name-link">increasePatentUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increasePatentUserCount()" class="member-name-link">increasePatentUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseProblemCount()" class="member-name-link">increaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseProblemCount()" class="member-name-link">increaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increaseProblemCount()" class="member-name-link">increaseProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseProblemParticipationCount()" class="member-name-link">increaseProblemParticipationCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseProblemParticipationCount()" class="member-name-link">increaseProblemParticipationCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseProblemUserCount()" class="member-name-link">increaseProblemUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseProblemUserCount()" class="member-name-link">increaseProblemUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseProjectCount()" class="member-name-link">increaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseProjectCount()" class="member-name-link">increaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increaseProjectCount()" class="member-name-link">increaseProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseProjectUserCount()" class="member-name-link">increaseProjectUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseProjectUserCount()" class="member-name-link">increaseProjectUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseQuestionCount()" class="member-name-link">increaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseQuestionCount()" class="member-name-link">increaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increaseQuestionCount()" class="member-name-link">increaseQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseQuestionUserCount()" class="member-name-link">increaseQuestionUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseQuestionUserCount()" class="member-name-link">increaseQuestionUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/User.html#increaseReportCount()" class="member-name-link">increaseReportCount()</a> - Method in class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseTeamCount()" class="member-name-link">increaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#incrementGithubProjectCount()" class="member-name-link">incrementGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseTeamCount()" class="member-name-link">increaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#incrementLocalProjectCount()" class="member-name-link">incrementLocalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#increaseTeamCount()" class="member-name-link">increaseTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#incrementProjectParticipation()" class="member-name-link">incrementProjectParticipation()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/CollegeStatistics.html#increaseTeamUserCount()" class="member-name-link">increaseTeamUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/CollegeStatistics.html" title="class in inha.git.statistics.domain">CollegeStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#incrementQuestionCount()" class="member-name-link">incrementQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/DepartmentStatistics.html#increaseTeamUserCount()" class="member-name-link">increaseTeamUserCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/DepartmentStatistics.html" title="class in inha.git.statistics.domain">DepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalGithubProjectCount()" class="member-name-link">increaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalGithubProjectCount()" class="member-name-link">increaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalGithubProjectCount()" class="member-name-link">increaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalGithubProjectCount()" class="member-name-link">increaseTotalGithubProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalPatentCount()" class="member-name-link">increaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalPatentCount()" class="member-name-link">increaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalPatentCount()" class="member-name-link">increaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalPatentCount()" class="member-name-link">increaseTotalPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalProblemCount()" class="member-name-link">increaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalProblemCount()" class="member-name-link">increaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalProblemCount()" class="member-name-link">increaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalProblemCount()" class="member-name-link">increaseTotalProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalProjectCount()" class="member-name-link">increaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalProjectCount()" class="member-name-link">increaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalProjectCount()" class="member-name-link">increaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalProjectCount()" class="member-name-link">increaseTotalProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalQuestionCount()" class="member-name-link">increaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalQuestionCount()" class="member-name-link">increaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalQuestionCount()" class="member-name-link">increaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalQuestionCount()" class="member-name-link">increaseTotalQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseTotalTeamCount()" class="member-name-link">increaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseTotalTeamCount()" class="member-name-link">increaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseTotalTeamCount()" class="member-name-link">increaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseTotalTeamCount()" class="member-name-link">increaseTotalTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseUserPatentCount()" class="member-name-link">increaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseUserPatentCount()" class="member-name-link">increaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseUserPatentCount()" class="member-name-link">increaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseUserPatentCount()" class="member-name-link">increaseUserPatentCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseUserProblemCount()" class="member-name-link">increaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseUserProblemCount()" class="member-name-link">increaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseUserProblemCount()" class="member-name-link">increaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseUserProblemCount()" class="member-name-link">increaseUserProblemCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseUserProjectCount()" class="member-name-link">increaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseUserProjectCount()" class="member-name-link">increaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseUserProjectCount()" class="member-name-link">increaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseUserProjectCount()" class="member-name-link">increaseUserProjectCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseUserQuestionCount()" class="member-name-link">increaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseUserQuestionCount()" class="member-name-link">increaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseUserQuestionCount()" class="member-name-link">increaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseUserQuestionCount()" class="member-name-link">increaseUserQuestionCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#increaseUserTeamCount()" class="member-name-link">increaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#increaseUserTeamCount()" class="member-name-link">increaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#increaseUserTeamCount()" class="member-name-link">increaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#increaseUserTeamCount()" class="member-name-link">increaseUserTeamCount()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
+<dt><a href="inha/git/statistics/domain/Statistics.html#incrementQuestionParticipation()" class="member-name-link">incrementQuestionParticipation()</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/package-summary.html">inha.git</a> - package inha.git</dt>
 <dd>&nbsp;</dd>
@@ -6268,6 +5946,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/package-summary.html">inha.git.statistics.api.controller</a> - package inha.git.statistics.api.controller</dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/package-summary.html">inha.git.statistics.api.controller.dto.data</a> - package inha.git.statistics.api.controller.dto.data</dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/request/package-summary.html">inha.git.statistics.api.controller.dto.request</a> - package inha.git.statistics.api.controller.dto.request</dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/package-summary.html">inha.git.statistics.api.controller.dto.response</a> - package inha.git.statistics.api.controller.dto.response</dt>
@@ -6278,7 +5958,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a> - package inha.git.statistics.domain</dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/id/package-summary.html">inha.git.statistics.domain.id</a> - package inha.git.statistics.domain.id</dt>
+<dt><a href="inha/git/statistics/domain/enums/package-summary.html">inha.git.statistics.domain.enums</a> - package inha.git.statistics.domain.enums</dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a> - package inha.git.statistics.domain.repository</dt>
 <dd>&nbsp;</dd>
@@ -6378,6 +6058,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">500 :  Database, Server 오류</div>
 </dd>
+<dt><a href="inha/git/common/code/status/ErrorStatus.html#INVALID_ACTION_TYPE" class="member-name-link">INVALID_ACTION_TYPE</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#INVALID_APPLICATION_NUMBER" class="member-name-link">INVALID_APPLICATION_NUMBER</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#INVALID_EMAIL_DOMAIN" class="member-name-link">INVALID_EMAIL_DOMAIN</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
@@ -6723,6 +6405,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/common/Constant.html#LOCAL_PROJECT_COUNT" class="member-name-link">LOCAL_PROJECT_COUNT</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#localCount()" class="member-name-link">localCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>localCount</code> record component.</div>
+</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#localProjectCount()" class="member-name-link">localProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>localProjectCount</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#localProjectCount()" class="member-name-link">localProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>localProjectCount</code> record component.</div>
@@ -6878,6 +6568,12 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/validation/annotation/ValidUserNumber.html#message()" class="member-name-link">message()</a> - Element in annotation interface inha.git.common.validation.annotation.<a href="inha/git/common/validation/annotation/ValidUserNumber.html" title="annotation interface in inha.git.common.validation.annotation">ValidUserNumber</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsMigrationService.html#migrateProjectStatistics()" class="member-name-link">migrateProjectStatistics()</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsMigrationService.html" title="class in inha.git.statistics.api.service">StatisticsMigrationService</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/StatisticsController.html#migrateStatistics()" class="member-name-link">migrateStatistics()</a> - Method in class inha.git.statistics.api.controller.<a href="inha/git/statistics/api/controller/StatisticsController.html" title="class in inha.git.statistics.api.controller">StatisticsController</a></dt>
+<dd>
+<div class="block">통계 마이그레이션 API</div>
+</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#MISSING_AUTH_HEADER" class="member-name-link">MISSING_AUTH_HEADER</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/utils/s3/S3Provider.html#multipartFileUpload(org.springframework.web.multipart.MultipartFile,inha.git.utils.s3.dto.S3UploadRequest)" class="member-name-link">multipartFileUpload(MultipartFile, S3UploadRequest)</a> - Method in class inha.git.utils.s3.<a href="inha/git/utils/s3/S3Provider.html" title="class in inha.git.utils.s3">S3Provider</a></dt>
@@ -7351,27 +7047,11 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/SuccessStatus.html#PATENT_SEARCH_SUCCESS" class="member-name-link">PATENT_SEARCH_SUCCESS</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/SuccessStatus.html" title="enum class in inha.git.common.code.status">SuccessStatus</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#patentProjectCount()" class="member-name-link">patentProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
-<dd>
-<div class="block">Returns the value of the <code>patentProjectCount</code> record component.</div>
-</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html#patentProjectCount()" class="member-name-link">patentProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></dt>
-<dd>
-<div class="block">Returns the value of the <code>patentProjectCount</code> record component.</div>
-</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html#patentProjectCount()" class="member-name-link">patentProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html" title="class in inha.git.statistics.api.controller.dto.response">SemesterStatistics</a></dt>
-<dd>
-<div class="block">Returns the value of the <code>patentProjectCount</code> record component.</div>
-</dd>
 <dt><a href="inha/git/project/api/controller/dto/response/PatentResponse.html" class="type-name-link" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a> - Record Class in <a href="inha/git/project/api/controller/dto/response/package-summary.html">inha.git.project.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/controller/dto/response/PatentResponse.html#%3Cinit%3E(java.lang.Integer)" class="member-name-link">PatentResponse(Integer)</a> - Constructor for record class inha.git.project.api.controller.dto.response.<a href="inha/git/project/api/controller/dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>PatentResponse</code> record class.</div>
-</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html#patentUserCount()" class="member-name-link">patentUserCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></dt>
-<dd>
-<div class="block">Returns the value of the <code>patentUserCount</code> record component.</div>
 </dd>
 <dt><a href="inha/git/github/api/controller/dto/response/GithubFileContentResponse.html#path()" class="member-name-link">path()</a> - Method in record class inha.git.github.api.controller.dto.response.<a href="inha/git/github/api/controller/dto/response/GithubFileContentResponse.html" title="class in inha.git.github.api.controller.dto.response">GithubFileContentResponse</a></dt>
 <dd>
@@ -8071,7 +7751,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/response/package-summary.html">inha.git.statistics.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html#%3Cinit%3E(inha.git.college.controller.dto.response.SearchCollegeResponse,inha.git.admin.api.controller.dto.response.SearchDepartmentResponse,inha.git.field.api.controller.dto.response.SearchFieldResponse,inha.git.semester.controller.dto.response.SearchSemesterResponse,inha.git.category.controller.dto.response.SearchCategoryResponse,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">ProjectStatisticsResponse(SearchCollegeResponse, SearchDepartmentResponse, SearchFieldResponse, SearchSemesterResponse, SearchCategoryResponse, Integer, Integer, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html#%3Cinit%3E(inha.git.college.controller.dto.response.SearchCollegeResponse,inha.git.admin.api.controller.dto.response.SearchDepartmentResponse,inha.git.field.api.controller.dto.response.SearchFieldResponse,inha.git.semester.controller.dto.response.SearchSemesterResponse,inha.git.category.controller.dto.response.SearchCategoryResponse,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">ProjectStatisticsResponse(SearchCollegeResponse, SearchDepartmentResponse, SearchFieldResponse, SearchSemesterResponse, SearchCategoryResponse, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>ProjectStatisticsResponse</code> record class.</div>
 </dd>
@@ -8282,6 +7962,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/question/api/controller/QuestionController.html#%3Cinit%3E()" class="member-name-link">QuestionController()</a> - Constructor for class inha.git.question.api.controller.<a href="inha/git/question/api/controller/QuestionController.html" title="class in inha.git.question.api.controller">QuestionController</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#questionCount()" class="member-name-link">questionCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>questionCount</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#questionCount()" class="member-name-link">questionCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>questionCount</code> record component.</div>
@@ -9268,6 +8952,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/semester/controller/SemesterController.html#%3Cinit%3E()" class="member-name-link">SemesterController()</a> - Constructor for class inha.git.semester.controller.<a href="inha/git/semester/controller/SemesterController.html" title="class in inha.git.semester.controller">SemesterController</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#semesterId()" class="member-name-link">semesterId()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>semesterId</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#semesterId()" class="member-name-link">semesterId()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>semesterId</code> record component.</div>
@@ -9336,7 +9024,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.response">SemesterStatistics</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/response/package-summary.html">inha.git.statistics.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html#%3Cinit%3E(inha.git.semester.controller.dto.response.SearchSemesterResponse,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">SemesterStatistics(SearchSemesterResponse, Integer, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html" title="class in inha.git.statistics.api.controller.dto.response">SemesterStatistics</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html#%3Cinit%3E(inha.git.semester.controller.dto.response.SearchSemesterResponse,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">SemesterStatistics(SearchSemesterResponse, Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html" title="class in inha.git.statistics.api.controller.dto.response">SemesterStatistics</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>SemesterStatistics</code> record class.</div>
 </dd>
@@ -9414,6 +9102,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/mapping/domain/ProjectField.html#setProject(inha.git.project.domain.Project)" class="member-name-link">setProject(Project)</a> - Method in class inha.git.mapping.domain.<a href="inha/git/mapping/domain/ProjectField.html" title="class in inha.git.mapping.domain">ProjectField</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/Statistics.html#setProjectParticipationCount(int)" class="member-name-link">setProjectParticipationCount(int)</a> - Method in class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/project/domain/Project.html#setProjectPatentId(java.lang.Integer)" class="member-name-link">setProjectPatentId(Integer)</a> - Method in class inha.git.project.domain.<a href="inha/git/project/domain/Project.html" title="class in inha.git.project.domain">Project</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/User.html#setProssor(inha.git.user.domain.Professor)" class="member-name-link">setProssor(Professor)</a> - Method in class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
@@ -9452,16 +9142,22 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the value of the <code>state</code> record component.</div>
 </dd>
+<dt><a href="inha/git/statistics/domain/Statistics.html" class="type-name-link" title="class in inha.git.statistics.domain">Statistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
+<dd>
+<div class="block">Statistics 엔티티는 애플리케이션의 통계 정보를 나타냄.</div>
+</dd>
+<dt><a href="inha/git/statistics/domain/Statistics.html#%3Cinit%3E()" class="member-name-link">Statistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/Statistics.html" title="class in inha.git.statistics.domain">Statistics</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/StatisticsController.html" class="type-name-link" title="class in inha.git.statistics.api.controller">StatisticsController</a> - Class in <a href="inha/git/statistics/api/controller/package-summary.html">inha.git.statistics.api.controller</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/controller/StatisticsController.html#%3Cinit%3E()" class="member-name-link">StatisticsController()</a> - Constructor for class inha.git.statistics.api.controller.<a href="inha/git/statistics/api/controller/StatisticsController.html" title="class in inha.git.statistics.api.controller">StatisticsController</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/StatisticsExcelQueryRepository.html" class="type-name-link" title="class in inha.git.statistics.domain.repository">StatisticsExcelQueryRepository</a> - Class in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">StatisticsExcelQueryRepository 통계 쿼리를 처리하는 레포지토리.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/repository/StatisticsExcelQueryRepository.html#%3Cinit%3E()" class="member-name-link">StatisticsExcelQueryRepository()</a> - Constructor for class inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/StatisticsExcelQueryRepository.html" title="class in inha.git.statistics.domain.repository">StatisticsExcelQueryRepository</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" class="type-name-link" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a> - Record Class in <a href="inha/git/statistics/api/controller/dto/data/package-summary.html">inha.git.statistics.api.controller.dto.data</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#%3Cinit%3E(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">StatisticsCounts(Integer, Integer, Integer, Integer)</a> - Constructor for record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>StatisticsCounts</code> record class.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsExcelService.html" class="type-name-link" title="interface in inha.git.statistics.api.service">StatisticsExcelService</a> - Interface in <a href="inha/git/statistics/api/service/package-summary.html">inha.git.statistics.api.service</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html" class="type-name-link" title="class in inha.git.statistics.api.service">StatisticsExcelServiceImpl</a> - Class in <a href="inha/git/statistics/api/service/package-summary.html">inha.git.statistics.api.service</a></dt>
@@ -9470,10 +9166,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html#%3Cinit%3E()" class="member-name-link">StatisticsExcelServiceImpl()</a> - Constructor for class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsExcelServiceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/repository/StatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">StatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html" class="type-name-link" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a> - Interface in <a href="inha/git/statistics/api/mapper/package-summary.html">inha.git.statistics.api.mapper</a></dt>
 <dd>
 <div class="block">StatisticsMapper는 Statistics 엔티티와 관련된 데이터 변환 기능을 제공.</div>
 </dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsMigrationService.html" class="type-name-link" title="class in inha.git.statistics.api.service">StatisticsMigrationService</a> - Class in <a href="inha/git/statistics/api/service/package-summary.html">inha.git.statistics.api.service</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsMigrationService.html#%3Cinit%3E()" class="member-name-link">StatisticsMigrationService()</a> - Constructor for class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsMigrationService.html" title="class in inha.git.statistics.api.service">StatisticsMigrationService</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsService.html" class="type-name-link" title="interface in inha.git.statistics.api.service">StatisticsService</a> - Interface in <a href="inha/git/statistics/api/service/package-summary.html">inha.git.statistics.api.service</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsServiceImpl.html" class="type-name-link" title="class in inha.git.statistics.api.service">StatisticsServiceImpl</a> - Class in <a href="inha/git/statistics/api/service/package-summary.html">inha.git.statistics.api.service</a></dt>
@@ -9482,7 +9184,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/statistics/api/service/StatisticsServiceImpl.html#%3Cinit%3E()" class="member-name-link">StatisticsServiceImpl()</a> - Constructor for class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsServiceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html" class="type-name-link" title="enum class in inha.git.statistics.domain">StatisticsType</a> - Enum Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html" class="type-name-link" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a> - Enum Class in <a href="inha/git/statistics/domain/enums/package-summary.html">inha.git.statistics.domain.enums</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/notice/api/controller/dto/response/SearchNoticeAttachmentResponse.html#storedFileUrl()" class="member-name-link">storedFileUrl()</a> - Method in record class inha.git.notice.api.controller.dto.response.<a href="inha/git/notice/api/controller/dto/response/SearchNoticeAttachmentResponse.html" title="class in inha.git.notice.api.controller.dto.response">SearchNoticeAttachmentResponse</a></dt>
 <dd>
@@ -10081,8 +9783,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/github/api/mapper/GithubMapper.html#toDto(org.kohsuke.github.GHRepository)" class="member-name-link">toDto(GHRepository)</a> - Method in interface inha.git.github.api.mapper.<a href="inha/git/github/api/mapper/GithubMapper.html" title="interface in inha.git.github.api.mapper">GithubMapper</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html#toHomeStatisticsResponse(inha.git.department.domain.Department,inha.git.statistics.domain.DepartmentStatistics)" class="member-name-link">toHomeStatisticsResponse(Department, DepartmentStatistics)</a> - Method in interface inha.git.statistics.api.mapper.<a href="inha/git/statistics/api/mapper/StatisticsMapper.html" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/Constant.html#TOKEN" class="member-name-link">TOKEN</a> - Static variable in class inha.git.common.<a href="inha/git/common/Constant.html" title="class in inha.git.common">Constant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#TOKEN_NOT_FOUND" class="member-name-link">TOKEN_NOT_FOUND</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
@@ -10103,8 +9803,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/mapper/ProjectMapper.html#toPatentResponse(inha.git.project.domain.ProjectPatent)" class="member-name-link">toPatentResponse(ProjectPatent)</a> - Method in interface inha.git.project.api.mapper.<a href="inha/git/project/api/mapper/ProjectMapper.html" title="interface in inha.git.project.api.mapper">ProjectMapper</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html#toProblemStatisticsResponse(java.lang.Integer,java.lang.Integer)" class="member-name-link">toProblemStatisticsResponse(Integer, Integer)</a> - Method in interface inha.git.statistics.api.mapper.<a href="inha/git/statistics/api/mapper/StatisticsMapper.html" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/mapper/ProjectMapper.html#toProjectComment(inha.git.project.api.controller.dto.request.CreateCommentRequest,inha.git.user.domain.User,inha.git.project.domain.Project)" class="member-name-link">toProjectComment(CreateCommentRequest, User, Project)</a> - Method in interface inha.git.project.api.mapper.<a href="inha/git/project/api/mapper/ProjectMapper.html" title="interface in inha.git.project.api.mapper">ProjectMapper</a></dt>
 <dd>
 <div class="block">ProjectComment 엔티티 생성</div>
@@ -10115,8 +9813,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">ProjectReplyComment 엔티티 생성</div>
 </dd>
-<dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html#toProjectStatisticsResponse(java.lang.Integer,java.lang.Integer)" class="member-name-link">toProjectStatisticsResponse(Integer, Integer)</a> - Method in interface inha.git.statistics.api.mapper.<a href="inha/git/statistics/api/mapper/StatisticsMapper.html" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/question/api/mapper/QuestionMapper.html#toQuestionComment(inha.git.question.api.controller.dto.request.CreateCommentRequest,inha.git.user.domain.User,inha.git.question.domain.Question)" class="member-name-link">toQuestionComment(CreateCommentRequest, User, Question)</a> - Method in interface inha.git.question.api.mapper.<a href="inha/git/question/api/mapper/QuestionMapper.html" title="interface in inha.git.question.api.mapper">QuestionMapper</a></dt>
 <dd>
 <div class="block">CreateCommentRequest를 QuestionComment로 변환합니다.</div>
@@ -10125,8 +9821,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">CreateReplyCommentRequest를 QuestionReplyComment로 변환합니다.</div>
 </dd>
-<dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html#toQuestionStatisticsResponse(java.lang.Integer,java.lang.Integer)" class="member-name-link">toQuestionStatisticsResponse(Integer, Integer)</a> - Method in interface inha.git.statistics.api.mapper.<a href="inha/git/statistics/api/mapper/StatisticsMapper.html" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/mapper/ProjectMapper.html#toReplyCommentResponse(inha.git.project.domain.ProjectReplyComment)" class="member-name-link">toReplyCommentResponse(ProjectReplyComment)</a> - Method in interface inha.git.project.api.mapper.<a href="inha/git/project/api/mapper/ProjectMapper.html" title="interface in inha.git.project.api.mapper">ProjectMapper</a></dt>
 <dd>
 <div class="block">ProjectReplyComment 엔티티를 ReplyCommentResponse로 변환</div>
@@ -10691,6 +10385,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns a string representation of this record class.</div>
 </dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#toString()" class="member-name-link">toString()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#toString()" class="member-name-link">toString()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/request/SearchCond.html#toString()" class="member-name-link">toString()</a> - Method in record class inha.git.statistics.api.controller.dto.request.<a href="inha/git/statistics/api/controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a></dt>
 <dd>
 <div class="block">Returns a string representation of this record class.</div>
@@ -10859,7 +10561,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns a string representation of this record class.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#TOTAL" class="member-name-link">TOTAL</a> - Enum constant in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#TOTAL" class="member-name-link">TOTAL</a> - Enum constant in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#TOTAL_COLLEGE_STATISTICS_NOT_FOUND" class="member-name-link">TOTAL_COLLEGE_STATISTICS_NOT_FOUND</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
@@ -10871,25 +10573,13 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#TOTAL_STATISTICS_NOT_FOUND" class="member-name-link">TOTAL_STATISTICS_NOT_FOUND</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#totalCount()" class="member-name-link">totalCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
 <dd>
-<div class="block">TotalCollegeStatistics 엔티티는 애플리케이션의 전체 통계 정보를 나타냄.</div>
+<div class="block">Returns the value of the <code>totalCount</code> record component.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/TotalCollegeStatistics.html#%3Cinit%3E()" class="member-name-link">TotalCollegeStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalCollegeStatistics.html" title="class in inha.git.statistics.domain">TotalCollegeStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/TotalCollegeStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">TotalCollegeStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
+<dt><a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html#totalProjectCount()" class="member-name-link">totalProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.data">CollegeStatisticsData</a></dt>
 <dd>
-<div class="block">TotalCollegeStatisticsJpaRepository는 단과대별 통계 정보를 조회하는 JPA 레포지토리.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>
-<div class="block">TotalStatistics 엔티티는 애플리케이션의 전체 통계 정보를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/TotalDepartmentStatistics.html#%3Cinit%3E()" class="member-name-link">TotalDepartmentStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalDepartmentStatistics.html" title="class in inha.git.statistics.domain">TotalDepartmentStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/TotalDepartmentStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">TotalDepartmentStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">TotalDepartmentStatisticsJpaRepository 학과별 통계 정보를 조회하는 JPA 레포지토리.</div>
+<div class="block">Returns the value of the <code>totalProjectCount</code> record component.</div>
 </dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html#totalProjectCount()" class="member-name-link">totalProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/CollegeStatisticsData.html" title="class in inha.git.statistics.api.controller.dto.response">CollegeStatisticsData</a></dt>
 <dd>
@@ -10902,16 +10592,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html#totalProjectCount()" class="member-name-link">totalProjectCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/SemesterStatistics.html" title="class in inha.git.statistics.api.controller.dto.response">SemesterStatistics</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>totalProjectCount</code> record component.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">TotalUserStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>
-<div class="block">TotalStatistics 엔티티는 애플리케이션의 전체 통계 정보를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/TotalUserStatistics.html#%3Cinit%3E()" class="member-name-link">TotalUserStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/TotalUserStatistics.html" title="class in inha.git.statistics.domain">TotalUserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/TotalUserStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">TotalUserStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">TotalUserStatisticsJpaRepository는 사용자별 통계 정보를 조회하는 JPA 레포지토리.</div>
 </dd>
 <dt><a href="inha/git/team/api/mapper/TeamMapper.html#toTeamComment(inha.git.team.api.controller.dto.request.CreateCommentRequest,inha.git.user.domain.User,inha.git.team.domain.TeamPost)" class="member-name-link">toTeamComment(CreateCommentRequest, User, TeamPost)</a> - Method in interface inha.git.team.api.mapper.<a href="inha/git/team/api/mapper/TeamMapper.html" title="interface in inha.git.team.api.mapper">TeamMapper</a></dt>
 <dd>
@@ -10929,8 +10609,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">팀 대댓글을 TeamReplyCommentResponse로 변환.</div>
 </dd>
-<dt><a href="inha/git/statistics/api/mapper/StatisticsMapper.html#toTeamStatisticsResponse(java.lang.Integer,java.lang.Integer)" class="member-name-link">toTeamStatisticsResponse(Integer, Integer)</a> - Method in interface inha.git.statistics.api.mapper.<a href="inha/git/statistics/api/mapper/StatisticsMapper.html" title="interface in inha.git.statistics.api.mapper">StatisticsMapper</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/mapper/UserMapper.html#toUserResponse(inha.git.user.domain.User)" class="member-name-link">toUserResponse(User)</a> - Method in interface inha.git.user.api.mapper.<a href="inha/git/user/api/mapper/UserMapper.html" title="interface in inha.git.user.api.mapper">UserMapper</a></dt>
 <dd>
 <div class="block">User 엔티티를 UserResponse로 변환하는 메서드 정의</div>
@@ -11363,6 +11041,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/domain/User.html#%3Cinit%3E()" class="member-name-link">User()</a> - Constructor for class inha.git.user.domain.<a href="inha/git/user/domain/User.html" title="class in inha.git.user.domain">User</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#USER" class="member-name-link">USER</a> - Enum constant in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/enums/Role.html#USER" class="member-name-link">USER</a> - Enum constant in enum class inha.git.user.domain.enums.<a href="inha/git/user/domain/enums/Role.html" title="enum class in inha.git.user.domain.enums">Role</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/SuccessStatus.html#USER_BLOCK_OK" class="member-name-link">USER_BLOCK_OK</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/SuccessStatus.html" title="enum class in inha.git.common.code.status">SuccessStatus</a></dt>
@@ -11395,6 +11075,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/user/api/controller/UserController.html#%3Cinit%3E()" class="member-name-link">UserController()</a> - Constructor for class inha.git.user.api.controller.<a href="inha/git/user/api/controller/UserController.html" title="class in inha.git.user.api.controller">UserController</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html#userCount()" class="member-name-link">userCount()</a> - Method in record class inha.git.statistics.api.controller.dto.data.<a href="inha/git/statistics/api/controller/dto/data/StatisticsCounts.html" title="class in inha.git.statistics.api.controller.dto.data">StatisticsCounts</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>userCount</code> record component.</div>
+</dd>
 <dt><a href="inha/git/statistics/api/controller/dto/response/ProblemStatisticsResponse.html#userCount()" class="member-name-link">userCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/ProblemStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProblemStatisticsResponse</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>userCount</code> record component.</div>
@@ -11406,20 +11090,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/statistics/api/controller/dto/response/TeamStatisticsResponse.html#userCount()" class="member-name-link">userCount()</a> - Method in record class inha.git.statistics.api.controller.dto.response.<a href="inha/git/statistics/api/controller/dto/response/TeamStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">TeamStatisticsResponse</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>userCount</code> record component.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">UserCountStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserCountStatistics.html#%3Cinit%3E()" class="member-name-link">UserCountStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserCountStatistics.html" title="class in inha.git.statistics.domain">UserCountStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/id/UserCountStatisticsId.html" class="type-name-link" title="class in inha.git.statistics.domain.id">UserCountStatisticsId</a> - Class in <a href="inha/git/statistics/domain/id/package-summary.html">inha.git.statistics.domain.id</a></dt>
-<dd>
-<div class="block">UserCountStatisticsId UserCountStatistics 엔티티의 복합키를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/id/UserCountStatisticsId.html#%3Cinit%3E()" class="member-name-link">UserCountStatisticsId()</a> - Constructor for class inha.git.statistics.domain.id.<a href="inha/git/statistics/domain/id/UserCountStatisticsId.html" title="class in inha.git.statistics.domain.id">UserCountStatisticsId</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserCountStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">UserCountStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">UserCountStatisticsJpaRepository는 인터페이스는 UserCountStatistics 정보를 조회하는데 사용됨.</div>
 </dd>
 <dt><a href="inha/git/mapping/domain/UserDepartment.html" class="type-name-link" title="class in inha.git.mapping.domain">UserDepartment</a> - Class in <a href="inha/git/mapping/domain/package-summary.html">inha.git.mapping.domain</a></dt>
 <dd>
@@ -11543,22 +11213,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/api/service/UserServiceImpl.html#%3Cinit%3E()" class="member-name-link">UserServiceImpl()</a> - Constructor for class inha.git.user.api.service.<a href="inha/git/user/api/service/UserServiceImpl.html" title="class in inha.git.user.api.service">UserServiceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html" class="type-name-link" title="class in inha.git.statistics.domain">UserStatistics</a> - Class in <a href="inha/git/statistics/domain/package-summary.html">inha.git.statistics.domain</a></dt>
-<dd>
-<div class="block">UserStatistics 엔티티는 애플리케이션의 유저별 통계 정보를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/UserStatistics.html#%3Cinit%3E()" class="member-name-link">UserStatistics()</a> - Constructor for class inha.git.statistics.domain.<a href="inha/git/statistics/domain/UserStatistics.html" title="class in inha.git.statistics.domain">UserStatistics</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/id/UserStatisticsId.html" class="type-name-link" title="class in inha.git.statistics.domain.id">UserStatisticsId</a> - Class in <a href="inha/git/statistics/domain/id/package-summary.html">inha.git.statistics.domain.id</a></dt>
-<dd>
-<div class="block">UserStatisticsId UserStatistics 엔티티의 복합키를 나타냄.</div>
-</dd>
-<dt><a href="inha/git/statistics/domain/id/UserStatisticsId.html#%3Cinit%3E()" class="member-name-link">UserStatisticsId()</a> - Constructor for class inha.git.statistics.domain.id.<a href="inha/git/statistics/domain/id/UserStatisticsId.html" title="class in inha.git.statistics.domain.id">UserStatisticsId</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/domain/repository/UserStatisticsJpaRepository.html" class="type-name-link" title="interface in inha.git.statistics.domain.repository">UserStatisticsJpaRepository</a> - Interface in <a href="inha/git/statistics/domain/repository/package-summary.html">inha.git.statistics.domain.repository</a></dt>
-<dd>
-<div class="block">UserStatisticsJpaRepository 인터페이스는 유저 통계 정보를 조회하는데 사용됨.</div>
-</dd>
 <dt><a href="inha/git/user/api/mapper/UserMapper.html#userToCompanySignupResponse(inha.git.user.domain.User)" class="member-name-link">userToCompanySignupResponse(User)</a> - Method in interface inha.git.user.api.mapper.<a href="inha/git/user/api/mapper/UserMapper.html" title="interface in inha.git.user.api.mapper">UserMapper</a></dt>
 <dd>
 <div class="block">User 엔티티를 CompanySignupResponse로 변환하는 메서드 정의</div>
@@ -11723,7 +11377,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
@@ -11760,7 +11414,7 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
-<dt><a href="inha/git/statistics/domain/StatisticsType.html#values()" class="member-name-link">values()</a> - Static method in enum class inha.git.statistics.domain.<a href="inha/git/statistics/domain/StatisticsType.html" title="enum class in inha.git.statistics.domain">StatisticsType</a></dt>
+<dt><a href="inha/git/statistics/domain/enums/StatisticsType.html#values()" class="member-name-link">values()</a> - Static method in enum class inha.git.statistics.domain.enums.<a href="inha/git/statistics/domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>

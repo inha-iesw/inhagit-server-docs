@@ -129,12 +129,13 @@ inha.git.semester.domain.repository
 inha.git.semester.mapper
 inha.git.semester.service
 inha.git.statistics.api.controller
+inha.git.statistics.api.controller.dto.data
 inha.git.statistics.api.controller.dto.request
 inha.git.statistics.api.controller.dto.response
 inha.git.statistics.api.mapper
 inha.git.statistics.api.service
 inha.git.statistics.domain
-inha.git.statistics.domain.id
+inha.git.statistics.domain.enums
 inha.git.statistics.domain.repository
 inha.git.team.api.controller
 inha.git.team.api.controller.dto.request

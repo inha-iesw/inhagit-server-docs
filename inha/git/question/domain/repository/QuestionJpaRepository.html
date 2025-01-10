@@ -93,14 +93,20 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Que
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../Question.html" title="class in inha.git.question.domain">Question</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;questionIdx,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#countByUserAndSemesterAndQuestionFields_FieldAndState(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)" class="member-name-link">countByUserAndSemesterAndQuestionFields_FieldAndState</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
+ <a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&nbsp;field,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../Question.html" title="class in inha.git.question.domain">Question</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndStateWithPessimisticLock(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndStateWithPessimisticLock</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;questionIdx,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;questionIdx,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../Question.html" title="class in inha.git.question.domain">Question</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndStateWithPessimisticLock(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndStateWithPessimisticLock</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;questionIdx,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -147,6 +153,15 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Que
 @QueryHints()
 @Query("SELECT q FROM Question q WHERE q.id = :questionIdx AND q.state = :state")
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../Question.html" title="class in inha.git.question.domain">Question</a>&gt;</span>&nbsp;<span class="element-name">findByIdAndStateWithPessimisticLock</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;questionIdx,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="countByUserAndSemesterAndQuestionFields_FieldAndState(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)">
+<h3>countByUserAndSemesterAndQuestionFields_FieldAndState</h3>
+<div class="member-signature"><span class="return-type">long</span>&nbsp;<span class="element-name">countByUserAndSemesterAndQuestionFields_FieldAndState</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
+ <a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&nbsp;field,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
 </section>
 </li>

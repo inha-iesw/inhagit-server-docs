@@ -126,6 +126,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">질문 통계 조회 API</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#migrateStatistics()" class="member-name-link">migrateStatistics</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">통계 마이그레이션 API</div>
+</div>
 </div>
 </div>
 </div>
@@ -209,6 +214,19 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>response</code> - HttpServletResponse</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="migrateStatistics()">
+<h3>migrateStatistics</h3>
+<div class="member-signature"><span class="annotations">@PostMapping("/migration")
+@PreAuthorize("hasAnyAuthority(\'admin:create\', \'admin:update\', \'admin:delete\')")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">migrateStatistics</span>()</div>
+<div class="block">통계 마이그레이션 API</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>BaseResponse<String></dd>
 </dl>
 </section>
 </li>

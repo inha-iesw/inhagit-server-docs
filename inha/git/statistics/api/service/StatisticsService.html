@@ -92,11 +92,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#decreaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">decreaseCount</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#adjustCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer,boolean)" class="member-name-link">adjustCount</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&gt;&nbsp;fields,
  <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
  <a href="../../../category/domain/Category.html" title="class in inha.git.category.domain">Category</a>&nbsp;category,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type,
+ boolean&nbsp;isIncrease)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/BatchCollegeStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">BatchCollegeStatisticsResponse</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBatchStatistics()" class="member-name-link">getBatchStatistics</a>()</code></div>
@@ -107,13 +108,6 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/QuestionStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">QuestionStatisticsResponse</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getQuestionStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getQuestionStatistics</a><wbr>(<a href="../controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#increaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)" class="member-name-link">increaseCount</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&gt;&nbsp;fields,
- <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
- <a href="../../../category/domain/Category.html" title="class in inha.git.category.domain">Category</a>&nbsp;category,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -129,23 +123,14 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="increaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)">
-<h3>increaseCount</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">increaseCount</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<section class="detail" id="adjustCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer,boolean)">
+<h3>adjustCount</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">adjustCount</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&gt;&nbsp;fields,
  <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
  <a href="../../../category/domain/Category.html" title="class in inha.git.category.domain">Category</a>&nbsp;category,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="decreaseCount(inha.git.user.domain.User,java.util.List,inha.git.semester.domain.Semester,inha.git.category.domain.Category,java.lang.Integer)">
-<h3>decreaseCount</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">decreaseCount</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&gt;&nbsp;fields,
- <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
- <a href="../../../category/domain/Category.html" title="class in inha.git.category.domain">Category</a>&nbsp;category,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type,
+ boolean&nbsp;isIncrease)</span></div>
 </section>
 </li>
 <li>
