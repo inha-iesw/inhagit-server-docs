@@ -3273,16 +3273,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">키에 대한 만료 시간을 설정하는 메서드.</div>
 </dd>
-<dt><a href="inha/git/statistics/api/controller/StatisticsController.html#exportToExcel(jakarta.servlet.http.HttpServletResponse)" class="member-name-link">exportToExcel(HttpServletResponse)</a> - Method in class inha.git.statistics.api.controller.<a href="inha/git/statistics/api/controller/StatisticsController.html" title="class in inha.git.statistics.api.controller">StatisticsController</a></dt>
+<dt><a href="inha/git/statistics/api/controller/StatisticsController.html#exportToExcel(inha.git.user.domain.User,jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer)" class="member-name-link">exportToExcel(User, HttpServletResponse, StatisticsType, Integer)</a> - Method in class inha.git.statistics.api.controller.<a href="inha/git/statistics/api/controller/StatisticsController.html" title="class in inha.git.statistics.api.controller">StatisticsController</a></dt>
 <dd>
 <div class="block">엑셀 다운로드 API</div>
 </dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsExcelService.html#exportToExcelFile(jakarta.servlet.http.HttpServletResponse)" class="member-name-link">exportToExcelFile(HttpServletResponse)</a> - Method in interface inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsExcelService.html" title="interface in inha.git.statistics.api.service">StatisticsExcelService</a></dt>
+<dt><a href="inha/git/statistics/api/service/StatisticsExcelService.html#exportToExcelFile(jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer)" class="member-name-link">exportToExcelFile(HttpServletResponse, StatisticsType, Integer)</a> - Method in interface inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsExcelService.html" title="interface in inha.git.statistics.api.service">StatisticsExcelService</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html#exportToExcelFile(jakarta.servlet.http.HttpServletResponse)" class="member-name-link">exportToExcelFile(HttpServletResponse)</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsExcelServiceImpl</a></dt>
-<dd>
-<div class="block">통계 엑셀 파일을 생성하여 출력한다.</div>
-</dd>
+<dt><a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html#exportToExcelFile(jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer)" class="member-name-link">exportToExcelFile(HttpServletResponse, StatisticsType, Integer)</a> - Method in class inha.git.statistics.api.service.<a href="inha/git/statistics/api/service/StatisticsExcelServiceImpl.html" title="class in inha.git.statistics.api.service">StatisticsExcelServiceImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/utils/jwt/JwtProvider.html#extractClaim(java.lang.String,java.util.function.Function)" class="member-name-link">extractClaim(String, Function&lt;Claims, T&gt;)</a> - Method in class inha.git.utils.jwt.<a href="inha/git/utils/jwt/JwtProvider.html" title="class in inha.git.utils.jwt">JwtProvider</a></dt>
 <dd>
 <div class="block">토큰에서 특정 클레임을 추출.</div>
@@ -3510,6 +3508,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/field/domain/repository/FieldJpaRepository.html#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState(BaseEntity.State)</a> - Method in interface inha.git.field.domain.repository.<a href="inha/git/field/domain/repository/FieldJpaRepository.html" title="interface in inha.git.field.domain.repository">FieldJpaRepository</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState(BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/semester/domain/repository/SemesterJpaRepository.html#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState(BaseEntity.State)</a> - Method in interface inha.git.semester.domain.repository.<a href="inha/git/semester/domain/repository/SemesterJpaRepository.html" title="interface in inha.git.semester.domain.repository">SemesterJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/repository/UserJpaRepository.html#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState(BaseEntity.State)</a> - Method in interface inha.git.user.domain.repository.<a href="inha/git/user/domain/repository/UserJpaRepository.html" title="interface in inha.git.user.domain.repository">UserJpaRepository</a></dt>
@@ -3521,6 +3521,12 @@ loadScripts(document, 'script');</script>
 <dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByStateOrderById(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByStateOrderById(BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/team/domain/repository/TeamCommentJpaRepository.html#findAllByTeamPostAndStateOrderByIdAsc(inha.git.team.domain.TeamPost,inha.git.common.BaseEntity.State)" class="member-name-link">findAllByTeamPostAndStateOrderByIdAsc(TeamPost, BaseEntity.State)</a> - Method in interface inha.git.team.domain.repository.<a href="inha/git/team/domain/repository/TeamCommentJpaRepository.html" title="interface in inha.git.team.domain.repository">TeamCommentJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByUserCollegeIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllByUserCollegeIdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByUserDepartmentIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllByUserDepartmentIdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findAllByUserIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllByUserIdAndState(Integer, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/domain/repository/ProjectPatentJpaRepository.html#findByApplicationNumberAndState(java.lang.String,inha.git.common.BaseEntity.State)" class="member-name-link">findByApplicationNumberAndState(String, BaseEntity.State)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectPatentJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectPatentJpaRepository</a></dt>
 <dd>&nbsp;</dd>
@@ -3718,6 +3724,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates an instance of a <code>FindPasswordRequest</code> record class.</div>
 </dd>
+<dt><a href="inha/git/project/domain/repository/ProjectJpaRepository.html#findProjectFieldsByProjectIds(java.util.List)" class="member-name-link">findProjectFieldsByProjectIds(List&lt;Integer&gt;)</a> - Method in interface inha.git.project.domain.repository.<a href="inha/git/project/domain/repository/ProjectJpaRepository.html" title="interface in inha.git.project.domain.repository">ProjectJpaRepository</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="inha/git/common/code/status/ErrorStatus.html#FORBIDDEN" class="member-name-link">FORBIDDEN</a> - Enum constant in enum class inha.git.common.code.status.<a href="inha/git/common/code/status/ErrorStatus.html" title="enum class in inha.git.common.code.status">ErrorStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/project/api/controller/dto/response/SearchRecommendCount.html#founding()" class="member-name-link">founding()</a> - Method in record class inha.git.project.api.controller.dto.response.<a href="inha/git/project/api/controller/dto/response/SearchRecommendCount.html" title="class in inha.git.project.api.controller.dto.response">SearchRecommendCount</a></dt>
