@@ -155,5 +155,3 @@ inha.git.user.domain.repository
 inha.git.utils
 inha.git.utils.file
 inha.git.utils.jwt
-inha.git.utils.s3
-inha.git.utils.s3.dto
