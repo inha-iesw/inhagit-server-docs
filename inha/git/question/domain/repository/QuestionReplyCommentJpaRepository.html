@@ -145,19 +145,19 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Que
 </section>
 </li>
 <li>
+<section class="detail" id="existsByQuestionCommentAndState(inha.git.question.domain.QuestionComment,inha.git.common.BaseEntity.State)">
+<h3>existsByQuestionCommentAndState</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">existsByQuestionCommentAndState</span><wbr><span class="parameters">(<a href="../QuestionComment.html" title="class in inha.git.question.domain">QuestionComment</a>&nbsp;questionComment,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="findByIdAndStateWithPessimisticLock(java.lang.Integer,inha.git.common.BaseEntity.State)">
 <h3>findByIdAndStateWithPessimisticLock</h3>
 <div class="member-signature"><span class="annotations">@Lock(PESSIMISTIC_WRITE)
 @QueryHints()
 @Query("SELECT c FROM QuestionReplyComment c WHERE c.id = :commentIdx AND c.state = :state")
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../QuestionReplyComment.html" title="class in inha.git.question.domain">QuestionReplyComment</a>&gt;</span>&nbsp;<span class="element-name">findByIdAndStateWithPessimisticLock</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;commentIdx,
- <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="existsByQuestionCommentAndState(inha.git.question.domain.QuestionComment,inha.git.common.BaseEntity.State)">
-<h3>existsByQuestionCommentAndState</h3>
-<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">existsByQuestionCommentAndState</span><wbr><span class="parameters">(<a href="../QuestionComment.html" title="class in inha.git.question.domain">QuestionComment</a>&nbsp;questionComment,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
 </section>
 </li>
