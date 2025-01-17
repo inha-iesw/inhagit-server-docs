@@ -146,18 +146,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 파일 조회 API</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchProjectsResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchProjectsResponse</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjects(java.lang.Integer,java.lang.Integer)" class="member-name-link">getProjects</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">프로젝트 전체 조회 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProjectResponse.html" title="class in inha.git.project.api.controller.dto.response">ProjectResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateProject(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.UpdateProjectRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">updateProject</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProjectResponse.html" title="class in inha.git.project.api.controller.dto.response">ProjectResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateProject(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.UpdateProjectRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">updateProject</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx,
  <a href="dto/request/UpdateProjectRequest.html" title="class in inha.git.project.api.controller.dto.request">UpdateProjectRequest</a>&nbsp;updateProjectRequest,
  org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 수정</div>
 </div>
 </div>
@@ -191,26 +185,6 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="getProjects(java.lang.Integer,java.lang.Integer)">
-<h3>getProjects</h3>
-<div class="member-signature"><span class="annotations">@GetMapping
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchProjectsResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchProjectsResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getProjects</span><wbr><span class="parameters">(@RequestParam("page")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
- @RequestParam("size")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</span></div>
-<div class="block">프로젝트 전체 조회 API
-
- <p>프로젝트 전체를 조회합니다.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>page</code> - 페이지 번호</dd>
-<dd><code>size</code> - 페이지 사이즈</dd>
-<dt>Returns:</dt>
-<dd>검색된 프로젝트 정보를 포함하는 BaseResponse&lt;Page<SearchProjectsResponse>></dd>
-</dl>
-</section>
-</li>
 <li>
 <section class="detail" id="getCondProjects(inha.git.project.api.controller.dto.request.SearchProjectCond,java.lang.Integer,java.lang.Integer)">
 <h3>getCondProjects</h3>

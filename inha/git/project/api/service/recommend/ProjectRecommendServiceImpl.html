@@ -5,21 +5,21 @@
 <title>ProjectRecommendServiceImpl (I-OSS Server API Documentation)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="declaration: package: inha.git.project.api.service, class: ProjectRecommendServiceImpl">
+<meta name="description" content="declaration: package: inha.git.project.api.service.recommend, class: ProjectRecommendServiceImpl">
 <meta name="generator" content="javadoc/ClassWriterImpl">
-<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.min.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
-<script type="text/javascript" src="../../../../../script.js"></script>
-<script type="text/javascript" src="../../../../../script-dir/jquery-3.7.1.min.js"></script>
-<script type="text/javascript" src="../../../../../script-dir/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../script-dir/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../../jquery-ui.overrides.css" title="Style">
+<script type="text/javascript" src="../../../../../../script.js"></script>
+<script type="text/javascript" src="../../../../../../script-dir/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../../../../../../script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
 var tableTab = "table-tab";
 var activeTableTab = "active-table-tab";
-var pathtoroot = "../../../../../";
+var pathtoroot = "../../../../../../";
 loadScripts(document, 'script');</script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -31,12 +31,12 @@ loadScripts(document, 'script');</script>
 <div class="top-nav" id="navbar-top">
 <div class="skip-nav"><a href="#skip-navbar-top" title="Skip navigation links">Skip navigation links</a></div>
 <ul id="navbar-top-firstrow" class="nav-list" title="Navigation">
-<li><a href="../../../../../index.html">Overview</a></li>
+<li><a href="../../../../../../index.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="nav-bar-cell1-rev">Class</li>
 <li><a href="package-tree.html">Tree</a></li>
-<li><a href="../../../../../index-all.html">Index</a></li>
-<li><a href="../../../../../help-doc.html#class">Help</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html#class">Help</a></li>
 </ul>
 </div>
 <div class="sub-nav">
@@ -67,23 +67,23 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">inha.git.project.api.service</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">inha.git.project.api.service.recommend</a></div>
 <h1 title="Class ProjectRecommendServiceImpl" class="title">Class ProjectRecommendServiceImpl</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">inha.git.project.api.service.ProjectRecommendServiceImpl</div>
+<div class="inheritance">inha.git.project.api.service.recommend.ProjectRecommendServiceImpl</div>
 </div>
 <section class="class-description" id="class-description">
 <dl class="notes">
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 </dl>
 <hr>
 <div class="type-signature"><span class="annotations">@Service
 @Transactional
 </span><span class="modifiers">public class </span><span class="element-name type-name-label">ProjectRecommendServiceImpl</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
-implements <a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></span></div>
+implements <a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></span></div>
 <div class="block">ProjectRecommendServiceImpl은 프로젝트 추천 관련 비즈니스 로직을 처리.</div>
 </section>
 <section class="summary">
@@ -113,38 +113,38 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectFoundingRecommend</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectFoundingRecommend</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 창업 추천 취소</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectLike</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectLike</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 좋아요 취소</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectRegistrationRecommend</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">cancelProjectRegistrationRecommend</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 등록 추천 취소</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectFoundingRecommend</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectFoundingRecommend</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 창업 추천</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectLike</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectLike</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 좋아요 추천</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectRegistrationRecommend</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)" class="member-name-link">createProjectRegistrationRecommend</a><wbr>(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 등록 추천</div>
 </div>
@@ -183,12 +183,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <section class="detail" id="createProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>createProjectFoundingRecommend</h3>
 <div class="member-signature"><span class="annotations">@Transactional
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectFoundingRecommend</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectFoundingRecommend</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 창업 추천</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#createProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectFoundingRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#createProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectFoundingRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 추천할 프로젝트 정보</dd>
@@ -200,12 +200,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <li>
 <section class="detail" id="createProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>createProjectLike</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectLike</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectLike</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 좋아요 추천</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#createProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectLike</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#createProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectLike</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 좋아요할 프로젝트 정보</dd>
@@ -217,12 +217,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <li>
 <section class="detail" id="createProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>createProjectRegistrationRecommend</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectRegistrationRecommend</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">createProjectRegistrationRecommend</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 등록 추천</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#createProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectRegistrationRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#createProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">createProjectRegistrationRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 추천할 프로젝트 정보</dd>
@@ -234,12 +234,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <li>
 <section class="detail" id="cancelProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>cancelProjectFoundingRecommend</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectFoundingRecommend</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectFoundingRecommend</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 창업 추천 취소</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#cancelProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectFoundingRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#cancelProjectFoundingRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectFoundingRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 추천할 프로젝트 정보</dd>
@@ -251,12 +251,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <li>
 <section class="detail" id="cancelProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>cancelProjectLike</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectLike</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectLike</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 좋아요 취소</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#cancelProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectLike</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#cancelProjectLike(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectLike</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 좋아요할 프로젝트 정보</dd>
@@ -268,12 +268,12 @@ implements <a href="ProjectRecommendService.html" title="interface in inha.git.p
 <li>
 <section class="detail" id="cancelProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">
 <h3>cancelProjectRegistrationRecommend</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectRegistrationRecommend</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">cancelProjectRegistrationRecommend</span><wbr><span class="parameters">(<a href="../../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../controller/dto/request/RecommendRequest.html" title="class in inha.git.project.api.controller.dto.request">RecommendRequest</a>&nbsp;recommendRequest)</span></div>
 <div class="block">프로젝트 등록 추천 취소</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="ProjectRecommendService.html#cancelProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectRegistrationRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service">ProjectRecommendService</a></code></dd>
+<dd><code><a href="ProjectRecommendService.html#cancelProjectRegistrationRecommend(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.RecommendRequest)">cancelProjectRegistrationRecommend</a></code>&nbsp;in interface&nbsp;<code><a href="ProjectRecommendService.html" title="interface in inha.git.project.api.service.recommend">ProjectRecommendService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 로그인한 사용자 정보</dd>
 <dd><code>recommendRequest</code> - 추천할 프로젝트 정보</dd>

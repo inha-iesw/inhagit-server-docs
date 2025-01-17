@@ -98,7 +98,15 @@ inha.git.project.api.controller
 inha.git.project.api.controller.dto.request
 inha.git.project.api.controller.dto.response
 inha.git.project.api.mapper
-inha.git.project.api.service
+inha.git.project.api.service.command
+inha.git.project.api.service.comment.comment
+inha.git.project.api.service.comment.like
+inha.git.project.api.service.comment.query
+inha.git.project.api.service.comment.reply
+inha.git.project.api.service.github
+inha.git.project.api.service.patent
+inha.git.project.api.service.query
+inha.git.project.api.service.recommend
 inha.git.project.domain
 inha.git.project.domain.repository
 inha.git.question.api.controller
