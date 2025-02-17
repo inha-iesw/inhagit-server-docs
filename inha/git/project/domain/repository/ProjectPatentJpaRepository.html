@@ -76,7 +76,8 @@ loadScripts(document, 'script');</script>
 <dd><code>org.springframework.data.repository.CrudRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code>, <code>org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code>, <code>org.springframework.data.repository.ListCrudRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code>, <code>org.springframework.data.repository.ListPagingAndSortingRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code>, <code>org.springframework.data.repository.PagingAndSortingRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code>, <code>org.springframework.data.repository.query.QueryByExampleExecutor&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code>, <code>org.springframework.data.repository.Repository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ProjectPatentJpaRepository</span><span class="extends-implements">
+<div class="type-signature"><span class="annotations">@Repository
+</span><span class="modifiers">public interface </span><span class="element-name type-name-label">ProjectPatentJpaRepository</span><span class="extends-implements">
 extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span></div>
 <div class="block">ProjectCommentJpaRepository는 Project 특허 엔티티에 대한 데이터 액세스 기능을 제공.</div>
 </section>
@@ -93,6 +94,35 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#countByProject_UserAndProject_SemesterAndProject_ProjectFields_FieldAndProject_State(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)" class="member-name-link">countByProject_UserAndProject_SemesterAndProject_ProjectFields_FieldAndProject_State</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
+ <a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&nbsp;field,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllAcceptedPatents(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllAcceptedPatents</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllAcceptedPatentsByCollege(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllAcceptedPatentsByCollege</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllAcceptedPatentsByDepartment(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllAcceptedPatentsByDepartment</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllAcceptedPatentsByUser(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findAllAcceptedPatentsByUser</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)" class="member-name-link">findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByApplicationNumberAndState(java.lang.String,inha.git.common.BaseEntity.State)" class="member-name-link">findByApplicationNumberAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
@@ -100,6 +130,13 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectPatentId,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdWithInventors(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdWithInventors</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findPatentsWithInventors(java.util.List)" class="member-name-link">findPatentsWithInventors</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;&nbsp;patents)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
@@ -145,6 +182,86 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <h3>findByApplicationNumberAndState</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findByApplicationNumberAndState</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="countByProject_UserAndProject_SemesterAndProject_ProjectFields_FieldAndProject_State(inha.git.user.domain.User,inha.git.semester.domain.Semester,inha.git.field.domain.Field,inha.git.common.BaseEntity.State)">
+<h3>countByProject_UserAndProject_SemesterAndProject_ProjectFields_FieldAndProject_State</h3>
+<div class="member-signature"><span class="return-type">long</span>&nbsp;<span class="element-name">countByProject_UserAndProject_SemesterAndProject_ProjectFields_FieldAndProject_State</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../../../semester/domain/Semester.html" title="class in inha.git.semester.domain">Semester</a>&nbsp;semester,
+ <a href="../../../field/domain/Field.html" title="class in inha.git.field.domain">Field</a>&nbsp;field,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findAllAcceptedPatents(java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findAllAcceptedPatents</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT DISTINCT pp FROM ProjectPatent pp JOIN FETCH pp.project p JOIN FETCH p.user u LEFT JOIN FETCH u.userDepartments ud LEFT JOIN FETCH ud.department d LEFT JOIN FETCH d.college c WHERE pp.acceptAt IS NOT NULL AND p.state = :state AND (:semesterId IS NULL OR p.semester.id = :semesterId) ORDER BY pp.patentType ASC, u.userNumber ASC")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findAllAcceptedPatents</span><wbr><span class="parameters">(@Param("semesterId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ @Param("state")
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findPatentsWithInventors(java.util.List)">
+<h3>findPatentsWithInventors</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT DISTINCT pp FROM ProjectPatent pp JOIN FETCH pp.projectPatentInventors WHERE pp IN :patents")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findPatentsWithInventors</span><wbr><span class="parameters">(@Param("patents")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;&nbsp;patents)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findAllAcceptedPatentsByCollege(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findAllAcceptedPatentsByCollege</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT DISTINCT pp FROM ProjectPatent pp JOIN FETCH pp.project p JOIN FETCH p.user u LEFT JOIN FETCH u.userDepartments ud LEFT JOIN FETCH ud.department d LEFT JOIN FETCH d.college c WHERE pp.acceptAt IS NOT NULL AND p.state = :state AND c.id = :collegeId AND (:semesterId IS NULL OR p.semester.id = :semesterId) ORDER BY pp.patentType ASC, u.userNumber ASC")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findAllAcceptedPatentsByCollege</span><wbr><span class="parameters">(@Param("collegeId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;collegeId,
+ @Param("semesterId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ @Param("state")
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findAllAcceptedPatentsByDepartment(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findAllAcceptedPatentsByDepartment</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT DISTINCT pp FROM ProjectPatent pp JOIN FETCH pp.project p JOIN FETCH p.user u LEFT JOIN FETCH u.userDepartments ud LEFT JOIN FETCH ud.department d LEFT JOIN FETCH d.college c WHERE pp.acceptAt IS NOT NULL AND p.state = :state AND d.id = :departmentId AND (:semesterId IS NULL OR p.semester.id = :semesterId) ORDER BY pp.patentType ASC, u.userNumber ASC")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findAllAcceptedPatentsByDepartment</span><wbr><span class="parameters">(@Param("departmentId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;departmentId,
+ @Param("semesterId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ @Param("state")
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findAllAcceptedPatentsByUser(java.lang.Integer,java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findAllAcceptedPatentsByUser</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT DISTINCT pp FROM ProjectPatent pp JOIN FETCH pp.project p JOIN FETCH p.user u LEFT JOIN FETCH u.userDepartments ud LEFT JOIN FETCH ud.department d LEFT JOIN FETCH d.college c WHERE pp.acceptAt IS NOT NULL AND p.state = :state AND u.id = :userId AND (:semesterId IS NULL OR p.semester.id = :semesterId) ORDER BY pp.patentType ASC, u.userNumber ASC")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findAllAcceptedPatentsByUser</span><wbr><span class="parameters">(@Param("userId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userId,
+ @Param("semesterId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId,
+ @Param("state")
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findByIdWithInventors(java.lang.Integer,inha.git.common.BaseEntity.State)">
+<h3>findByIdWithInventors</h3>
+<div class="member-signature"><span class="annotations">@Query("SELECT pp FROM ProjectPatent pp JOIN FETCH pp.project p JOIN FETCH p.user u LEFT JOIN FETCH pp.projectPatentInventors WHERE pp.id = :patentId AND pp.state = :state")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findByIdWithInventors</span><wbr><span class="parameters">(@Param("patentId")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentId,
+ @Param("state")
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)">
+<h3>findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</h3>
+<div class="member-signature"><span class="return-type">org.springframework.data.domain.Page&lt;<a href="../ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>&gt;</span>&nbsp;<span class="element-name">findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</span><wbr><span class="parameters">(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</span></div>
 </section>
 </li>
 </ul>

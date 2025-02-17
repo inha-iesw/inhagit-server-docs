@@ -127,14 +127,19 @@ implements <a href="StatisticsService.html" title="interface in inha.git.statist
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">단과대별 학기별 통계를 조회한다.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjectStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getProjectStatistics</a><wbr>(<a href="../controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/PatentStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">PatentStatisticsResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPatentStatistics()" class="member-name-link">getPatentStatistics</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특허 통계 정보를 조회한다.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjectStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getProjectStatistics</a><wbr>(<a href="../controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 통계 정보를 조회한다.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/QuestionStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">QuestionStatisticsResponse</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getQuestionStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getQuestionStatistics</a><wbr>(<a href="../controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../controller/dto/response/QuestionStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">QuestionStatisticsResponse</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getQuestionStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getQuestionStatistics</a><wbr>(<a href="../controller/dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">질문 통계 정보를 조회한다.</div>
 </div>
 </div>
@@ -230,6 +235,20 @@ implements <a href="StatisticsService.html" title="interface in inha.git.statist
 <dd><code><a href="StatisticsService.html#getBatchStatistics()">getBatchStatistics</a></code>&nbsp;in interface&nbsp;<code><a href="StatisticsService.html" title="interface in inha.git.statistics.api.service">StatisticsService</a></code></dd>
 <dt>Returns:</dt>
 <dd>List<BatchCollegeStatisticsResponse></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getPatentStatistics()">
+<h3>getPatentStatistics</h3>
+<div class="member-signature"><span class="annotations">@Transactional(readOnly=true)
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/PatentStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">PatentStatisticsResponse</a>&gt;</span>&nbsp;<span class="element-name">getPatentStatistics</span>()</div>
+<div class="block">특허 통계 정보를 조회한다.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="StatisticsService.html#getPatentStatistics()">getPatentStatistics</a></code>&nbsp;in interface&nbsp;<code><a href="StatisticsService.html" title="interface in inha.git.statistics.api.service">StatisticsService</a></code></dd>
+<dt>Returns:</dt>
+<dd>List<PatentStatisticsResponse></dd>
 </dl>
 </section>
 </li>

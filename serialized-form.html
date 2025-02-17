@@ -2214,8 +2214,8 @@ loadScripts(document, 'script');</script>
 <pre>com.querydsl.core.types.dsl.ListPath&lt;<a href="inha/git/mapping/domain/ProjectField.html" title="class in inha.git.mapping.domain">ProjectField</a>,<wbr>inha.git.mapping.domain.QProjectField&gt; projectFields</pre>
 </li>
 <li class="block-list">
-<h5>projectPatentId</h5>
-<pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; projectPatentId</pre>
+<h5>projectPatents</h5>
+<pre>com.querydsl.core.types.dsl.ListPath&lt;<a href="inha/git/project/domain/ProjectPatent.html" title="class in inha.git.project.domain">ProjectPatent</a>,<wbr>inha.git.project.domain.QProjectPatent&gt; projectPatents</pre>
 </li>
 <li class="block-list">
 <h5>projectUpload</h5>
@@ -2340,6 +2340,10 @@ loadScripts(document, 'script');</script>
 <pre>inha.git.common.QBaseEntity _super</pre>
 </li>
 <li class="block-list">
+<h5>acceptAt</h5>
+<pre>com.querydsl.core.types.dsl.DateTimePath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&gt; acceptAt</pre>
+</li>
+<li class="block-list">
 <h5>applicantEnglishName</h5>
 <pre>com.querydsl.core.types.dsl.StringPath applicantEnglishName</pre>
 </li>
@@ -2368,6 +2372,10 @@ loadScripts(document, 'script');</script>
 <pre>com.querydsl.core.types.dsl.StringPath evidence</pre>
 </li>
 <li class="block-list">
+<h5>evidenceName</h5>
+<pre>com.querydsl.core.types.dsl.StringPath evidenceName</pre>
+</li>
+<li class="block-list">
 <h5>id</h5>
 <pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; id</pre>
 </li>
@@ -2378,6 +2386,14 @@ loadScripts(document, 'script');</script>
 <li class="block-list">
 <h5>inventionTitleEnglish</h5>
 <pre>com.querydsl.core.types.dsl.StringPath inventionTitleEnglish</pre>
+</li>
+<li class="block-list">
+<h5>patentType</h5>
+<pre>com.querydsl.core.types.dsl.EnumPath&lt;<a href="inha/git/project/domain/enums/PatentType.html" title="enum class in inha.git.project.domain.enums">PatentType</a>&gt; patentType</pre>
+</li>
+<li class="block-list">
+<h5>project</h5>
+<pre>inha.git.project.domain.QProject project</pre>
 </li>
 <li class="block-list">
 <h5>projectPatentInventors</h5>
@@ -2411,6 +2427,14 @@ loadScripts(document, 'script');</script>
 <h4>Serialized Fields</h4>
 <ul class="block-list">
 <li class="block-list">
+<h5>affiliation</h5>
+<pre>com.querydsl.core.types.dsl.StringPath affiliation</pre>
+</li>
+<li class="block-list">
+<h5>email</h5>
+<pre>com.querydsl.core.types.dsl.StringPath email</pre>
+</li>
+<li class="block-list">
 <h5>englishName</h5>
 <pre>com.querydsl.core.types.dsl.StringPath englishName</pre>
 </li>
@@ -2419,12 +2443,24 @@ loadScripts(document, 'script');</script>
 <pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; id</pre>
 </li>
 <li class="block-list">
+<h5>mainInventor</h5>
+<pre>com.querydsl.core.types.dsl.BooleanPath mainInventor</pre>
+</li>
+<li class="block-list">
 <h5>name</h5>
 <pre>com.querydsl.core.types.dsl.StringPath name</pre>
 </li>
 <li class="block-list">
 <h5>projectPatent</h5>
 <pre>inha.git.project.domain.QProjectPatent projectPatent</pre>
+</li>
+<li class="block-list">
+<h5>share</h5>
+<pre>com.querydsl.core.types.dsl.StringPath share</pre>
+</li>
+<li class="block-list">
+<h5>userNumber</h5>
+<pre>com.querydsl.core.types.dsl.StringPath userNumber</pre>
 </li>
 </ul>
 </section>
@@ -2983,6 +3019,14 @@ loadScripts(document, 'script');</script>
 <li class="block-list">
 <h5>localProjectCount</h5>
 <pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; localProjectCount</pre>
+</li>
+<li class="block-list">
+<h5>patentCount</h5>
+<pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; patentCount</pre>
+</li>
+<li class="block-list">
+<h5>patentParticipationCount</h5>
+<pre>com.querydsl.core.types.dsl.NumberPath&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt; patentParticipationCount</pre>
 </li>
 <li class="block-list">
 <h5>projectParticipationCount</h5>

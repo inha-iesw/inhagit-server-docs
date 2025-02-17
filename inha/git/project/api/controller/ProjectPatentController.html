@@ -108,36 +108,38 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deletePatent(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deletePatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">특허 삭제 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchPatentResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchPatentResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjectPatent(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getProjectPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">특허 조회 API</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerManualPatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.CreatePatentRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">registerManualPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createPatent(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.CreatePatentRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">createPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="dto/request/CreatePatentRequest.html" title="class in inha.git.project.api.controller.dto.request">CreatePatentRequest</a>&nbsp;createPatentRequest,
  org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerPatent(inha.git.user.domain.User,java.lang.String,java.lang.Integer)" class="member-name-link">registerPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">특허 등록 API</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deletePatent(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deletePatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentIdx)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특허 삭제 API</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchPatentResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchPatentResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#searchProjectPatent(inha.git.user.domain.User,java.lang.String,java.lang.Integer)" class="member-name-link">searchProjectPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#searchPatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.domain.enums.PatentType)" class="member-name-link">searchPatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx,
+ <a href="../../domain/enums/PatentType.html" title="enum class in inha.git.project.domain.enums">PatentType</a>&nbsp;type)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">특허 검색 API</div>
+<div class="block">특허 조회 API</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/PatentResponses.html" title="class in inha.git.project.api.controller.dto.response">PatentResponses</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#searchPatentPage(java.lang.Integer,java.lang.Integer)" class="member-name-link">searchPatentPage</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특허 페이징 조회 API</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updatePatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.UpdatePatentRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">updatePatent</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentIdx,
+ <a href="dto/request/UpdatePatentRequest.html" title="class in inha.git.project.api.controller.dto.request">UpdatePatentRequest</a>&nbsp;updatePatentRequest,
+ org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특허 수정 API</div>
 </div>
 </div>
 </div>
@@ -171,13 +173,15 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getProjectPatent(inha.git.user.domain.User,java.lang.Integer)">
-<h3>getProjectPatent</h3>
+<section class="detail" id="searchPatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.domain.enums.PatentType)">
+<h3>searchPatent</h3>
 <div class="member-signature"><span class="annotations">@GetMapping("/{projectIdx}")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchPatentResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchPatentResponse</a>&gt;</span>&nbsp;<span class="element-name">getProjectPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchPatentResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchPatentResponse</a>&gt;</span>&nbsp;<span class="element-name">searchPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("projectIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx,
+ @RequestParam("type")
+ <a href="../../domain/enums/PatentType.html" title="enum class in inha.git.project.domain.enums">PatentType</a>&nbsp;type)</span></div>
 <div class="block">특허 조회 API
 
  <p>특허를 조회합니다.</p></div>
@@ -191,83 +195,93 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="searchProjectPatent(inha.git.user.domain.User,java.lang.String,java.lang.Integer)">
-<h3>searchProjectPatent</h3>
-<div class="member-signature"><span class="annotations">@PostMapping("/{projectIdx}/search")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchPatentResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchPatentResponse</a>&gt;</span>&nbsp;<span class="element-name">searchProjectPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @RequestParam("applicationNumber")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
- @PathVariable("projectIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</span></div>
-<div class="block">특허 검색 API
+<section class="detail" id="searchPatentPage(java.lang.Integer,java.lang.Integer)">
+<h3>searchPatentPage</h3>
+<div class="member-signature"><span class="annotations">@GetMapping
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/PatentResponses.html" title="class in inha.git.project.api.controller.dto.response">PatentResponses</a>&gt;&gt;</span>&nbsp;<span class="element-name">searchPatentPage</span><wbr><span class="parameters">(@RequestParam("page")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
+ @RequestParam("size")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</span></div>
+<div class="block">특허 페이징 조회 API
 
- <p>특허 검색을 합니다.</p></div>
+ <p>특허를 페이징 조회합니다.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>user</code> - 사용자 정보</dd>
-<dd><code>applicationNumber</code> - 특허 출원번호</dd>
-<dd><code>projectIdx</code> - 프로젝트 인덱스</dd>
+<dd><code>page</code> - 페이지</dd>
+<dd><code>size</code> - 사이즈</dd>
 <dt>Returns:</dt>
-<dd>검색된 특허 정보를 포함하는 BaseResponse<SearchPatentResponse></dd>
+<dd>특허 페이징 조회 결과를 포함하는 BaseResponse&lt;Page<PatentResponses>></dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="registerPatent(inha.git.user.domain.User,java.lang.String,java.lang.Integer)">
-<h3>registerPatent</h3>
-<div class="member-signature"><span class="annotations">@PostMapping("/{projectIdx}")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</span>&nbsp;<span class="element-name">registerPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
+<section class="detail" id="createPatent(inha.git.user.domain.User,inha.git.project.api.controller.dto.request.CreatePatentRequest,org.springframework.web.multipart.MultipartFile)">
+<h3>createPatent</h3>
+<div class="member-signature"><span class="annotations">@PostMapping(consumes="multipart/form-data")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</span>&nbsp;<span class="element-name">createPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @RequestParam("applicationNumber")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;applicationNumber,
- @PathVariable("projectIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</span></div>
+ @Validated @RequestPart("createPatentRequest")
+ <a href="dto/request/CreatePatentRequest.html" title="class in inha.git.project.api.controller.dto.request">CreatePatentRequest</a>&nbsp;createPatentRequest,
+ @RequestPart(value="file",required=false)
+ org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
 <div class="block">특허 등록 API
 
  <p>특허를 등록합니다.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 사용자 정보</dd>
-<dd><code>applicationNumber</code> - 특허 출원번호</dd>
-<dd><code>projectIdx</code> - 프로젝트 인덱스</dd>
+<dd><code>createPatentRequest</code> - 특허 등록 요청</dd>
+<dd><code>file</code> - 특허 파일</dd>
 <dt>Returns:</dt>
 <dd>등록된 특허 정보를 포함하는 BaseResponse<PatentResponse></dd>
 </dl>
 </section>
 </li>
 <li>
+<section class="detail" id="updatePatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.UpdatePatentRequest,org.springframework.web.multipart.MultipartFile)">
+<h3>updatePatent</h3>
+<div class="member-signature"><span class="annotations">@PutMapping(value="/{patentIdx}",
+            consumes="multipart/form-data")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</span>&nbsp;<span class="element-name">updatePatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ @PathVariable("patentIdx")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentIdx,
+ @Validated @RequestPart("updatePatentRequest")
+ <a href="dto/request/UpdatePatentRequest.html" title="class in inha.git.project.api.controller.dto.request">UpdatePatentRequest</a>&nbsp;updatePatentRequest,
+ @RequestPart(value="file",required=false)
+ org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
+<div class="block">특허 수정 API
+
+ <p>특허를 수정합니다.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>user</code> - 사용자 정보</dd>
+<dd><code>patentIdx</code> - 특허 인덱스</dd>
+<dd><code>updatePatentRequest</code> - 특허 수정 요청</dd>
+<dd><code>file</code> - 특허 파일</dd>
+<dt>Returns:</dt>
+<dd>수정된 특허 정보를 포함하는 BaseResponse<PatentResponse></dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="deletePatent(inha.git.user.domain.User,java.lang.Integer)">
 <h3>deletePatent</h3>
-<div class="member-signature"><span class="annotations">@DeleteMapping("/{projectIdx}")
+<div class="member-signature"><span class="annotations">@DeleteMapping("/{patentIdx}")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</span>&nbsp;<span class="element-name">deletePatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("projectIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx)</span></div>
+ @PathVariable("patentIdx")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;patentIdx)</span></div>
 <div class="block">특허 삭제 API
 
  <p>특허를 삭제합니다.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 사용자 정보</dd>
-<dd><code>projectIdx</code> - 프로젝트 인덱스</dd>
+<dd><code>patentIdx</code> - 프로젝트 인덱스</dd>
 <dt>Returns:</dt>
 <dd>삭제된 특허 정보를 포함하는 BaseResponse<PatentResponse></dd>
 </dl>
-</section>
-</li>
-<li>
-<section class="detail" id="registerManualPatent(inha.git.user.domain.User,java.lang.Integer,inha.git.project.api.controller.dto.request.CreatePatentRequest,org.springframework.web.multipart.MultipartFile)">
-<h3>registerManualPatent</h3>
-<div class="member-signature"><span class="annotations">@PostMapping("/{projectIdx}/manual")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/PatentResponse.html" title="class in inha.git.project.api.controller.dto.response">PatentResponse</a>&gt;</span>&nbsp;<span class="element-name">registerManualPatent</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("projectIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectIdx,
- @Validated @RequestPart
- <a href="dto/request/CreatePatentRequest.html" title="class in inha.git.project.api.controller.dto.request">CreatePatentRequest</a>&nbsp;createPatentRequest,
- @RequestPart("file")
- org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
 </section>
 </li>
 </ul>

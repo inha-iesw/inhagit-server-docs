@@ -107,8 +107,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#exportToExcel(inha.git.user.domain.User,jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer,java.lang.Integer)" class="member-name-link">exportToExcel</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#exportToExcel(inha.git.user.domain.User,jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.ExcelType,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer,java.lang.Integer)" class="member-name-link">exportToExcel</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  jakarta.servlet.http.HttpServletResponse&nbsp;response,
+ <a href="../../domain/enums/ExcelType.html" title="enum class in inha.git.statistics.domain.enums">ExcelType</a>&nbsp;excelType,
  <a href="../../domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a>&nbsp;statisticsType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;filterId,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;semesterId)</code></div>
@@ -120,19 +121,24 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">단과대별 학기별 통계 일괄 조회 API</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjectStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getProjectStatistics</a><wbr>(<a href="dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/PatentStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">PatentStatisticsResponse</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPatentStatistics()" class="member-name-link">getPatentStatistics</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">특허 통계 조회 API</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProjectStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">ProjectStatisticsResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProjectStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getProjectStatistics</a><wbr>(<a href="dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">프로젝트 통계 조회 API</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/QuestionStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">QuestionStatisticsResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getQuestionStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getQuestionStatistics</a><wbr>(<a href="dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/QuestionStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">QuestionStatisticsResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getQuestionStatistics(inha.git.statistics.api.controller.dto.request.SearchCond)" class="member-name-link">getQuestionStatistics</a><wbr>(<a href="dto/request/SearchCond.html" title="class in inha.git.statistics.api.controller.dto.request">SearchCond</a>&nbsp;searchCond)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">질문 통계 조회 API</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#migrateStatistics()" class="member-name-link">migrateStatistics</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#migrateStatistics()" class="member-name-link">migrateStatistics</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">통계 마이그레이션 API</div>
 </div>
 </div>
@@ -209,13 +215,27 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="exportToExcel(inha.git.user.domain.User,jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer,java.lang.Integer)">
+<section class="detail" id="getPatentStatistics()">
+<h3>getPatentStatistics</h3>
+<div class="member-signature"><span class="annotations">@GetMapping("/patent")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/PatentStatisticsResponse.html" title="class in inha.git.statistics.api.controller.dto.response">PatentStatisticsResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getPatentStatistics</span>()</div>
+<div class="block">특허 통계 조회 API</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>BaseResponse&lt;List<PatentStatisticsResponse>></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="exportToExcel(inha.git.user.domain.User,jakarta.servlet.http.HttpServletResponse,inha.git.statistics.domain.enums.ExcelType,inha.git.statistics.domain.enums.StatisticsType,java.lang.Integer,java.lang.Integer)">
 <h3>exportToExcel</h3>
 <div class="member-signature"><span class="annotations">@GetMapping("/export/excel")
 @PreAuthorize("hasAnyAuthority(\'professor:read\', \'admin:read\')")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">exportToExcel</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  jakarta.servlet.http.HttpServletResponse&nbsp;response,
+ @RequestParam(value="excelType",defaultValue="PROJECT")
+ <a href="../../domain/enums/ExcelType.html" title="enum class in inha.git.statistics.domain.enums">ExcelType</a>&nbsp;excelType,
  @RequestParam(value="statisticsType",defaultValue="TOTAL")
  <a href="../../domain/enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a>&nbsp;statisticsType,
  @RequestParam(value="filterId",required=false)

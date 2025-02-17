@@ -108,6 +108,7 @@ inha.git.project.api.service.patent
 inha.git.project.api.service.query
 inha.git.project.api.service.recommend
 inha.git.project.domain
+inha.git.project.domain.enums
 inha.git.project.domain.repository
 inha.git.question.api.controller
 inha.git.question.api.controller.dto.request
