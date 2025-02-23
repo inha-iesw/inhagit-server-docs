@@ -167,21 +167,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">특정 사용자가 작성한 신고 목록을 조회합니다.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="../../../team/api/controller/dto/response/SearchMyTeamsResponse.html" title="class in inha.git.team.api.controller.dto.response">SearchMyTeamsResponse</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserTeams(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserTeams</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProfessorSignupResponse.html" title="class in inha.git.user.api.controller.dto.response">ProfessorSignupResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#professorSignup(inha.git.user.api.controller.dto.request.ProfessorSignupRequest)" class="member-name-link">professorSignup</a><wbr>(<a href="dto/request/ProfessorSignupRequest.html" title="class in inha.git.user.api.controller.dto.request">ProfessorSignupRequest</a>&nbsp;professorSignupRequest)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">특정 사용자가 참여중인 팀 목록을 조회합니다.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProfessorSignupResponse.html" title="class in inha.git.user.api.controller.dto.response">ProfessorSignupResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#professorSignup(inha.git.user.api.controller.dto.request.ProfessorSignupRequest)" class="member-name-link">professorSignup</a><wbr>(<a href="dto/request/ProfessorSignupRequest.html" title="class in inha.git.user.api.controller.dto.request">ProfessorSignupRequest</a>&nbsp;professorSignupRequest)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">교수 회원가입을 처리합니다.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/StudentSignupResponse.html" title="class in inha.git.user.api.controller.dto.response">StudentSignupResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#studentSignup(inha.git.user.api.controller.dto.request.StudentSignupRequest)" class="member-name-link">studentSignup</a><wbr>(<a href="dto/request/StudentSignupRequest.html" title="class in inha.git.user.api.controller.dto.request">StudentSignupRequest</a>&nbsp;studentSignupRequest)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/StudentSignupResponse.html" title="class in inha.git.user.api.controller.dto.response">StudentSignupResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#studentSignup(inha.git.user.api.controller.dto.request.StudentSignupRequest)" class="member-name-link">studentSignup</a><wbr>(<a href="dto/request/StudentSignupRequest.html" title="class in inha.git.user.api.controller.dto.request">StudentSignupRequest</a>&nbsp;studentSignupRequest)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">학생 회원가입을 처리합니다.</div>
 </div>
 </div>
@@ -288,29 +281,6 @@ loadScripts(document, 'script');</script>
 <dd><code>page</code> - 조회할 페이지 번호 (1부터 시작)</dd>
 <dt>Returns:</dt>
 <dd>BaseResponse&lt;Page<SearchQuestionsResponse>> 질문 목록을 포함한 페이징 응답</dd>
-<dt>Throws:</dt>
-<dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - 페이지 번호가 1 미만이거나, 조회 권한이 없는 경우</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getUserTeams(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)">
-<h3>getUserTeams</h3>
-<div class="member-signature"><span class="annotations">@GetMapping("/{userIdx}/teams")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="../../../team/api/controller/dto/response/SearchMyTeamsResponse.html" title="class in inha.git.team.api.controller.dto.response">SearchMyTeamsResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getUserTeams</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("userIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
- @RequestParam("page")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</span></div>
-<div class="block">특정 사용자가 참여중인 팀 목록을 조회합니다.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 현재 인증된 사용자 정보</dd>
-<dd><code>userIdx</code> - 조회할 대상 사용자의 식별자</dd>
-<dd><code>page</code> - 조회할 페이지 번호 (1부터 시작)</dd>
-<dt>Returns:</dt>
-<dd>BaseResponse&lt;Page<SearchMyTeamsResponse>> 팀 목록을 포함한 페이징 응답</dd>
 <dt>Throws:</dt>
 <dd><code><a href="../../../common/exceptions/BaseException.html" title="class in inha.git.common.exceptions">BaseException</a></code> - 페이지 번호가 1 미만이거나, 조회 권한이 없는 경우</dd>
 </dl>

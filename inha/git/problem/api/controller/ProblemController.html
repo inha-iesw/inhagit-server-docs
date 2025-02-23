@@ -107,88 +107,44 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#approveRequest(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemApproveRequest)" class="member-name-link">approveRequest</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="dto/request/CreateProblemApproveRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemApproveRequest</a>&nbsp;createProblemApproveRequest)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 참여 승인 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">createProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest,java.util.List)" class="member-name-link">createProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemRequest,
- org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;files)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 생성 API</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">deleteProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 삭제 API</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAvailableSubmits(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getAvailableSubmits</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 제출 가능 여부 조회 API</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/ProblemParticipantsResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemParticipantsResponse</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getParticipants(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getParticipants</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblem(java.lang.Integer)" class="member-name-link">getProblem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 참여자 목록 조회 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblem(java.lang.Integer)" class="member-name-link">getProblem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 상세 조회 API</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblems(java.lang.Integer,java.lang.Integer)" class="member-name-link">getProblems</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblems(java.lang.Integer,java.lang.Integer)" class="member-name-link">getProblems</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 목록 조회 API</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRequestProblems(java.lang.Integer,java.lang.Integer,java.lang.Integer)" class="member-name-link">getRequestProblems</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 신청 목록 조회 API</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#requestTeam(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateTeamRequestProblemRequest)" class="member-name-link">requestTeam</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="dto/request/CreateTeamRequestProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateTeamRequestProblemRequest</a>&nbsp;createTeamRequestProblemRequest)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 팀 참여 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#requestUser(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateRequestProblemRequest)" class="member-name-link">requestUser</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="dto/request/CreateRequestProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateRequestProblemRequest</a>&nbsp;createRequestProblemRequest)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 개인 참여 API</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#submitPersonal(inha.git.user.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile)" class="member-name-link">submitPersonal</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;personalIdx,
- org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 개인 제출 API</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#submitTeam(inha.git.user.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile)" class="member-name-link">submitTeam</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;teamIdx,
- org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">문제 팀 제출 API</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateProblem(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.api.controller.dto.request.UpdateProblemRequest,org.springframework.web.multipart.MultipartFile)" class="member-name-link">updateProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateProblem(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.api.controller.dto.request.UpdateProblemRequest,java.util.List)" class="member-name-link">updateProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
  <a href="dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
- org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;files)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 수정 API</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateProblemStatus(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.domain.enums.ProblemStatus)" class="member-name-link">updateProblemStatus</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
+ <a href="../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a>&nbsp;status)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">문제 상태 수정 API</div>
 </div>
 </div>
 </div>
@@ -257,48 +213,70 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="createProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest,org.springframework.web.multipart.MultipartFile)">
+<section class="detail" id="createProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest,java.util.List)">
 <h3>createProblem</h3>
 <div class="member-signature"><span class="annotations">@PostMapping(consumes="multipart/form-data")
-@PreAuthorize("hasAuthority(\'assistant:create\')")
+@PreAuthorize("hasAnyAuthority(\'professor:create\', \'company:create\')")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">createProblem</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @Validated @RequestPart("createProblemRequest")
  <a href="dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemRequest,
- @RequestPart("file")
- org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
+ @RequestPart(value="files",required=false)
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;files)</span></div>
 <div class="block">문제 생성 API</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 유저 정보</dd>
 <dd><code>createProblemRequest</code> - 문제 생성 요청 정보</dd>
-<dd><code>file</code> - 문제 파일</dd>
+<dd><code>files</code> - 문제 파일들</dd>
 <dt>Returns:</dt>
 <dd>생성된 문제 정보</dd>
 </dl>
 </section>
 </li>
 <li>
-<section class="detail" id="updateProblem(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.api.controller.dto.request.UpdateProblemRequest,org.springframework.web.multipart.MultipartFile)">
+<section class="detail" id="updateProblem(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.api.controller.dto.request.UpdateProblemRequest,java.util.List)">
 <h3>updateProblem</h3>
 <div class="member-signature"><span class="annotations">@PutMapping(value="/{problemIdx}",
             consumes="multipart/form-data")
-@PreAuthorize("hasAuthority(\'assistant:update\')")
+@PreAuthorize("hasAnyAuthority(\'professor:update\', \'company:update\')")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">updateProblem</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("problemIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
  @Validated @RequestPart("updateProblemRequest")
  <a href="dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
- @RequestPart(value="file",required=false)
- org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
+ @RequestPart(value="files",required=false)
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.springframework.web.multipart.MultipartFile&gt;&nbsp;files)</span></div>
 <div class="block">문제 수정 API</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>user</code> - 유저 정보</dd>
 <dd><code>problemIdx</code> - 문제 인덱스</dd>
 <dd><code>updateProblemRequest</code> - 문제 수정 요청 정보</dd>
-<dd><code>file</code> - 문제 파일</dd>
+<dd><code>files</code> - 문제 파일들</dd>
+<dt>Returns:</dt>
+<dd>수정된 문제 정보</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="updateProblemStatus(inha.git.user.domain.User,java.lang.Integer,inha.git.problem.domain.enums.ProblemStatus)">
+<h3>updateProblemStatus</h3>
+<div class="member-signature"><span class="annotations">@PatchMapping("/{problemIdx}")
+@PreAuthorize("hasAnyAuthority(\'professor:update\', \'company:update\')")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">updateProblemStatus</span><wbr><span class="parameters">(@AuthenticationPrincipal
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ @PathVariable("problemIdx")
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
+ @Validated @RequestParam("status")
+ <a href="../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a>&nbsp;status)</span></div>
+<div class="block">문제 상태 수정 API</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>user</code> - 유저 정보</dd>
+<dd><code>problemIdx</code> - 문제 인덱스</dd>
+<dd><code>status</code> - 문제 상태</dd>
 <dt>Returns:</dt>
 <dd>수정된 문제 정보</dd>
 </dl>
@@ -308,7 +286,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="deleteProblem(inha.git.user.domain.User,java.lang.Integer)">
 <h3>deleteProblem</h3>
 <div class="member-signature"><span class="annotations">@DeleteMapping("/{problemIdx}")
-@PreAuthorize("hasAuthority(\'assistant:delete\')")
+@PreAuthorize("hasAnyAuthority(\'professor:update\', \'company:update\')")
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">deleteProblem</span><wbr><span class="parameters">(@AuthenticationPrincipal
  <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  @PathVariable("problemIdx")
@@ -320,158 +298,6 @@ loadScripts(document, 'script');</script>
 <dd><code>problemIdx</code> - 문제 인덱스</dd>
 <dt>Returns:</dt>
 <dd>삭제된 문제 정보</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getRequestProblems(java.lang.Integer,java.lang.Integer,java.lang.Integer)">
-<h3>getRequestProblems</h3>
-<div class="member-signature"><span class="annotations">@GetMapping("/requests")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;org.springframework.data.domain.Page&lt;<a href="dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getRequestProblems</span><wbr><span class="parameters">(@RequestParam("problemIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
- @RequestParam("page")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page,
- @RequestParam("size")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;size)</span></div>
-<div class="block">문제 신청 목록 조회 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>page</code> - 페이지</dd>
-<dd><code>size</code> - 사이즈</dd>
-<dt>Returns:</dt>
-<dd>문제 신청 목록</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="requestUser(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateRequestProblemRequest)">
-<h3>requestUser</h3>
-<div class="member-signature"><span class="annotations">@PostMapping("/requests/user")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">requestUser</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @Validated @RequestBody
- <a href="dto/request/CreateRequestProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateRequestProblemRequest</a>&nbsp;createRequestProblemRequest)</span></div>
-<div class="block">문제 개인 참여 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 유저 정보</dd>
-<dd><code>createRequestProblemRequest</code> - 문제 참여 요청 정보</dd>
-<dt>Returns:</dt>
-<dd>참여된 문제 정보</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="requestTeam(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateTeamRequestProblemRequest)">
-<h3>requestTeam</h3>
-<div class="member-signature"><span class="annotations">@PostMapping("/requests/team")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">requestTeam</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @Validated @RequestBody
- <a href="dto/request/CreateTeamRequestProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateTeamRequestProblemRequest</a>&nbsp;createTeamRequestProblemRequest)</span></div>
-<div class="block">문제 팀 참여 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 유저 정보</dd>
-<dd><code>createTeamRequestProblemRequest</code> - 문제 팀 참여 요청 정보</dd>
-<dt>Returns:</dt>
-<dd>참여된 문제 정보</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="approveRequest(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemApproveRequest)">
-<h3>approveRequest</h3>
-<div class="member-signature"><span class="annotations">@PutMapping("/requests/approve")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">approveRequest</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @Validated @RequestBody
- <a href="dto/request/CreateProblemApproveRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemApproveRequest</a>&nbsp;createProblemApproveRequest)</span></div>
-<div class="block">문제 참여 승인 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 유저 정보</dd>
-<dd><code>createProblemApproveRequest</code> - 문제 참여 승인 요청 정보</dd>
-<dt>Returns:</dt>
-<dd>승인된 문제 정보</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getParticipants(inha.git.user.domain.User,java.lang.Integer)">
-<h3>getParticipants</h3>
-<div class="member-signature"><span class="annotations">@GetMapping("/{problemIdx}/participants")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/ProblemParticipantsResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemParticipantsResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getParticipants</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("problemIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</span></div>
-<div class="block">문제 참여자 목록 조회 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problemIdx</code> - 문제 인덱스</dd>
-<dt>Returns:</dt>
-<dd>문제 참여자 목록</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getAvailableSubmits(inha.git.user.domain.User,java.lang.Integer)">
-<h3>getAvailableSubmits</h3>
-<div class="member-signature"><span class="annotations">@GetMapping("{problemIdx}/submits")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a>&gt;&gt;</span>&nbsp;<span class="element-name">getAvailableSubmits</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("problemIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</span></div>
-<div class="block">문제 제출 가능 여부 조회 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problemIdx</code> - 문제 인덱스</dd>
-<dt>Returns:</dt>
-<dd>문제 제출 가능 여부</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="submitPersonal(inha.git.user.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile)">
-<h3>submitPersonal</h3>
-<div class="member-signature"><span class="annotations">@PostMapping(value="/{personalIdx}/submits/personal",
-             consumes="multipart/form-data")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a>&gt;</span>&nbsp;<span class="element-name">submitPersonal</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("personalIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;personalIdx,
- @RequestPart("file")
- org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
-<div class="block">문제 개인 제출 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 유저 정보</dd>
-<dd><code>personalIdx</code> - 개인 인덱스</dd>
-<dd><code>file</code> - 제출 파일</dd>
-<dt>Returns:</dt>
-<dd>제출된 문제 정보</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="submitTeam(inha.git.user.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile)">
-<h3>submitTeam</h3>
-<div class="member-signature"><span class="annotations">@PostMapping(value="/{teamIdx}/submits/team",
-             consumes="multipart/form-data")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a>&gt;</span>&nbsp;<span class="element-name">submitTeam</span><wbr><span class="parameters">(@AuthenticationPrincipal
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- @PathVariable("teamIdx")
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;teamIdx,
- @RequestPart("file")
- org.springframework.web.multipart.MultipartFile&nbsp;file)</span></div>
-<div class="block">문제 팀 제출 API</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 유저 정보</dd>
-<dd><code>teamIdx</code> - 팀 인덱스</dd>
-<dd><code>file</code> - 제출 파일</dd>
-<dt>Returns:</dt>
-<dd>제출된 문제 정보</dd>
 </dl>
 </section>
 </li>

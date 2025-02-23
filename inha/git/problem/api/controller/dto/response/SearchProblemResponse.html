@@ -77,7 +77,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">SearchProblemResponse</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;idx, @NotNull @Size(min=1,max=12) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title, @NotNull @Size(min=1,max=250) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&nbsp;createdAt, @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">SearchProblemResponse</span>(@jakarta.validation.constraints.NotNull int&nbsp;idx, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&nbsp;createdAt, @jakarta.validation.constraints.NotNull int&nbsp;participantCount, @NotNull <a href="../../../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a>&nbsp;status, @jakarta.validation.constraints.NotNull boolean&nbsp;hasAttachment, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration, @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;&nbsp;attachments)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
 </section>
 <section class="summary">
@@ -90,13 +90,16 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Integer,java.lang.String,java.lang.String,java.time.LocalDateTime,inha.git.project.api.controller.dto.response.SearchUserResponse,java.lang.String,java.lang.String)" class="member-name-link">SearchProblemResponse</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;idx,
- @NotNull @Size(min=1,max=12) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
- @NotNull @Size(min=1,max=250) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,java.lang.String,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.lang.String,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List)" class="member-name-link">SearchProblemResponse</a><wbr>(@jakarta.validation.constraints.NotNull int&nbsp;idx,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&nbsp;createdAt,
- @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ @jakarta.validation.constraints.NotNull int&nbsp;participantCount,
+ @NotNull <a href="../../../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a>&nbsp;status,
+ @jakarta.validation.constraints.NotNull boolean&nbsp;hasAttachment,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration,
- @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath)</code></div>
+ @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;&nbsp;attachments)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an instance of a <code>SearchProblemResponse</code> record class.</div>
 </div>
@@ -114,54 +117,69 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#author()" class="member-name-link">author</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#attachments()" class="member-name-link">attachments</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>attachments</code> record component.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#author()" class="member-name-link">author</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>author</code> record component.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull @Size(min=1,max=250) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#contents()" class="member-name-link">contents</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#contents()" class="member-name-link">contents</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>contents</code> record component.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createdAt()" class="member-name-link">createdAt</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createdAt()" class="member-name-link">createdAt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>createdAt</code> record component.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#duration()" class="member-name-link">duration</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#duration()" class="member-name-link">duration</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>duration</code> record component.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Indicates whether some other object is "equal to" this one.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#filePath()" class="member-name-link">filePath</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>filePath</code> record component.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final int</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@jakarta.validation.constraints.NotNull boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hasAttachment()" class="member-name-link">hasAttachment</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>hasAttachment</code> record component.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a hash code value for this object.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#idx()" class="member-name-link">idx</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@jakarta.validation.constraints.NotNull int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#idx()" class="member-name-link">idx</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>idx</code> record component.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull @Size(min=1,max=12) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#title()" class="member-name-link">title</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@jakarta.validation.constraints.NotNull int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#participantCount()" class="member-name-link">participantCount</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>participantCount</code> record component.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../../../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#status()" class="member-name-link">status</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>status</code> record component.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#title()" class="member-name-link">title</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>title</code> record component.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a string representation of this record class.</div>
 </div>
 </div>
@@ -182,22 +200,27 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.Integer,java.lang.String,java.lang.String,java.time.LocalDateTime,inha.git.project.api.controller.dto.response.SearchUserResponse,java.lang.String,java.lang.String)">
+<section class="detail" id="&lt;init&gt;(int,java.lang.String,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.lang.String,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List)">
 <h3>SearchProblemResponse</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SearchProblemResponse</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;idx,
- @NotNull @Size(min=1,max=12)
- @NotNull @Size(min=1,max=12) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
- @NotNull @Size(min=1,max=250)
- @NotNull @Size(min=1,max=250) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
+ @jakarta.validation.constraints.NotNull int&nbsp;idx,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&nbsp;createdAt,
  @NotNull
- @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ @jakarta.validation.constraints.NotNull int&nbsp;participantCount,
+ @NotNull
+ @NotNull <a href="../../../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a>&nbsp;status,
+ @NotNull
+ @jakarta.validation.constraints.NotNull boolean&nbsp;hasAttachment,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration,
  @NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath)</span></div>
+ @NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;&nbsp;attachments)</span></div>
 <div class="block">Creates an instance of a <code>SearchProblemResponse</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -205,9 +228,12 @@ loadScripts(document, 'script');</script>
 <dd><code>title</code> - the value for the <code>title</code> record component</dd>
 <dd><code>contents</code> - the value for the <code>contents</code> record component</dd>
 <dd><code>createdAt</code> - the value for the <code>createdAt</code> record component</dd>
-<dd><code>author</code> - the value for the <code>author</code> record component</dd>
+<dd><code>participantCount</code> - the value for the <code>participantCount</code> record component</dd>
+<dd><code>status</code> - the value for the <code>status</code> record component</dd>
+<dd><code>hasAttachment</code> - the value for the <code>hasAttachment</code> record component</dd>
 <dd><code>duration</code> - the value for the <code>duration</code> record component</dd>
-<dd><code>filePath</code> - the value for the <code>filePath</code> record component</dd>
+<dd><code>author</code> - the value for the <code>author</code> record component</dd>
+<dd><code>attachments</code> - the value for the <code>attachments</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -249,7 +275,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="equals(java.lang.Object)">
 <h3>equals</h3>
 <div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
-<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>.</div>
+<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. Reference components are compared with <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>; primitive components are compared with '=='.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></code></dd>
@@ -264,7 +290,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="idx()">
 <h3>idx</h3>
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">idx</span>()</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@jakarta.validation.constraints.NotNull int</span>&nbsp;<span class="element-name">idx</span>()</div>
 <div class="block">Returns the value of the <code>idx</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -276,9 +302,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="title()">
 <h3>title</h3>
 <div class="member-signature"><span class="annotations">@NotNull
-@Size(min=1,
-      max=12)
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull @Size(min=1,max=12) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">title</span>()</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">title</span>()</div>
 <div class="block">Returns the value of the <code>title</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -290,9 +314,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="contents()">
 <h3>contents</h3>
 <div class="member-signature"><span class="annotations">@NotNull
-@Size(min=1,
-      max=250)
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull @Size(min=1,max=250) <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">contents</span>()</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">contents</span>()</div>
 <div class="block">Returns the value of the <code>contents</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -313,14 +335,38 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="author()">
-<h3>author</h3>
+<section class="detail" id="participantCount()">
+<h3>participantCount</h3>
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></span>&nbsp;<span class="element-name">author</span>()</div>
-<div class="block">Returns the value of the <code>author</code> record component.</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@jakarta.validation.constraints.NotNull int</span>&nbsp;<span class="element-name">participantCount</span>()</div>
+<div class="block">Returns the value of the <code>participantCount</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the value of the <code>author</code> record component</dd>
+<dd>the value of the <code>participantCount</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="status()">
+<h3>status</h3>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="../../../../domain/enums/ProblemStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemStatus</a></span>&nbsp;<span class="element-name">status</span>()</div>
+<div class="block">Returns the value of the <code>status</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>status</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="hasAttachment()">
+<h3>hasAttachment</h3>
+<div class="member-signature"><span class="annotations">@NotNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@jakarta.validation.constraints.NotNull boolean</span>&nbsp;<span class="element-name">hasAttachment</span>()</div>
+<div class="block">Returns the value of the <code>hasAttachment</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>hasAttachment</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -337,14 +383,25 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="filePath()">
-<h3>filePath</h3>
+<section class="detail" id="author()">
+<h3>author</h3>
 <div class="member-signature"><span class="annotations">@NotNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">filePath</span>()</div>
-<div class="block">Returns the value of the <code>filePath</code> record component.</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull <a href="../../../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></span>&nbsp;<span class="element-name">author</span>()</div>
+<div class="block">Returns the value of the <code>author</code> record component.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the value of the <code>filePath</code> record component</dd>
+<dd>the value of the <code>author</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="attachments()">
+<h3>attachments</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;</span>&nbsp;<span class="element-name">attachments</span>()</div>
+<div class="block">Returns the value of the <code>attachments</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>attachments</code> record component</dd>
 </dl>
 </section>
 </li>

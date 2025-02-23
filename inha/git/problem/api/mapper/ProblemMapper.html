@@ -88,73 +88,27 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createProblemRequestToProblem(inha.git.problem.api.controller.dto.request.CreateProblemRequest,java.lang.String,inha.git.user.domain.User)" class="member-name-link">createProblemRequestToProblem</a><wbr>(<a href="../controller/dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath,
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">CreateProblemRequest를 Problem 엔티티로 변환</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createProblemRequestToProblemRequest(inha.git.problem.domain.Problem,java.lang.Integer)" class="member-name-link">createProblemRequestToProblemRequest</a><wbr>(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">User와 Problem을 ProblemRequest로 변환</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createProblemSubmitRequestToProblemSubmit(inha.git.problem.domain.ProblemRequest,java.lang.String,java.lang.String)" class="member-name-link">createProblemSubmitRequestToProblemSubmit</a><wbr>(<a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;zipFilePath,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;folderName)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/ProblemPersonalRequest.html" title="class in inha.git.problem.domain">ProblemPersonalRequest</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createRequestProblemRequestToProblemPersonalRequest(inha.git.user.domain.User,inha.git.problem.domain.ProblemRequest)" class="member-name-link">createRequestProblemRequestToProblemPersonalRequest</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">User와 ProblemRequest를 ProblemPersonalRequest로 변환</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/ProblemTeamRequest.html" title="class in inha.git.problem.domain">ProblemTeamRequest</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createTeamRequestProblemRequestToProblemTeamRequest(inha.git.team.domain.Team,inha.git.problem.domain.ProblemRequest)" class="member-name-link">createTeamRequestProblemRequestToProblemTeamRequest</a><wbr>(<a href="../../../team/domain/Team.html" title="class in inha.git.team.domain">Team</a>&nbsp;team,
- <a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Team과 ProblemRequest를 ProblemTeamRequest로 변환</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemRequestToRequestProblemResponse(inha.git.problem.domain.ProblemRequest)" class="member-name-link">problemRequestToRequestProblemResponse</a><wbr>(<a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">ProblemReuqest를 RequestProblemResponse로 변환</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemSubmitToProblemSubmitResponse(inha.git.problem.domain.ProblemSubmit)" class="member-name-link">problemSubmitToProblemSubmitResponse</a><wbr>(<a href="../../domain/ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a>&nbsp;problemSubmit)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemToProblemResponse(inha.git.problem.domain.Problem)" class="member-name-link">problemToProblemResponse</a><wbr>(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Problem 엔티티를 ProblemResponse로 변환</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.user.domain.User)" class="member-name-link">problemToSearchProblemResponse</a><wbr>(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;author)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Problem 엔티티를 SearchProblemResponse로 변환</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateProblemRequestToProblem(inha.git.problem.api.controller.dto.request.UpdateProblemRequest,inha.git.problem.domain.Problem)" class="member-name-link">updateProblemRequestToProblem</a><wbr>(<a href="../controller/dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/ProblemAttachment.html" title="class in inha.git.problem.domain">ProblemAttachment</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createProblemAttachmentRequestToProblemAttachment(java.lang.String,java.lang.String,inha.git.problem.domain.Problem)" class="member-name-link">createProblemAttachmentRequestToProblemAttachment</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;originalFileName,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;storedFileUrl,
  <a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">파일 경로가 없는 경우</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createProblemRequestToProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest)" class="member-name-link">createProblemRequestToProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../controller/dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemReques)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemToProblemResponse(inha.git.problem.domain.Problem)" class="member-name-link">problemToProblemResponse</a><wbr>(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List)" class="member-name-link">problemToSearchProblemResponse</a><wbr>(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;&nbsp;attachments)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateProblemRequestToProblem(inha.git.problem.api.controller.dto.request.UpdateProblemRequest,java.lang.String,inha.git.problem.domain.Problem)" class="member-name-link">updateProblemRequestToProblem</a><wbr>(<a href="../controller/dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateProblemRequestToProblem(inha.git.problem.api.controller.dto.request.UpdateProblemRequest,inha.git.problem.domain.Problem)" class="member-name-link">updateProblemRequestToProblem</a><wbr>(<a href="../controller/dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
  <a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">파일 경로가 있는 경우</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#userToSearchUserResponse(inha.git.user.domain.User)" class="member-name-link">userToSearchUserResponse</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">User 엔티티를 SearchUserResponse로 변환</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -170,31 +124,16 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="createProblemRequestToProblem(inha.git.problem.api.controller.dto.request.CreateProblemRequest,java.lang.String,inha.git.user.domain.User)">
+<section class="detail" id="createProblemRequestToProblem(inha.git.user.domain.User,inha.git.problem.api.controller.dto.request.CreateProblemRequest)">
 <h3>createProblemRequestToProblem</h3>
-<div class="member-signature"><span class="return-type"><a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a></span>&nbsp;<span class="element-name">createProblemRequestToProblem</span><wbr><span class="parameters">(<a href="../controller/dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath,
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user)</span></div>
-<div class="block">CreateProblemRequest를 Problem 엔티티로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>createProblemRequest</code> - </dd>
-<dd><code>filePath</code> - </dd>
-<dd><code>user</code> - </dd>
-<dt>Returns:</dt>
-</dl>
+<div class="member-signature"><span class="return-type"><a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a></span>&nbsp;<span class="element-name">createProblemRequestToProblem</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="../controller/dto/request/CreateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">CreateProblemRequest</a>&nbsp;createProblemReques)</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="problemToProblemResponse(inha.git.problem.domain.Problem)">
 <h3>problemToProblemResponse</h3>
 <div class="member-signature"><span class="return-type"><a href="../controller/dto/response/ProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemResponse</a></span>&nbsp;<span class="element-name">problemToProblemResponse</span><wbr><span class="parameters">(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</span></div>
-<div class="block">Problem 엔티티를 ProblemResponse로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problem</code> - </dd>
-<dt>Returns:</dt>
-</dl>
 </section>
 </li>
 <li>
@@ -202,121 +141,22 @@ loadScripts(document, 'script');</script>
 <h3>updateProblemRequestToProblem</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">updateProblemRequestToProblem</span><wbr><span class="parameters">(<a href="../controller/dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
  <a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</span></div>
-<div class="block">파일 경로가 없는 경우</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>updateProblemRequest</code> - </dd>
-<dd><code>problem</code> - </dd>
-</dl>
 </section>
 </li>
 <li>
-<section class="detail" id="updateProblemRequestToProblem(inha.git.problem.api.controller.dto.request.UpdateProblemRequest,java.lang.String,inha.git.problem.domain.Problem)">
-<h3>updateProblemRequestToProblem</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">updateProblemRequestToProblem</span><wbr><span class="parameters">(<a href="../controller/dto/request/UpdateProblemRequest.html" title="class in inha.git.problem.api.controller.dto.request">UpdateProblemRequest</a>&nbsp;updateProblemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filePath,
- <a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</span></div>
-<div class="block">파일 경로가 있는 경우</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>updateProblemRequest</code> - </dd>
-<dd><code>filePath</code> - </dd>
-<dd><code>problem</code> - </dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.user.domain.User)">
+<section class="detail" id="problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List)">
 <h3>problemToSearchProblemResponse</h3>
 <div class="member-signature"><span class="return-type"><a href="../controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></span>&nbsp;<span class="element-name">problemToSearchProblemResponse</span><wbr><span class="parameters">(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
- <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;author)</span></div>
-<div class="block">Problem 엔티티를 SearchProblemResponse로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problem</code> - </dd>
-<dd><code>author</code> - </dd>
-<dt>Returns:</dt>
-</dl>
+ <a href="../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a>&nbsp;author,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../controller/dto/response/SearchProblemAttachmentResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemAttachmentResponse</a>&gt;&nbsp;attachments)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="userToSearchUserResponse(inha.git.user.domain.User)">
-<h3>userToSearchUserResponse</h3>
-<div class="member-signature"><span class="return-type"><a href="../../../project/api/controller/dto/response/SearchUserResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchUserResponse</a></span>&nbsp;<span class="element-name">userToSearchUserResponse</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user)</span></div>
-<div class="block">User 엔티티를 SearchUserResponse로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - </dd>
-<dt>Returns:</dt>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="createProblemRequestToProblemRequest(inha.git.problem.domain.Problem,java.lang.Integer)">
-<h3>createProblemRequestToProblemRequest</h3>
-<div class="member-signature"><span class="return-type"><a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a></span>&nbsp;<span class="element-name">createProblemRequestToProblemRequest</span><wbr><span class="parameters">(<a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;type)</span></div>
-<div class="block">User와 Problem을 ProblemRequest로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problem</code> - </dd>
-<dd><code>type</code> - </dd>
-<dt>Returns:</dt>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="problemRequestToRequestProblemResponse(inha.git.problem.domain.ProblemRequest)">
-<h3>problemRequestToRequestProblemResponse</h3>
-<div class="member-signature"><span class="return-type"><a href="../controller/dto/response/RequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">RequestProblemResponse</a></span>&nbsp;<span class="element-name">problemRequestToRequestProblemResponse</span><wbr><span class="parameters">(<a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</span></div>
-<div class="block">ProblemReuqest를 RequestProblemResponse로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>problemRequest</code> - </dd>
-<dt>Returns:</dt>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="createRequestProblemRequestToProblemPersonalRequest(inha.git.user.domain.User,inha.git.problem.domain.ProblemRequest)">
-<h3>createRequestProblemRequestToProblemPersonalRequest</h3>
-<div class="member-signature"><span class="return-type"><a href="../../domain/ProblemPersonalRequest.html" title="class in inha.git.problem.domain">ProblemPersonalRequest</a></span>&nbsp;<span class="element-name">createRequestProblemRequestToProblemPersonalRequest</span><wbr><span class="parameters">(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
- <a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</span></div>
-<div class="block">User와 ProblemRequest를 ProblemPersonalRequest로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - </dd>
-<dd><code>problemRequest</code> - </dd>
-<dt>Returns:</dt>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="createTeamRequestProblemRequestToProblemTeamRequest(inha.git.team.domain.Team,inha.git.problem.domain.ProblemRequest)">
-<h3>createTeamRequestProblemRequestToProblemTeamRequest</h3>
-<div class="member-signature"><span class="return-type"><a href="../../domain/ProblemTeamRequest.html" title="class in inha.git.problem.domain">ProblemTeamRequest</a></span>&nbsp;<span class="element-name">createTeamRequestProblemRequestToProblemTeamRequest</span><wbr><span class="parameters">(<a href="../../../team/domain/Team.html" title="class in inha.git.team.domain">Team</a>&nbsp;team,
- <a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</span></div>
-<div class="block">Team과 ProblemRequest를 ProblemTeamRequest로 변환</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>team</code> - </dd>
-<dd><code>problemRequest</code> - </dd>
-<dt>Returns:</dt>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="createProblemSubmitRequestToProblemSubmit(inha.git.problem.domain.ProblemRequest,java.lang.String,java.lang.String)">
-<h3>createProblemSubmitRequestToProblemSubmit</h3>
-<div class="member-signature"><span class="return-type"><a href="../../domain/ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a></span>&nbsp;<span class="element-name">createProblemSubmitRequestToProblemSubmit</span><wbr><span class="parameters">(<a href="../../domain/ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;zipFilePath,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;folderName)</span></div>
-</section>
-</li>
-<li>
-<section class="detail" id="problemSubmitToProblemSubmitResponse(inha.git.problem.domain.ProblemSubmit)">
-<h3>problemSubmitToProblemSubmitResponse</h3>
-<div class="member-signature"><span class="return-type"><a href="../controller/dto/response/ProblemSubmitResponse.html" title="class in inha.git.problem.api.controller.dto.response">ProblemSubmitResponse</a></span>&nbsp;<span class="element-name">problemSubmitToProblemSubmitResponse</span><wbr><span class="parameters">(<a href="../../domain/ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a>&nbsp;problemSubmit)</span></div>
+<section class="detail" id="createProblemAttachmentRequestToProblemAttachment(java.lang.String,java.lang.String,inha.git.problem.domain.Problem)">
+<h3>createProblemAttachmentRequestToProblemAttachment</h3>
+<div class="member-signature"><span class="return-type"><a href="../../domain/ProblemAttachment.html" title="class in inha.git.problem.domain">ProblemAttachment</a></span>&nbsp;<span class="element-name">createProblemAttachmentRequestToProblemAttachment</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;originalFileName,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;storedFileUrl,
+ <a href="../../domain/Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem)</span></div>
 </section>
 </li>
 </ul>

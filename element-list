@@ -93,6 +93,7 @@ inha.git.problem.api.controller.dto.response
 inha.git.problem.api.mapper
 inha.git.problem.api.service
 inha.git.problem.domain
+inha.git.problem.domain.enums
 inha.git.problem.domain.repository
 inha.git.project.api.controller
 inha.git.project.api.controller.dto.request

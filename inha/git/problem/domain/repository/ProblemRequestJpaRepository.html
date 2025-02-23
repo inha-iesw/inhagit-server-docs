@@ -93,22 +93,31 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;integer,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#existsByProblemAndUserAndState(inha.git.problem.domain.Problem,inha.git.user.domain.User,inha.git.common.BaseEntity.State)" class="member-name-link">existsByProblemAndUserAndState</a><wbr>(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemAndAcceptAtIsNotNullAndState(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State)" class="member-name-link">findByProblemAndAcceptAtIsNotNullAndState</a><wbr>(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;integer,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemIdAndAcceptAtIsNotNullAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByProblemIdAndAcceptAtIsNotNullAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemId,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemAndState(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)" class="member-name-link">findByProblemAndState</a><wbr>(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemAndStateAndProblemRequestStatus(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State,inha.git.problem.domain.enums.ProblemRequestStatus,org.springframework.data.domain.Pageable)" class="member-name-link">findByProblemAndStateAndProblemRequestStatus</a><wbr>(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ <a href="../enums/ProblemRequestStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemRequestStatus</a>&nbsp;problemRequestStatus,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemIdAndUserAndState(java.lang.Integer,inha.git.user.domain.User,inha.git.common.BaseEntity.State)" class="member-name-link">findByProblemIdAndUserAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByProblemIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
- <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -149,23 +158,35 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 </section>
 </li>
 <li>
-<section class="detail" id="findByProblemIdAndAcceptAtIsNotNullAndState(java.lang.Integer,inha.git.common.BaseEntity.State)">
-<h3>findByProblemIdAndAcceptAtIsNotNullAndState</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemIdAndAcceptAtIsNotNullAndState</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemId,
+<section class="detail" id="existsByProblemAndUserAndState(inha.git.problem.domain.Problem,inha.git.user.domain.User,inha.git.common.BaseEntity.State)">
+<h3>existsByProblemAndUserAndState</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">existsByProblemAndUserAndState</span><wbr><span class="parameters">(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="findByProblemIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)">
-<h3>findByProblemIdAndState</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemIdAndState</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
- <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
+<section class="detail" id="findByProblemAndState(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)">
+<h3>findByProblemAndState</h3>
+<div class="member-signature"><span class="return-type">org.springframework.data.domain.Page&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemAndState</span><wbr><span class="parameters">(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</span></div>
 </section>
 </li>
 <li>
-<section class="detail" id="findByProblemAndAcceptAtIsNotNullAndState(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State)">
-<h3>findByProblemAndAcceptAtIsNotNullAndState</h3>
-<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemAndAcceptAtIsNotNullAndState</span><wbr><span class="parameters">(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+<section class="detail" id="findByProblemAndStateAndProblemRequestStatus(inha.git.problem.domain.Problem,inha.git.common.BaseEntity.State,inha.git.problem.domain.enums.ProblemRequestStatus,org.springframework.data.domain.Pageable)">
+<h3>findByProblemAndStateAndProblemRequestStatus</h3>
+<div class="member-signature"><span class="return-type">org.springframework.data.domain.Page&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemAndStateAndProblemRequestStatus</span><wbr><span class="parameters">(<a href="../Problem.html" title="class in inha.git.problem.domain">Problem</a>&nbsp;problem,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+ <a href="../enums/ProblemRequestStatus.html" title="enum class in inha.git.problem.domain.enums">ProblemRequestStatus</a>&nbsp;problemRequestStatus,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="findByProblemIdAndUserAndState(java.lang.Integer,inha.git.user.domain.User,inha.git.common.BaseEntity.State)">
+<h3>findByProblemIdAndUserAndState</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&gt;</span>&nbsp;<span class="element-name">findByProblemIdAndUserAndState</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
 </section>
 </li>
