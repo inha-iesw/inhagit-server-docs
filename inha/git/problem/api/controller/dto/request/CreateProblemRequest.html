@@ -77,7 +77,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">CreateProblemRequest</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">CreateProblemRequest</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents, @NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.") <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;fieldIdxList)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
 </section>
 <section class="summary">
@@ -90,9 +90,10 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">CreateProblemRequest</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.util.List)" class="member-name-link">CreateProblemRequest</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration,
- @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents)</code></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
+ @NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.") <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;fieldIdxList)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an instance of a <code>CreateProblemRequest</code> record class.</div>
 </div>
@@ -125,19 +126,24 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Indicates whether some other object is "equal to" this one.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.") <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#fieldIdxList()" class="member-name-link">fieldIdxList</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>fieldIdxList</code> record component.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a hash code value for this object.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#title()" class="member-name-link">title</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#title()" class="member-name-link">title</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>title</code> record component.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a string representation of this record class.</div>
 </div>
 </div>
@@ -158,20 +164,23 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String)">
+<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.util.List)">
 <h3>CreateProblemRequest</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">CreateProblemRequest</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;duration,
  @NotNull
- @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents)</span></div>
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;contents,
+ @NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.")
+ @NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.") <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;fieldIdxList)</span></div>
 <div class="block">Creates an instance of a <code>CreateProblemRequest</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>title</code> - the value for the <code>title</code> record component</dd>
 <dd><code>duration</code> - the value for the <code>duration</code> record component</dd>
 <dd><code>contents</code> - the value for the <code>contents</code> record component</dd>
+<dd><code>fieldIdxList</code> - the value for the <code>fieldIdxList</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -257,6 +266,21 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the value of the <code>contents</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="fieldIdxList()">
+<h3>fieldIdxList</h3>
+<div class="member-signature"><span class="annotations">@NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.")
+@Size(min=1,
+      max=1,
+      message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull(message="\ubd84\uc57c\ub97c \uc120\ud0dd\ud574\uc8fc\uc138\uc694.") @Size(min=1,max=1,message="\ud558\ub098\uc758 \ubd84\uc57c\ub9cc \uc120\ud0dd\ud574\uc57c \ud569\ub2c8\ub2e4.") <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">fieldIdxList</span>()</div>
+<div class="block">Returns the value of the <code>fieldIdxList</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>fieldIdxList</code> record component</dd>
 </dl>
 </section>
 </li>

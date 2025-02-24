@@ -133,29 +133,36 @@ implements <a href="UserService.html" title="interface in inha.git.user.api.serv
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserProblems(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProblems</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;pageIndex)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">사용자 문제 조회</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../project/api/controller/dto/response/SearchProjectsResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchProjectsResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserProjects(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProjects</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserProblemsParticipating(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProblemsParticipating</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">사용자 프로젝트 조회</div>
+<div class="block">사용자 문제 조회</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../question/api/controller/dto/response/SearchQuestionsResponse.html" title="class in inha.git.question.api.controller.dto.response">SearchQuestionsResponse</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserQuestions(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserQuestions</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../project/api/controller/dto/response/SearchProjectsResponse.html" title="class in inha.git.project.api.controller.dto.response">SearchProjectsResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserProjects(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserProjects</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">사용자 질문 조회</div>
+<div class="block">사용자 프로젝트 조회</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../report/api/controller/dto/response/SearchReportResponse.html" title="class in inha.git.report.api.controller.dto.response">SearchReportResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserReports(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserReports</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../question/api/controller/dto/response/SearchQuestionsResponse.html" title="class in inha.git.question.api.controller.dto.response">SearchQuestionsResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserQuestions(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserQuestions</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">사용자 질문 조회</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.springframework.data.domain.Page&lt;<a href="../../../report/api/controller/dto/response/SearchReportResponse.html" title="class in inha.git.report.api.controller.dto.response">SearchReportResponse</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserReports(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)" class="member-name-link">getUserReports</a><wbr>(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">사용자 신고 조회</div>
 </div>
 </div>
@@ -245,11 +252,29 @@ implements <a href="UserService.html" title="interface in inha.git.user.api.serv
 <h3>getUserProblems</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.springframework.data.domain.Page&lt;<a href="../../../problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;</span>&nbsp;<span class="element-name">getUserProblems</span><wbr><span class="parameters">(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;pageIndex)</span></div>
 <div class="block">사용자 문제 조회</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="UserService.html#getUserProblems(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)">getUserProblems</a></code>&nbsp;in interface&nbsp;<code><a href="UserService.html" title="interface in inha.git.user.api.service">UserService</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>user</code> - 사용자 정보</dd>
+<dd><code>pageIndex</code> - 페이지 번호</dd>
+<dt>Returns:</dt>
+<dd>사용자 문제 조회 결과</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getUserProblemsParticipating(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)">
+<h3>getUserProblemsParticipating</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.springframework.data.domain.Page&lt;<a href="../../../problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a>&gt;</span>&nbsp;<span class="element-name">getUserProblemsParticipating</span><wbr><span class="parameters">(<a href="../../domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;userIdx,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;page)</span></div>
+<div class="block">사용자 문제 조회</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="UserService.html#getUserProblemsParticipating(inha.git.user.domain.User,java.lang.Integer,java.lang.Integer)">getUserProblemsParticipating</a></code>&nbsp;in interface&nbsp;<code><a href="UserService.html" title="interface in inha.git.user.api.service">UserService</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>user</code> - 사용자 정보</dd>
 <dd><code>page</code> - 페이지 번호</dd>
