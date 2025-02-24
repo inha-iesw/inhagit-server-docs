@@ -180,7 +180,7 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Sta
 <h3>findByStatisticsTypeAndTargetIdAndSemesterIdAndFieldIdAndCategoryIdWithPessimisticLock</h3>
 <div class="member-signature"><span class="annotations">@Lock(PESSIMISTIC_WRITE)
 @QueryHints()
-@Query("SELECT s FROM Statistics s WHERE s.statisticsType = :statisticsType AND s.targetId = :targetId AND s.semesterId = :semesterId AND s.fieldId = :fieldId AND s.categoryId = :categoryId")
+@Query("SELECT s FROM Statistics s WHERE s.statisticsType = :statisticsType AND (:targetId IS NULL AND s.targetId IS NULL OR s.targetId = :targetId) AND s.semesterId = :semesterId AND s.fieldId = :fieldId AND s.categoryId = :categoryId")
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../Statistics.html" title="class in inha.git.statistics.domain">Statistics</a>&gt;</span>&nbsp;<span class="element-name">findByStatisticsTypeAndTargetIdAndSemesterIdAndFieldIdAndCategoryIdWithPessimisticLock</span><wbr><span class="parameters">(@Param("statisticsType")
  <a href="../enums/StatisticsType.html" title="enum class in inha.git.statistics.domain.enums">StatisticsType</a>&nbsp;statisticsType,
  @Param("targetId")
