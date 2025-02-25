@@ -2454,6 +2454,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the value of the <code>duration</code> record component.</div>
 </dd>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html#duration()" class="member-name-link">duration()</a> - Method in record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>duration</code> record component.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
@@ -4359,13 +4363,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/statistics/domain/repository/PatentStatisticsQueryRepository.html#getPatentStatistics()" class="member-name-link">getPatentStatistics()</a> - Method in class inha.git.statistics.domain.repository.<a href="inha/git/statistics/domain/repository/PatentStatisticsQueryRepository.html" title="class in inha.git.statistics.domain.repository">PatentStatisticsQueryRepository</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/controller/ProblemController.html#getProblem(java.lang.Integer)" class="member-name-link">getProblem(Integer)</a> - Method in class inha.git.problem.api.controller.<a href="inha/git/problem/api/controller/ProblemController.html" title="class in inha.git.problem.api.controller">ProblemController</a></dt>
+<dt><a href="inha/git/problem/api/controller/ProblemController.html#getProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getProblem(User, Integer)</a> - Method in class inha.git.problem.api.controller.<a href="inha/git/problem/api/controller/ProblemController.html" title="class in inha.git.problem.api.controller">ProblemController</a></dt>
 <dd>
 <div class="block">문제 상세 조회 API</div>
 </dd>
-<dt><a href="inha/git/problem/api/service/ProblemService.html#getProblem(java.lang.Integer)" class="member-name-link">getProblem(Integer)</a> - Method in interface inha.git.problem.api.service.<a href="inha/git/problem/api/service/ProblemService.html" title="interface in inha.git.problem.api.service">ProblemService</a></dt>
+<dt><a href="inha/git/problem/api/service/ProblemService.html#getProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getProblem(User, Integer)</a> - Method in interface inha.git.problem.api.service.<a href="inha/git/problem/api/service/ProblemService.html" title="interface in inha.git.problem.api.service">ProblemService</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/service/ProblemServiceImpl.html#getProblem(java.lang.Integer)" class="member-name-link">getProblem(Integer)</a> - Method in class inha.git.problem.api.service.<a href="inha/git/problem/api/service/ProblemServiceImpl.html" title="class in inha.git.problem.api.service">ProblemServiceImpl</a></dt>
+<dt><a href="inha/git/problem/api/service/ProblemServiceImpl.html#getProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getProblem(User, Integer)</a> - Method in class inha.git.problem.api.service.<a href="inha/git/problem/api/service/ProblemServiceImpl.html" title="class in inha.git.problem.api.service">ProblemServiceImpl</a></dt>
 <dd>
 <div class="block">문제 상세 조회</div>
 </dd>
@@ -7912,6 +7916,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the value of the <code>problemRequestidx</code> record component.</div>
 </dd>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html#problemRequestIdx()" class="member-name-link">problemRequestIdx()</a> - Method in record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>problemRequestIdx</code> record component.</div>
+</dd>
 <dt><a href="inha/git/problem/domain/repository/ProblemRequestJpaRepository.html" class="type-name-link" title="interface in inha.git.problem.domain.repository">ProblemRequestJpaRepository</a> - Interface in <a href="inha/git/problem/domain/repository/package-summary.html">inha.git.problem.domain.repository</a></dt>
 <dd>
 <div class="block">ProblemRequestJpaRepository는 Problem 신청 엔티티에 대한 데이터 액세스 기능을 제공.</div>
@@ -8006,7 +8014,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/problem/api/mapper/ProblemMapper.html#problemToProblemResponse(inha.git.problem.domain.Problem)" class="member-name-link">problemToProblemResponse(Problem)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemMapper.html" title="interface in inha.git.problem.api.mapper">ProblemMapper</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/mapper/ProblemMapper.html#problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List,java.util.List)" class="member-name-link">problemToSearchProblemResponse(Problem, SearchUserResponse, List&lt;SearchProblemAttachmentResponse&gt;, List&lt;SearchFieldResponse&gt;)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemMapper.html" title="interface in inha.git.problem.api.mapper">ProblemMapper</a></dt>
+<dt><a href="inha/git/problem/api/mapper/ProblemMapper.html#problemToSearchProblemResponse(inha.git.problem.domain.Problem,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List,java.util.List,java.lang.Integer)" class="member-name-link">problemToSearchProblemResponse(Problem, SearchUserResponse, List&lt;SearchProblemAttachmentResponse&gt;, List&lt;SearchFieldResponse&gt;, Integer)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemMapper.html" title="interface in inha.git.problem.api.mapper">ProblemMapper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/user/domain/Professor.html" class="type-name-link" title="class in inha.git.user.domain">Professor</a> - Class in <a href="inha/git/user/domain/package-summary.html">inha.git.user.domain</a></dt>
 <dd>
@@ -8306,9 +8314,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the value of the <code>projectidx</code> record component.</div>
 </dd>
-<dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemsResponse.html#projectidx()" class="member-name-link">projectidx()</a> - Method in record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemsResponse</a></dt>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html#projectIdx()" class="member-name-link">projectIdx()</a> - Method in record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a></dt>
 <dd>
-<div class="block">Returns the value of the <code>projectidx</code> record component.</div>
+<div class="block">Returns the value of the <code>projectIdx</code> record component.</div>
+</dd>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemsResponse.html#projectIdx()" class="member-name-link">projectIdx()</a> - Method in record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemsResponse</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>projectIdx</code> record component.</div>
 </dd>
 <dt><a href="inha/git/project/api/controller/dto/request/CreateCommentRequest.html#projectIdx()" class="member-name-link">projectIdx()</a> - Method in record class inha.git.project.api.controller.dto.request.<a href="inha/git/project/api/controller/dto/request/CreateCommentRequest.html" title="class in inha.git.project.api.controller.dto.request">CreateCommentRequest</a></dt>
 <dd>
@@ -9387,13 +9399,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html" class="type-name-link" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a> - Record Class in <a href="inha/git/problem/api/controller/dto/response/package-summary.html">inha.git.problem.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.lang.String,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List,java.util.List)" class="member-name-link">SearchProblemResponse(int, String, String, LocalDateTime, int, ProblemStatus, boolean, String, SearchUserResponse, List&lt;SearchFieldResponse&gt;, List&lt;SearchProblemAttachmentResponse&gt;)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></dt>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.lang.String,java.lang.Integer,inha.git.project.api.controller.dto.response.SearchUserResponse,java.util.List,java.util.List)" class="member-name-link">SearchProblemResponse(int, String, String, LocalDateTime, int, ProblemStatus, boolean, String, Integer, SearchUserResponse, List&lt;SearchFieldResponse&gt;, List&lt;SearchProblemAttachmentResponse&gt;)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>SearchProblemResponse</code> record class.</div>
 </dd>
 <dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html" class="type-name-link" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a> - Record Class in <a href="inha/git/problem/api/controller/dto/response/package-summary.html">inha.git.problem.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html#%3Cinit%3E(int,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.util.List,inha.git.project.api.controller.dto.response.SearchUserResponse)" class="member-name-link">SearchProblemsResponse(int, String, LocalDateTime, int, ProblemStatus, boolean, List&lt;SearchFieldResponse&gt;, SearchUserResponse)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a></dt>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.time.LocalDateTime,int,inha.git.problem.domain.enums.ProblemStatus,boolean,java.util.List,inha.git.project.api.controller.dto.response.SearchUserResponse)" class="member-name-link">SearchProblemsResponse(int, String, String, LocalDateTime, int, ProblemStatus, boolean, List&lt;SearchFieldResponse&gt;, SearchUserResponse)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchProblemsResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemsResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>SearchProblemsResponse</code> record class.</div>
 </dd>
@@ -9505,7 +9517,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html" class="type-name-link" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a> - Record Class in <a href="inha/git/problem/api/controller/dto/response/package-summary.html">inha.git.problem.api.controller.dto.response</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,inha.git.problem.domain.enums.ProblemRequestStatus,inha.git.problem.api.controller.dto.response.SearchUserRequestProblemResponse,java.util.List,java.time.LocalDateTime)" class="member-name-link">SearchRequestProblemResponse(int, String, String, String, String, String, ProblemRequestStatus, SearchUserRequestProblemResponse, List&lt;ProblemParticipantResponse&gt;, LocalDateTime)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a></dt>
+<dt><a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,inha.git.problem.domain.enums.ProblemRequestStatus,inha.git.problem.api.controller.dto.response.SearchUserRequestProblemResponse,java.util.List,java.lang.Integer,java.time.LocalDateTime)" class="member-name-link">SearchRequestProblemResponse(int, String, String, String, String, String, ProblemRequestStatus, SearchUserRequestProblemResponse, List&lt;ProblemParticipantResponse&gt;, Integer, LocalDateTime)</a> - Constructor for record class inha.git.problem.api.controller.dto.response.<a href="inha/git/problem/api/controller/dto/response/SearchRequestProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchRequestProblemResponse</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>SearchRequestProblemResponse</code> record class.</div>
 </dd>
@@ -10692,7 +10704,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">TeamComment 목록을 CommentResponse 목록으로 변환.</div>
 </dd>
-<dt><a href="inha/git/problem/api/mapper/ProblemRequestMapper.html#toSearchRequestProblemResponse(inha.git.problem.domain.ProblemRequest)" class="member-name-link">toSearchRequestProblemResponse(ProblemRequest)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemRequestMapper.html" title="interface in inha.git.problem.api.mapper">ProblemRequestMapper</a></dt>
+<dt><a href="inha/git/problem/api/mapper/ProblemRequestMapper.html#toSearchRequestProblemResponse(inha.git.problem.domain.ProblemRequest,java.lang.Integer)" class="member-name-link">toSearchRequestProblemResponse(ProblemRequest, Integer)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemRequestMapper.html" title="interface in inha.git.problem.api.mapper">ProblemRequestMapper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="inha/git/problem/api/mapper/ProblemRequestMapper.html#toSearchUserRequestProblemResponse(inha.git.user.domain.User)" class="member-name-link">toSearchUserRequestProblemResponse(User)</a> - Method in interface inha.git.problem.api.mapper.<a href="inha/git/problem/api/mapper/ProblemRequestMapper.html" title="interface in inha.git.problem.api.mapper">ProblemRequestMapper</a></dt>
 <dd>&nbsp;</dd>

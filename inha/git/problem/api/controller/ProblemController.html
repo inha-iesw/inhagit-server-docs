@@ -121,7 +121,8 @@ loadScripts(document, 'script');</script>
 <div class="block">문제 삭제 API</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblem(java.lang.Integer)" class="member-name-link">getProblem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProblem(inha.git.user.domain.User,java.lang.Integer)" class="member-name-link">getProblem</a><wbr>(<a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">문제 상세 조회 API</div>
 </div>
@@ -198,14 +199,17 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getProblem(java.lang.Integer)">
+<section class="detail" id="getProblem(inha.git.user.domain.User,java.lang.Integer)">
 <h3>getProblem</h3>
 <div class="member-signature"><span class="annotations">@GetMapping("/{problemIdx}")
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">getProblem</span><wbr><span class="parameters">(@PathVariable("problemIdx")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../common/BaseResponse.html" title="class in inha.git.common">BaseResponse</a>&lt;<a href="dto/response/SearchProblemResponse.html" title="class in inha.git.problem.api.controller.dto.response">SearchProblemResponse</a>&gt;</span>&nbsp;<span class="element-name">getProblem</span><wbr><span class="parameters">(@AuthenticationPrincipal
+ <a href="../../../user/domain/User.html" title="class in inha.git.user.domain">User</a>&nbsp;user,
+ @PathVariable("problemIdx")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx)</span></div>
 <div class="block">문제 상세 조회 API</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>user</code> - 유저 정보</dd>
 <dd><code>problemIdx</code> - 문제 인덱스</dd>
 <dt>Returns:</dt>
 <dd>문제 상세 정보</dd>
