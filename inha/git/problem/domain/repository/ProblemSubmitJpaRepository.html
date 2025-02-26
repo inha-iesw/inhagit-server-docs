@@ -93,13 +93,16 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemRequest_Problem_Id(java.lang.Integer,org.springframework.data.domain.Pageable)" class="member-name-link">findByProblemRequest_Problem_Id</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
- org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#existsByProblemRequest(inha.git.problem.domain.ProblemRequest)" class="member-name-link">existsByProblemRequest</a><wbr>(<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findProjectIdByProblemRequestId(java.lang.Integer)" class="member-name-link">findProjectIdByProblemRequestId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemRequestId)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProblemSubmit.html" title="class in inha.git.problem.domain">ProblemSubmit</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProblemRequest_Problem_Id(java.lang.Integer,org.springframework.data.domain.Pageable)" class="member-name-link">findByProblemRequest_Problem_Id</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemIdx,
+ org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findProjectIdByProblemRequestId(java.lang.Integer)" class="member-name-link">findProjectIdByProblemRequestId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemRequestId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -145,6 +148,12 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="member-signature"><span class="annotations">@Query("SELECT ps.projectId FROM ProblemSubmit ps WHERE ps.problemRequest.id = :problemRequestId")
 </span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">findProjectIdByProblemRequestId</span><wbr><span class="parameters">(@Param("problemRequestId")
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;problemRequestId)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="existsByProblemRequest(inha.git.problem.domain.ProblemRequest)">
+<h3>existsByProblemRequest</h3>
+<div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">existsByProblemRequest</span><wbr><span class="parameters">(<a href="../ProblemRequest.html" title="class in inha.git.problem.domain">ProblemRequest</a>&nbsp;problemRequest)</span></div>
 </section>
 </li>
 </ul>
