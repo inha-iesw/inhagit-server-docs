@@ -94,19 +94,25 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deleteByProject_Id(java.lang.Integer)" class="member-name-link">deleteByProject_Id</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllByStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByStateOrderByCreatedAtDesc</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllByState(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByState</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)" class="member-name-link">findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findAllByStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State)" class="member-name-link">findAllByStateOrderByCreatedAtDesc</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>org.springframework.data.domain.Page&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc(inha.git.common.BaseEntity.State,org.springframework.data.domain.Pageable)" class="member-name-link">findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</a><wbr>(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
  org.springframework.data.domain.Pageable&nbsp;pageable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId,
+ <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByIdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByIdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId,
- <a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProject_Id(java.lang.Integer)" class="member-name-link">findByProject_Id</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#findByProject_IdAndState(java.lang.Integer,inha.git.common.BaseEntity.State)" class="member-name-link">findByProject_IdAndState</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId,
@@ -159,6 +165,12 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 </section>
 </li>
 <li>
+<section class="detail" id="findByProject_Id(java.lang.Integer)">
+<h3>findByProject_Id</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</span>&nbsp;<span class="element-name">findByProject_Id</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId)</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="findAllByState(inha.git.common.BaseEntity.State)">
 <h3>findAllByState</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</span>&nbsp;<span class="element-name">findAllByState</span><wbr><span class="parameters">(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state)</span></div>
@@ -175,6 +187,12 @@ extends org.springframework.data.jpa.repository.JpaRepository&lt;<a href="../Pro
 <h3>findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</h3>
 <div class="member-signature"><span class="return-type">org.springframework.data.domain.Page&lt;<a href="../ProjectStar.html" title="class in inha.git.project.domain">ProjectStar</a>&gt;</span>&nbsp;<span class="element-name">findByAcceptAtIsNotNullAndStateOrderByCreatedAtDesc</span><wbr><span class="parameters">(<a href="../../../common/BaseEntity.State.html" title="enum class in inha.git.common">BaseEntity.State</a>&nbsp;state,
  org.springframework.data.domain.Pageable&nbsp;pageable)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="deleteByProject_Id(java.lang.Integer)">
+<h3>deleteByProject_Id</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">deleteByProject_Id</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;projectId)</span></div>
 </section>
 </li>
 </ul>
